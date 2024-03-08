@@ -1,0 +1,93 @@
+# name: 
+sha1: a80e3c32aa28f616d55d4e8bd217a128bb5c1f52
+options:
+  base_path: ../../
+  basename: goin_quackers
+  target_path: disk/us/SLUS_200.77
+  ld_script_path: linker_scripts/us/goin_quackers.us.ld
+  compiler: GCC
+  find_file_boundaries: False
+  platform: ps2
+  undefined_funcs_auto_path: linker_scripts/us/auto/undefined_funcs_auto.ld
+  undefined_syms_auto_path: linker_scripts/us/auto/undefined_syms_auto.ld
+  symbol_addrs_path:
+    - config/us/symbol_addrs.txt
+    - config/us/ignored_addresses.txt
+  reloc_addrs_path:
+    - config/us/reloc_addrs.txt
+
+  ld_partial_linking: False
+
+  asm_path: asm/us
+  src_path: src
+  build_path: build
+  asset_path: bin/us
+  extensions_path: tools/splat_ext
+  # mips_abi_float_regs: o32
+  o_as_suffix: True
+  mnemonic_ljust: 12
+  rom_address_padding: True
+  dump_symbols: True
+
+  # generated_c_preamble: |
+  #   #include "libultra.h"
+  #   #include "include_asm.h"
+  #   #include "macros_defines.h"
+  #   #include "unknown_structs.h"
+  # asm_inc_header: ""
+  use_legacy_include_asm: False
+  create_asm_dependencies: True
+  string_encoding: SHIFT-JIS
+  data_string_encoding: SHIFT-JIS
+  rodata_string_guesser_level: 2
+  asm_function_macro: glabel
+  # asm_function_alt_macro: alabel
+  # asm_end_label: endlabel
+  asm_jtbl_label_macro: jlabel
+  asm_data_macro: dlabel
+  # include_macro_inc: False
+  # libultra_symbols: True
+  # hardware_regs: True
+segments:
+  - [0x000000, bin, elf_stuff]
+
+  - name: indata
+    type: code
+    start: 0x0000A0
+    vram: 0x00100000
+    subsegments:
+      - [0x0000A0, databin, indata/indata]
+
+  - name: main
+    type: code
+    start: 0x000100
+    vram: 0x00200000
+    bss_size: 0x16F100 # maybe larger
+    subsegments:
+      - [0x000100, asm, main/000100]
+      - { start: 0x195F00, type: bss, vram: 0x00395E80, name: main/00395E80}
+
+  # - name: heap
+  #   type: code
+  #   start: 0x195F00
+  #   vram: 0x00580000
+  #   subsegments:
+  #     - [0x195F00, data, heap/heap]
+
+  - [0x195F00, databin, elf_stuff_2]
+
+  - [0x29F8FC]
+
+# Section Headers:
+#   [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+#   [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+#   [ 1] .shstrtab         STRTAB          00000000 195f00 00004f 01      0   0  1
+#   [ 2] .strtab           STRTAB          00000000 195f50 059e6d 01      0   0  1
+#   [ 3] .symtab           SYMTAB          00000000 1efdc0 031cf0 10      2 6343  1
+#   [ 4] indata            PROGBITS        00100000 0000a0 000000 01  WA  0   0 16
+#   [ 5] main              PROGBITS        00200000 000100 195e00 01 WAX  0   0 128
+#   [ 6] .relmain          REL             00000000 22b7c0 073f40 08      3   5  0
+#   [ 7] heap              PROGBITS        00580000 195f00 000000 01  WA  0   0 16
+#   [ 8] .mwcats           LOUSER+0x4a2a82c2 00000000 221ab0 009d08 01      5   0  4
+#   [ 9] .comment          PROGBITS        00000000 29f700 00002b 01      0   0  1
+#   [10] .reginfo          MIPS_REGINFO    00000000 29f72c 000018 01      0   0  4

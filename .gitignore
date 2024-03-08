@@ -1,0 +1,7 @@
+*.bin
+*.cue
+*.iso
+disk/
+
+SLUS_200.77
+.splat/
