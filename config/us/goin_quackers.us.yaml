@@ -11,6 +11,7 @@ options:
   undefined_funcs_auto_path: linker_scripts/us/auto/undefined_funcs_auto.ld
   undefined_syms_auto_path: linker_scripts/us/auto/undefined_syms_auto.ld
   symbol_addrs_path:
+    - config/us/elf_symbol_addrs.txt
     - config/us/symbol_addrs.txt
     - config/us/ignored_addresses.txt
   reloc_addrs_path:
