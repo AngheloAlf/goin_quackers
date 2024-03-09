@@ -38,8 +38,8 @@ options:
   # asm_inc_header: ""
   use_legacy_include_asm: False
   create_asm_dependencies: True
-  string_encoding: SHIFT-JIS
-  data_string_encoding: SHIFT-JIS
+  string_encoding: ASCII
+  data_string_encoding: ASCII
   rodata_string_guesser_level: 2
   asm_function_macro: glabel
   # asm_function_alt_macro: alabel
