@@ -250,103 +250,103 @@ segments:
       - [0x035468, asm, main/035468]
       - [0x16F280, textbin, main/16F280] # vutext
       - [0x170C20, textbin, main/170C20] # vutext
-      - [0x171350, data, main/171350]
-      - [0x171370, data, main/171370]
-      - [0x171390, data, main/171390]
-      - [0x171440, data, main/171440]
-      - [0x171530, data, main/171530]
-      - [0x171548, data, main/171548]
-      - [0x1715F8, data, main/1715F8]
-      - [0x171640, data, main/171640]
-      - [0x171F10, data, main/171F10]
-      - [0x171F90, data, main/171F90]
-      - [0x171F98, data, main/171F98]
-      - [0x171FA0, data, main/171FA0]
-      - [0x171FA8, data, main/171FA8]
-      - [0x171FB0, data, main/171FB0]
-      - [0x171FB8, data, main/171FB8]
-      - [0x1722A8, data, main/1722A8]
-      - [0x1722C0, data, main/1722C0]
-      - [0x172718, data, main/172718]
-      - [0x172788, data, main/172788]
-      - [0x1727D0, data, main/1727D0]
-      - [0x17A188, rodata, main/17A188]
-      - [0x17A1C0, rodata, main/17A1C0]
-      - [0x17A2E0, rodata, main/17A2E0]
-      - [0x17A3A0, rodata, main/17A3A0]
-      - [0x17A3C0, rodata, main/17A3C0]
-      - [0x17A3D8, rodata, main/17A3D8]
-      - [0x17A670, rodata, main/17A670]
-      - [0x17A688, rodata, main/17A688]
-      - [0x17A6C0, rodata, main/17A6C0]
-      - [0x17A768, rodata, main/17A768]
-      - [0x17A8B0, rodata, main/17A8B0]
-      - [0x17A920, rodata, main/17A920]
-      - [0x17AA88, rodata, main/17AA88]
-      - [0x17AA90, rodata, main/17AA90]
-      - [0x17AAC0, rodata, main/17AAC0]
-      - [0x17AC50, rodata, main/17AC50]
-      - [0x17AD30, rodata, main/17AD30]
-      - [0x17AE10, rodata, main/17AE10]
-      - [0x17AFE0, rodata, main/17AFE0]
-      - [0x17B230, rodata, main/17B230]
-      - [0x17B2B8, rodata, main/17B2B8]
-      - [0x17B678, rodata, main/17B678]
-      - [0x17B6E0, rodata, main/17B6E0]
-      - [0x17B750, rodata, main/17B750]
-      - [0x17B7C0, rodata, main/17B7C0]
-      - [0x17B850, rodata, main/17B850]
-      - [0x17B8A0, rodata, main/17B8A0]
-      - [0x17B8E8, rodata, main/17B8E8]
-      - [0x17B8F8, rodata, main/17B8F8]
+      - [0x171350, data, main/000100]
+      - [0x171370, data, main/009D78]
+      - [0x171390, data, main/00A950]
+      - [0x171440, data, main/00C778]
+      - [0x171530, data, main/00C7A0]
+      - [0x171548, data, main/011968]
+      - [0x1715F8, data, main/012928]
+      - [0x171640, data, main/014020]
+      - [0x171F10, data, main/014040]
+      - [0x171F90, data, main/0144C0]
+      - [0x171F98, data, main/0158F8]
+      - [0x171FA0, data, main/016830]
+      - [0x171FA8, data, main/016F60]
+      - [0x171FB0, data, main/017DC0]
+      - [0x171FB8, data, main/023D68]
+      - [0x1722A8, data, main/023E00]
+      - [0x1722C0, data, main/0240B8]
+      - [0x172718, data, main/02E980]
+      - [0x172788, data, main/02F560]
+      - [0x1727D0, data, main/031F98]
+      - [0x17A188, rodata, main/009F30]
+      - [0x17A1C0, rodata, main/00A950]
+      - [0x17A2E0, rodata, main/00AB38]
+      - [0x17A3A0, rodata, main/00B658]
+      - [0x17A3C0, rodata, main/00BA68]
+      - [0x17A3D8, rodata, main/00C7A0]
+      - [0x17A670, rodata, main/0114D8]
+      - [0x17A688, rodata, main/011B68]
+      - [0x17A6C0, rodata, main/012928]
+      - [0x17A768, rodata, main/013490]
+      - [0x17A8B0, rodata, main/0158F8]
+      - [0x17A920, rodata, main/015E08]
+      - [0x17AA88, rodata, main/018618]
+      - [0x17AA90, rodata, main/018BE0]
+      - [0x17AAC0, rodata, main/018E78]
+      - [0x17AC50, rodata, main/019448]
+      - [0x17AD30, rodata, main/019C20]
+      - [0x17AE10, rodata, main/01A110]
+      - [0x17AFE0, rodata, main/01AE38]
+      - [0x17B230, rodata, main/01BE30]
+      - [0x17B2B8, rodata, main/01C6C0]
+      - [0x17B678, rodata, main/01CBD8]
+      - [0x17B6E0, rodata, main/01CE28]
+      - [0x17B750, rodata, main/01D990]
+      - [0x17B7C0, rodata, main/01DB68]
+      - [0x17B850, rodata, main/01E138]
+      - [0x17B8A0, rodata, main/01EB90]
+      - [0x17B8E8, rodata, main/01EE28]
+      - [0x17B8F8, rodata, main/01F190]
       - [0x17B908, rodata, main/17B908]
-      - [0x17B910, rodata, main/17B910]
-      - [0x17B918, rodata, main/17B918]
-      - [0x17B928, rodata, main/17B928]
-      - [0x17B958, rodata, main/17B958]
-      - [0x17B9B0, rodata, main/17B9B0]
-      - [0x17B9B8, rodata, main/17B9B8]
-      - [0x17B9E8, rodata, main/17B9E8]
-      - [0x17B9F8, rodata, main/17B9F8]
-      - [0x17BA08, rodata, main/17BA08]
-      - [0x17BA28, rodata, main/17BA28]
-      - [0x17BA38, rodata, main/17BA38]
-      - [0x17BA40, rodata, main/17BA40]
-      - [0x17BA48, rodata, main/17BA48]
-      - [0x17BA68, rodata, main/17BA68]
-      - [0x17BB70, rodata, main/17BB70]
-      - [0x17BBC8, rodata, main/17BBC8]
-      - [0x17BBD0, rodata, main/17BBD0]
-      - [0x17BC18, rodata, main/17BC18]
-      - [0x17BD40, rodata, main/17BD40]
-      - [0x17BE10, rodata, main/17BE10]
-      - [0x17C020, rodata, main/17C020]
-      - [0x17C490, rodata, main/17C490]
-      - [0x17C590, rodata, main/17C590]
-      - [0x17C690, rodata, main/17C690]
-      - [0x17C790, rodata, main/17C790]
-      - [0x17C890, rodata, main/17C890]
-      - [0x17CC60, rodata, main/17CC60]
-      - [0x17CD60, rodata, main/17CD60]
-      - [0x17CF38, rodata, main/17CF38]
-      - { start: 0x195F00, type: bss, vram: 0x00395E80, name: main/00395E80 }
-      - { type: bss, vram: 0x003962C0, name: main/003962C0 }
-      - { type: bss, vram: 0x00396CD0, name: main/00396CD0 }
-      - { type: bss, vram: 0x00396D00, name: main/00396D00 }
-      - { type: bss, vram: 0x003970C0, name: main/003970C0 }
-      - { type: bss, vram: 0x00397140, name: main/00397140 }
-      - { type: bss, vram: 0x003973C0, name: main/003973C0 }
-      - { type: bss, vram: 0x00398C00, name: main/00398C00 }
-      - { type: bss, vram: 0x00399240, name: main/00399240 }
-      - { type: bss, vram: 0x00399480, name: main/00399480 }
-      - { type: bss, vram: 0x003994E8, name: main/003994E8 }
-      - { type: bss, vram: 0x00399500, name: main/00399500 }
-      - { type: bss, vram: 0x00399540, name: main/00399540 }
-      - { type: bss, vram: 0x0039AB00, name: main/0039AB00 }
-      - { type: bss, vram: 0x0039B200, name: main/0039B200 }
-      - { type: bss, vram: 0x0039C880, name: main/0039C880 }
-      # - { type: vubss, vram: 0x00504F80, name: main/00504F80 }
-      # - { type: vubss, vram: 0x00504F80, name: main/00504F80 }
+      - [0x17B910, rodata, main/01F3B0]
+      - [0x17B918, rodata, main/01F410]
+      - [0x17B928, rodata, main/01F610]
+      - [0x17B958, rodata, main/01F950]
+      - [0x17B9B0, rodata, main/020140]
+      - [0x17B9B8, rodata, main/020230]
+      - [0x17B9E8, rodata, main/020388]
+      - [0x17B9F8, rodata, main/0204B0]
+      - [0x17BA08, rodata, main/0205F8]
+      - [0x17BA28, rodata, main/020A28]
+      - [0x17BA38, rodata, main/020B38]
+      - [0x17BA40, rodata, main/020C38]
+      - [0x17BA48, rodata, main/020D38]
+      - [0x17BA68, rodata, main/021380]
+      - [0x17BB70, rodata, main/0213D8]
+      - [0x17BBC8, rodata, main/023D68]
+      - [0x17BBD0, rodata, main/023E18]
+      - [0x17BC18, rodata, main/024F00]
+      - [0x17BD40, rodata, main/028020]
+      - [0x17BE10, rodata, main/0297B0]
+      - [0x17C020, rodata, main/02B0D0]
+      - [0x17C490, rodata, main/02BFC0]
+      - [0x17C590, rodata, main/02CAB0]
+      - [0x17C690, rodata, main/02D178]
+      - [0x17C790, rodata, main/02D748]
+      - [0x17C890, rodata, main/02F560]
+      - [0x17CC60, rodata, main/031F98]
+      - [0x17CD60, rodata, main/033028]
+      - [0x17CF38, rodata, main/035468]
+      - { type: bss, vram: 0x00395E80, name: main/000100 }
+      - { type: bss, vram: 0x003962C0, name: main/013490 }
+      - { type: bss, vram: 0x00396CD0, name: main/015718 }
+      - { type: bss, vram: 0x00396D00, name: main/0158F8 }
+      - { type: bss, vram: 0x003970C0, name: main/015E08 }
+      - { type: bss, vram: 0x00397140, name: main/016830 }
+      - { type: bss, vram: 0x003973C0, name: main/016F60 }
+      - { type: bss, vram: 0x00398C00, name: main/017DC0 }
+      - { type: bss, vram: 0x00399240, name: main/018618 }
+      - { type: bss, vram: 0x00399480, name: main/018BE0 }
+      - { type: bss, vram: 0x003994E8, name: main/02DC88 }
+      - { type: bss, vram: 0x00399500, name: main/02E980 }
+      - { type: bss, vram: 0x00399540, name: main/02F560 }
+      - { type: bss, vram: 0x0039AB00, name: main/031F98 }
+      - { type: bss, vram: 0x0039B200, name: main/033028 }
+      - { type: bss, vram: 0x0039C880, name: main/035468 }
+      # - { type: vubss, vram: 0x00504F80, name: main/16F280 }
+      # - { type: vubss, vram: 0x00504F80, name: main/170C20 }
 
   # - name: heap
   #   type: code

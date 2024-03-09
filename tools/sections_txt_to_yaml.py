@@ -21,7 +21,9 @@ noloads = {
     "sbss",
 }
 
-sections: list[tuple[int, str]] = []
+sections: list[tuple[int, str, str]] = []
+
+current_text_name = f""
 
 with Path("tools/elf_sections.us.txt").open() as f:
     for line in f:
@@ -34,15 +36,19 @@ with Path("tools/elf_sections.us.txt").open() as f:
             print(f"yeeting {section}")
             continue
 
-        sections.append((address, section))
+        if section in {".text", ".vutext"}:
+            start = address - ADDRESS + START
+            current_text_name = f"{start:06X}"
+
+        sections.append((address, section, current_text_name))
 
 sections.sort()
 
-for address, section in sections:
+for address, section, filename in sections:
     start = address - ADDRESS + START
     splat_type = section_mapping[section]
 
     if splat_type in noloads:
-        print(f"      - {{ type: {splat_type}, vram: 0x{address:08X}, name: main/{address:08X} }}")
+        print(f"      - {{ type: {splat_type}, vram: 0x{address:08X}, name: main/{filename} }}")
     else:
-        print(f"      - [0x{start:06X}, {splat_type}, main/{start:06X}]")
+        print(f"      - [0x{start:06X}, {splat_type}, main/{filename}]")
