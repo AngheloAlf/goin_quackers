@@ -329,7 +329,7 @@ segments:
       - [0x17CC60, rodata, main/17CC60]
       - [0x17CD60, rodata, main/17CD60]
       - [0x17CF38, rodata, main/17CF38]
-      - { start: 0x195F00, type: bss, vram: 0x00395E80, name: main/00395E80}
+      - { start: 0x195F00, type: bss, vram: 0x00395E80, name: main/00395E80 }
       - { type: bss, vram: 0x003962C0, name: main/003962C0 }
       - { type: bss, vram: 0x00396CD0, name: main/00396CD0 }
       - { type: bss, vram: 0x00396D00, name: main/00396D00 }
