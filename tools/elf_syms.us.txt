@@ -1,6 +1,11 @@
 
 Symbol table '.symtab' contains 12751 entries:
    Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00200000   184 SECTION LOCAL  DEFAULT    5 .text
+     2: 00395e80   324 SECTION LOCAL  DEFAULT    5 .bss
+     3: 002000b0     0 NOTYPE  LOCAL  DEFAULT    5 _root
+     4: 00395e80     0 NOTYPE  LOCAL  DEFAULT    5 _args
      5: 0038d380    56 FUNC    LOCAL  DEFAULT    5 __sinit_gcc_wrapper.c
      6: 00395fc8     1 OBJECT  LOCAL  DEFAULT    5 __msl_ios_base_init__3std
      7: 00395fd0    12 OBJECT  LOCAL  DEFAULT    5 @543
@@ -129,90 +134,282 @@ Symbol table '.symtab' contains 12751 entries:
    130: 00395e28     8 OBJECT  LOCAL  DEFAULT    5 C$592
    131: 00395e20     1 OBJECT  LOCAL  DEFAULT    5 init$594
    132: 00371250    16 OBJECT  LOCAL  DEFAULT    5 __ps2_libinfo__
+   133: 00209c78     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   134: 00371250     0 SECTION LOCAL  DEFAULT    5 .data
+   135: 00209c78     0 SECTION LOCAL  DEFAULT    5 .text
+   136: 00209c78     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    137: 00371260    16 OBJECT  LOCAL  DEFAULT    5 gp.6
+   138: 00209dc8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   139: 00371270     0 SECTION LOCAL  DEFAULT    5 .data
+   140: 00209dc8     0 SECTION LOCAL  DEFAULT    5 .text
+   141: 00209dc8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    142: 00371270    32 OBJECT  LOCAL  DEFAULT    5 init_vif_regs.3
+   143: 00209e30     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   144: 00209e30     0 SECTION LOCAL  DEFAULT    5 .text
+   145: 00209e30     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   146: 0037a088     0 SECTION LOCAL  DEFAULT    5 .rodata
+   147: 0020a090     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   148: 0020a090     0 SECTION LOCAL  DEFAULT    5 .text
+   149: 0020a090     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   150: 0020a150     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   151: 0020a150     0 SECTION LOCAL  DEFAULT    5 .text
+   152: 0020a150     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   153: 0020a218     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   154: 0020a218     0 SECTION LOCAL  DEFAULT    5 .text
+   155: 0020a218     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   156: 0020a400     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   157: 0020a400     0 SECTION LOCAL  DEFAULT    5 .text
+   158: 0020a400     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   159: 0020a508     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   160: 0020a508     0 SECTION LOCAL  DEFAULT    5 .text
+   161: 0020a508     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   162: 0020a7b8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   163: 0020a7b8     0 SECTION LOCAL  DEFAULT    5 .text
+   164: 0020a7b8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   165: 0020a850     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   166: 0020a850     0 SECTION LOCAL  DEFAULT    5 .text
+   167: 0020a850     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   168: 0037a0c0     0 SECTION LOCAL  DEFAULT    5 .rodata
    169: 003712c0    16 OBJECT  LOCAL  DEFAULT    5 __ps2_libinfo__
    170: 0020aa38    52 FUNC    LOCAL  DEFAULT    5 memclr
+   171: 0020aa38     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    172: 003712d0    40 OBJECT  LOCAL  DEFAULT    5 isclr
+   173: 00371290     0 SECTION LOCAL  DEFAULT    5 .data
+   174: 0020aa38     0 SECTION LOCAL  DEFAULT    5 .text
    175: 00371318    10 OBJECT  LOCAL  DEFAULT    5 mfdtbl
+   176: 0020aa38     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   177: 0037a1e0     0 SECTION LOCAL  DEFAULT    5 .rodata
    178: 00371308    10 OBJECT  LOCAL  DEFAULT    5 stdtbl
    179: 003712f8    10 OBJECT  LOCAL  DEFAULT    5 ststbl
    180: 0020b6b8    64 FUNC    LOCAL  DEFAULT    5 sceDevVu0Sync
    181: 0020b558    20 FUNC    LOCAL  DEFAULT    5 sceDevVu0CheckBusy
+   182: 0020b558     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   183: 0020b558     0 SECTION LOCAL  DEFAULT    5 .text
+   184: 0020b558     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   185: 0037a2a0     0 SECTION LOCAL  DEFAULT    5 .rodata
    186: 0020bb68    72 FUNC    LOCAL  DEFAULT    5 sceDevVu1Sync
    187: 0020b9d8    68 FUNC    LOCAL  DEFAULT    5 sceVu0MemReadQ
    188: 0020b998    64 FUNC    LOCAL  DEFAULT    5 sceVu0MemWriteQ
    189: 0020b968    44 FUNC    LOCAL  DEFAULT    5 sceVuCheckBusy
+   190: 0020b968     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   191: 0020b968     0 SECTION LOCAL  DEFAULT    5 .text
+   192: 0020b968     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   193: 0037a2c0     0 SECTION LOCAL  DEFAULT    5 .rodata
    194: 0020bfc0    80 FUNC    LOCAL  DEFAULT    5 sceDevVif0Sync
+   195: 0020bec0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   196: 0020bec0     0 SECTION LOCAL  DEFAULT    5 .text
+   197: 0020bec0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    198: 0020c2f0    80 FUNC    LOCAL  DEFAULT    5 sceDevVif1Sync
+   199: 0020c1f0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   200: 0020c1f0     0 SECTION LOCAL  DEFAULT    5 .text
+   201: 0020c1f0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   202: 0020c5d8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   203: 0020c5d8     0 SECTION LOCAL  DEFAULT    5 .text
+   204: 0020c5d8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   205: 0020c5e8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   206: 0020c5e8     0 SECTION LOCAL  DEFAULT    5 .text
+   207: 0020c5e8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   208: 0020c5f8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   209: 0020c5f8     0 SECTION LOCAL  DEFAULT    5 .text
+   210: 0020c5f8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   211: 0020c660     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   212: 0020c660     0 SECTION LOCAL  DEFAULT    5 .text
+   213: 0020c660     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   214: 0020c678     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   215: 0020c678     0 SECTION LOCAL  DEFAULT    5 .text
+   216: 0020c678     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    217: 00210f60   404 FUNC    LOCAL  DEFAULT    5 _getPtsDtsFlags
+   218: 0020c6a0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    219: 003713e8     4 OBJECT  LOCAL  DEFAULT    5 tempRefOld.194
    220: 003713e4     4 OBJECT  LOCAL  DEFAULT    5 tempRefWrap.193
    221: 00210f28    56 FUNC    LOCAL  DEFAULT    5 _markOutput
    222: 00210320   208 FUNC    LOCAL  DEFAULT    5 _updateTempTackData
+   223: 0020e420     0 NOTYPE  LOCAL  DEFAULT    5 _maxval
    224: 0020c6a0   812 FUNC    LOCAL  DEFAULT    5 _motionComp0
+   225: 00371340     0 SECTION LOCAL  DEFAULT    5 .data
+   226: 0020c6a0     0 SECTION LOCAL  DEFAULT    5 .text
    227: 0020ede8  1320 FUNC    LOCAL  DEFAULT    5 _decMB0
    228: 0020d4c0   432 FUNC    LOCAL  DEFAULT    5 _doMC
    229: 0020ed18   208 FUNC    LOCAL  DEFAULT    5 _skipMB0
    230: 0020ea10   292 FUNC    LOCAL  DEFAULT    5 _sliceA0
    231: 0020eb38   480 FUNC    LOCAL  DEFAULT    5 _slice0
+   232: 0020c6a0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   233: 0037a2d8     0 SECTION LOCAL  DEFAULT    5 .rodata
    234: 003713b8    44 OBJECT  LOCAL  DEFAULT    5 ext_func.183
    235: 00371360    32 OBJECT  LOCAL  DEFAULT    5 _ri0
    236: 00371340    32 OBJECT  LOCAL  DEFAULT    5 _rix
    237: 00210c68   156 FUNC    LOCAL  DEFAULT    5 _isOutSizeOK
    238: 00371380    40 OBJECT  LOCAL  DEFAULT    5 _isDirty
+   239: 002113d8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   240: 00371430     0 SECTION LOCAL  DEFAULT    5 .data
+   241: 002113d8     0 SECTION LOCAL  DEFAULT    5 .text
    242: 00211568   424 FUNC    LOCAL  DEFAULT    5 _doCSC2
    243: 002113d8   220 FUNC    LOCAL  DEFAULT    5 _doCSC
    244: 002114b8   176 FUNC    LOCAL  DEFAULT    5 _ch3dmaCSC
+   245: 002113d8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   246: 0037a570     0 SECTION LOCAL  DEFAULT    5 .rodata
+   247: 00211868     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   248: 00211868     0 SECTION LOCAL  DEFAULT    5 .text
    249: 002118c0   136 FUNC    LOCAL  DEFAULT    5 _sysbitFlush
+   250: 00211868     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   251: 00211a68     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   252: 00371448     0 SECTION LOCAL  DEFAULT    5 .data
+   253: 00211a68     0 SECTION LOCAL  DEFAULT    5 .text
    254: 00371448   160 OBJECT  LOCAL  DEFAULT    5 _strmap
+   255: 00211a68     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   256: 0037a588     0 SECTION LOCAL  DEFAULT    5 .rodata
    257: 003714e8     0 OBJECT  LOCAL  DEFAULT    5 ES_DSM_trick_mode_add_copy_CRC.39
    258: 00212ed8   376 FUNC    LOCAL  DEFAULT    5 _getpic
+   259: 00212828     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   260: 00212828     0 SECTION LOCAL  DEFAULT    5 .text
    261: 002131a8   376 FUNC    LOCAL  DEFAULT    5 _decodeOrSkipField
    262: 00213050   280 FUNC    LOCAL  DEFAULT    5 _decodeOrSkipFrame
    263: 00213168    60 FUNC    LOCAL  DEFAULT    5 _decodeOrSkip
+   264: 00212828     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   265: 0037a5c0     0 SECTION LOCAL  DEFAULT    5 .rodata
+   266: 00213390     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   267: 003714f8     0 SECTION LOCAL  DEFAULT    5 .data
+   268: 00213390     0 SECTION LOCAL  DEFAULT    5 .text
    269: 00213c18   192 FUNC    LOCAL  DEFAULT    5 _setDefaultQM
    270: 003962c0   512 OBJECT  LOCAL  DEFAULT    5 _sprtagdata
+   271: 00213390     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   272: 0037a668     0 SECTION LOCAL  DEFAULT    5 .rodata
+   273: 003962c0     0 SECTION LOCAL  DEFAULT    5 .bss
    274: 00213668    32 FUNC    LOCAL  DEFAULT    5 _RefImageInit
    275: 003964c0  2064 OBJECT  LOCAL  DEFAULT    5 _bstag
    276: 003714f8     4 OBJECT  LOCAL  DEFAULT    5 _buffbase
    277: 00213b30   232 FUNC    LOCAL  DEFAULT    5 _initRefImages
+   278: 00213f20     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   279: 00213f20     0 SECTION LOCAL  DEFAULT    5 .text
+   280: 00213f20     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   281: 00371540     0 SECTION LOCAL  DEFAULT    5 .data
+   282: 00213f40     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   283: 00213f40     0 SECTION LOCAL  DEFAULT    5 .text
+   284: 00213f40     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    285: 00371e20    80 OBJECT  LOCAL  DEFAULT    5 iqval
    286: 00371e10    16 OBJECT  LOCAL  DEFAULT    5 __ps2_libinfo__
+   287: 00214190     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   288: 00371e10     0 SECTION LOCAL  DEFAULT    5 .data
+   289: 00214190     0 SECTION LOCAL  DEFAULT    5 .text
+   290: 00214190     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    291: 00371e70    32 OBJECT  LOCAL  DEFAULT    5 vqval
+   292: 002143c0     0 SECTION LOCAL  DEFAULT    5 .text
    293: 00371e90     4 OBJECT  LOCAL  DEFAULT    5 ttyinit
+   294: 00214c50     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   295: 00371e90     0 SECTION LOCAL  DEFAULT    5 .data
+   296: 00214c50     0 SECTION LOCAL  DEFAULT    5 .text
+   297: 00214c50     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    298: 00371e94     4 OBJECT  LOCAL  DEFAULT    5 heap_ptr.27
+   299: 00214fd0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   300: 00214fd0     0 SECTION LOCAL  DEFAULT    5 .text
+   301: 00214fd0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   302: 00215240     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   303: 00215240     0 SECTION LOCAL  DEFAULT    5 .text
+   304: 00215240     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   305: 00215578     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   306: 00215578     0 SECTION LOCAL  DEFAULT    5 .text
+   307: 00215578     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   308: 00215618     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   309: 00215618     0 SECTION LOCAL  DEFAULT    5 .text
+   310: 00215618     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   311: 00396cd0     0 SECTION LOCAL  DEFAULT    5 .bss
+   312: 00396cd0     0 NOTYPE  LOCAL  DEFAULT    5 userarea
+   313: 00396f80     0 NOTYPE  LOCAL  DEFAULT    5 rbuf
    314: 002158a0   380 FUNC    LOCAL  DEFAULT    5 sceTtyHandler
+   315: 002157f8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   316: 002157f8     0 SECTION LOCAL  DEFAULT    5 .text
    317: 00215860    60 FUNC    LOCAL  DEFAULT    5 QueuePeekReadDone
    318: 00215820    60 FUNC    LOCAL  DEFAULT    5 QueuePeekWriteDone
    319: 002157f8    36 FUNC    LOCAL  DEFAULT    5 QueueInit
+   320: 002157f8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   321: 0037a7b0     0 SECTION LOCAL  DEFAULT    5 .rodata
+   322: 00396d00     0 SECTION LOCAL  DEFAULT    5 .bss
+   323: 00396e40     0 NOTYPE  LOCAL  DEFAULT    5 wbuf
+   324: 00396e10     0 NOTYPE  LOCAL  DEFAULT    5 tinfo
+   325: 00396d00     0 NOTYPE  LOCAL  DEFAULT    5 q.3
+   326: 00215d08     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    327: 00215d40   176 FUNC    LOCAL  DEFAULT    5 deci2Putchar
+   328: 00371e98     0 SECTION LOCAL  DEFAULT    5 .data
+   329: 00215d08     0 SECTION LOCAL  DEFAULT    5 .text
    330: 00215d08    52 FUNC    LOCAL  DEFAULT    5 kputchar
    331: 00371e98     4 OBJECT  LOCAL  DEFAULT    5 count
+   332: 00215d08     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   333: 0037a820     0 SECTION LOCAL  DEFAULT    5 .rodata
+   334: 003970c0     0 SECTION LOCAL  DEFAULT    5 .bss
+   335: 003970c0     0 NOTYPE  LOCAL  DEFAULT    5 linebuf
    336: 00215df0    52 FUNC    LOCAL  DEFAULT    5 serialPutchar
    337: 00371e9c     4 OBJECT  LOCAL  DEFAULT    5 _putchar
+   338: 00216730     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   339: 00397214     0 NOTYPE  LOCAL  DEFAULT    5 sif0_handleid
+   340: 00216730     0 SECTION LOCAL  DEFAULT    5 .text
+   341: 00216e04     0 NOTYPE  LOCAL  DEFAULT    5 loop8
+   342: 00216de4     0 NOTYPE  LOCAL  DEFAULT    5 loop1
+   343: 00397218     0 NOTYPE  LOCAL  DEFAULT    5 _data_table
+   344: 00216e00     0 NOTYPE  LOCAL  DEFAULT    5 eight
    345: 00216ad0   320 FUNC    LOCAL  DEFAULT    5 _sceSifSendCmd
+   346: 00397200     0 NOTYPE  LOCAL  DEFAULT    5 _csdata
    347: 00216c90   288 FUNC    LOCAL  DEFAULT    5 _sceSifCmdIntrHdlr
+   348: 00397240     0 NOTYPE  LOCAL  DEFAULT    5 _sys_buffer
+   349: 003971c0     0 NOTYPE  LOCAL  DEFAULT    5 _send_buffer
+   350: 00397340     0 NOTYPE  LOCAL  DEFAULT    5 soft_reg
    351: 00216750    12 FUNC    LOCAL  DEFAULT    5 _change_addr
    352: 00216730    28 FUNC    LOCAL  DEFAULT    5 _set_sreg
+   353: 00216730     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   354: 00397140     0 SECTION LOCAL  DEFAULT    5 .bss
+   355: 00216e54     0 NOTYPE  LOCAL  DEFAULT    5 last
+   356: 00397140     0 NOTYPE  LOCAL  DEFAULT    5 _packet_buffer
+   357: 00216e60     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   358: 003983c0     0 NOTYPE  LOCAL  DEFAULT    5 _free_buffer2
+   359: 00397bc0     0 NOTYPE  LOCAL  DEFAULT    5 _free_buffer
+   360: 00371ea0     0 SECTION LOCAL  DEFAULT    5 .data
+   361: 00216e60     0 SECTION LOCAL  DEFAULT    5 .text
+   362: 00398bc0     0 NOTYPE  LOCAL  DEFAULT    5 _data_table
    363: 00217398    76 FUNC    LOCAL  DEFAULT    5 _search_svdata
    364: 00217110    64 FUNC    LOCAL  DEFAULT    5 _sceRpcGetFPacket2
    365: 002170e0    48 FUNC    LOCAL  DEFAULT    5 _sceRpcGetFPacket
    366: 002170c0    28 FUNC    LOCAL  DEFAULT    5 _sceRpcFreePacket
    367: 00217018   164 FUNC    LOCAL  DEFAULT    5 _sceRpcGetPacket
    368: 00371ea0     4 OBJECT  LOCAL  DEFAULT    5 _sceSifInitCheck
+   369: 00216e60     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   370: 003973c0     0 SECTION LOCAL  DEFAULT    5 .bss
    371: 00217200    96 FUNC    LOCAL  DEFAULT    5 _request_rdata
    372: 002175b8   140 FUNC    LOCAL  DEFAULT    5 _request_call
    373: 002173e8   176 FUNC    LOCAL  DEFAULT    5 _request_bind
    374: 00217150   176 FUNC    LOCAL  DEFAULT    5 _request_end
+   375: 003973c0     0 NOTYPE  LOCAL  DEFAULT    5 _packet_buffer
+   376: 00217cc0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    377: 00371ea8     4 OBJECT  LOCAL  DEFAULT    5 _fs_init
    378: 00217d30    36 FUNC    LOCAL  DEFAULT    5 get_iob
+   379: 00371ea8     0 SECTION LOCAL  DEFAULT    5 .data
+   380: 00217cc0     0 SECTION LOCAL  DEFAULT    5 .text
    381: 00217cc0   112 FUNC    LOCAL  DEFAULT    5 new_iob
+   382: 00398c00     0 NOTYPE  LOCAL  DEFAULT    5 _send_data
+   383: 00399210     0 NOTYPE  LOCAL  DEFAULT    5 _cd
+   384: 00217cc0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   385: 00398c00     0 SECTION LOCAL  DEFAULT    5 .bss
    386: 00218140   144 FUNC    LOCAL  DEFAULT    5 fs_read_intr
+   387: 00399040     0 NOTYPE  LOCAL  DEFAULT    5 _rcv_data
+   388: 00399080     0 NOTYPE  LOCAL  DEFAULT    5 _intr_data
+   389: 00399110     0 NOTYPE  LOCAL  DEFAULT    5 _iob
+   390: 00218518     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   391: 00371eb0     0 SECTION LOCAL  DEFAULT    5 .data
+   392: 00218518     0 SECTION LOCAL  DEFAULT    5 .text
    393: 00218518   164 FUNC    LOCAL  DEFAULT    5 _lf_bind
    394: 002187d8   240 FUNC    LOCAL  DEFAULT    5 _sceSifLoadElfPart
+   395: 00399240     0 NOTYPE  LOCAL  DEFAULT    5 _senddata
    396: 002185d8   476 FUNC    LOCAL  DEFAULT    5 _sceSifLoadModule
+   397: 00218518     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   398: 0037a988     0 SECTION LOCAL  DEFAULT    5 .rodata
+   399: 00399240     0 SECTION LOCAL  DEFAULT    5 .bss
    400: 00371eb0     4 OBJECT  LOCAL  DEFAULT    5 _bind_check
+   401: 00399440     0 NOTYPE  LOCAL  DEFAULT    5 cd
+   402: 00218ae0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   403: 00218ae0     0 SECTION LOCAL  DEFAULT    5 .text
+   404: 00218ae0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   405: 0037a990     0 SECTION LOCAL  DEFAULT    5 .rodata
+   406: 00399480     0 SECTION LOCAL  DEFAULT    5 .bss
+   407: 00399480     0 NOTYPE  LOCAL  DEFAULT    5 rdata
+   408: 00218d78     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    409: 0037a9d8     8 OBJECT  LOCAL  DEFAULT    5 pio2_lo
    410: 0037a9d0     8 OBJECT  LOCAL  DEFAULT    5 pio2_hi
    411: 0037a9c8     8 OBJECT  LOCAL  DEFAULT    5 pi
@@ -221,13 +418,17 @@ Symbol table '.symtab' contains 12751 entries:
    414: 0037aa20     8 OBJECT  LOCAL  DEFAULT    5 qS3
    415: 0037aa18     8 OBJECT  LOCAL  DEFAULT    5 qS2
    416: 0037aa10     8 OBJECT  LOCAL  DEFAULT    5 qS1
+   417: 00218d78     0 SECTION LOCAL  DEFAULT    5 .text
    418: 0037aa08     8 OBJECT  LOCAL  DEFAULT    5 pS5
    419: 0037aa00     8 OBJECT  LOCAL  DEFAULT    5 pS4
    420: 0037a9f8     8 OBJECT  LOCAL  DEFAULT    5 pS3
    421: 0037a9f0     8 OBJECT  LOCAL  DEFAULT    5 pS2
    422: 0037a9e8     8 OBJECT  LOCAL  DEFAULT    5 pS1
    423: 0037a9e0     8 OBJECT  LOCAL  DEFAULT    5 pS0
+   424: 00218d78     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   425: 0037a9c0     0 SECTION LOCAL  DEFAULT    5 .rodata
    426: 0037ab78     8 OBJECT  LOCAL  DEFAULT    5 o_threshold
+   427: 00219348     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    428: 0037abb0     8 OBJECT  LOCAL  DEFAULT    5 P1
    429: 0037ab58    16 OBJECT  LOCAL  DEFAULT    5 halF
    430: 0037ab50     8 OBJECT  LOCAL  DEFAULT    5 one
@@ -235,14 +436,22 @@ Symbol table '.symtab' contains 12751 entries:
    432: 0037ab98    16 OBJECT  LOCAL  DEFAULT    5 ln2LO
    433: 0037ab88    16 OBJECT  LOCAL  DEFAULT    5 ln2HI
    434: 0037ab80     8 OBJECT  LOCAL  DEFAULT    5 u_threshold
+   435: 00219348     0 SECTION LOCAL  DEFAULT    5 .text
    436: 0037abc0     8 OBJECT  LOCAL  DEFAULT    5 P3
    437: 0037ab70     8 OBJECT  LOCAL  DEFAULT    5 twom1000
    438: 0037abc8     8 OBJECT  LOCAL  DEFAULT    5 P4
+   439: 00219348     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   440: 0037ab50     0 SECTION LOCAL  DEFAULT    5 .rodata
    441: 0037abd0     8 OBJECT  LOCAL  DEFAULT    5 P5
    442: 0037ab68     8 OBJECT  LOCAL  DEFAULT    5 huge
    443: 0037aba8     8 OBJECT  LOCAL  DEFAULT    5 invln2
+   444: 00219748     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   445: 00219748     0 SECTION LOCAL  DEFAULT    5 .text
+   446: 00219748     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   447: 00219b20     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    448: 0037ac38     8 OBJECT  LOCAL  DEFAULT    5 ln2_lo
    449: 0037ac30     8 OBJECT  LOCAL  DEFAULT    5 ln2_hi
+   450: 00219b20     0 SECTION LOCAL  DEFAULT    5 .text
    451: 0037ac78     8 OBJECT  LOCAL  DEFAULT    5 Lg7
    452: 0037ac70     8 OBJECT  LOCAL  DEFAULT    5 Lg6
    453: 0037ac68     8 OBJECT  LOCAL  DEFAULT    5 Lg5
@@ -251,8 +460,11 @@ Symbol table '.symtab' contains 12751 entries:
    456: 0037ac50     8 OBJECT  LOCAL  DEFAULT    5 Lg2
    457: 0037ac48     8 OBJECT  LOCAL  DEFAULT    5 Lg1
    458: 0037ac40     8 OBJECT  LOCAL  DEFAULT    5 two54
+   459: 00219b20     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   460: 0037ac30     0 SECTION LOCAL  DEFAULT    5 .rodata
    461: 0037ac80     8 OBJECT  LOCAL  DEFAULT    5 zero
    462: 0037ad88     8 OBJECT  LOCAL  DEFAULT    5 L4
+   463: 0021a010     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    464: 0037ade0     8 OBJECT  LOCAL  DEFAULT    5 ovt
    465: 0037ada0     8 OBJECT  LOCAL  DEFAULT    5 P1
    466: 0037ad90     8 OBJECT  LOCAL  DEFAULT    5 L5
@@ -260,6 +472,7 @@ Symbol table '.symtab' contains 12751 entries:
    468: 0037ada8     8 OBJECT  LOCAL  DEFAULT    5 P2
    469: 0037ad98     8 OBJECT  LOCAL  DEFAULT    5 L6
    470: 0037ad10    16 OBJECT  LOCAL  DEFAULT    5 bp
+   471: 0021a010     0 SECTION LOCAL  DEFAULT    5 .text
    472: 0037adf8     8 OBJECT  LOCAL  DEFAULT    5 cp_l
    473: 0037adf0     8 OBJECT  LOCAL  DEFAULT    5 cp_h
    474: 0037ade8     8 OBJECT  LOCAL  DEFAULT    5 cp
@@ -272,6 +485,8 @@ Symbol table '.symtab' contains 12751 entries:
    481: 0037adb8     8 OBJECT  LOCAL  DEFAULT    5 P4
    482: 0037ad30    16 OBJECT  LOCAL  DEFAULT    5 dp_l
    483: 0037ad20    16 OBJECT  LOCAL  DEFAULT    5 dp_h
+   484: 0021a010     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   485: 0037ad10     0 SECTION LOCAL  DEFAULT    5 .rodata
    486: 0037adc0     8 OBJECT  LOCAL  DEFAULT    5 P5
    487: 0037ad70     8 OBJECT  LOCAL  DEFAULT    5 L1
    488: 0037ad68     8 OBJECT  LOCAL  DEFAULT    5 tiny
@@ -282,6 +497,7 @@ Symbol table '.symtab' contains 12751 entries:
    493: 0037ae00     8 OBJECT  LOCAL  DEFAULT    5 ivln2
    494: 0037ad80     8 OBJECT  LOCAL  DEFAULT    5 L3
    495: 0037ad40     8 OBJECT  LOCAL  DEFAULT    5 zero
+   496: 0021ad38     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    497: 0037b0b0     8 OBJECT  LOCAL  DEFAULT    5 pio2_3t
    498: 0037b0a8     8 OBJECT  LOCAL  DEFAULT    5 pio2_3
    499: 0037b0a0     8 OBJECT  LOCAL  DEFAULT    5 pio2_2t
@@ -289,12 +505,25 @@ Symbol table '.symtab' contains 12751 entries:
    501: 0037b090     8 OBJECT  LOCAL  DEFAULT    5 pio2_1t
    502: 0037b088     8 OBJECT  LOCAL  DEFAULT    5 pio2_1
    503: 0037b070     8 OBJECT  LOCAL  DEFAULT    5 half
+   504: 0021ad38     0 SECTION LOCAL  DEFAULT    5 .text
    505: 0037b078     8 OBJECT  LOCAL  DEFAULT    5 two24
    506: 0037aee0   264 OBJECT  LOCAL  DEFAULT    5 two_over_pi
+   507: 0021ad38     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   508: 0037aee0     0 SECTION LOCAL  DEFAULT    5 .rodata
    509: 0037afe8   128 OBJECT  LOCAL  DEFAULT    5 npio2_hw
    510: 0037b080     8 OBJECT  LOCAL  DEFAULT    5 invpio2
    511: 0037b068     8 OBJECT  LOCAL  DEFAULT    5 zero
+   512: 0021b258     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   513: 0021b258     0 SECTION LOCAL  DEFAULT    5 .text
+   514: 0021b258     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   515: 0021b560     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   516: 0021b560     0 SECTION LOCAL  DEFAULT    5 .text
+   517: 0021b560     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   518: 0021b990     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   519: 0021b990     0 SECTION LOCAL  DEFAULT    5 .text
+   520: 0021b990     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    521: 0037b16c     4 OBJECT  LOCAL  DEFAULT    5 L4
+   522: 0021bd30     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    523: 0037b198     4 OBJECT  LOCAL  DEFAULT    5 ovt
    524: 0037b178     4 OBJECT  LOCAL  DEFAULT    5 P1
    525: 0037b170     4 OBJECT  LOCAL  DEFAULT    5 L5
@@ -302,6 +531,7 @@ Symbol table '.symtab' contains 12751 entries:
    527: 0037b17c     4 OBJECT  LOCAL  DEFAULT    5 P2
    528: 0037b174     4 OBJECT  LOCAL  DEFAULT    5 L6
    529: 0037b130     8 OBJECT  LOCAL  DEFAULT    5 bp
+   530: 0021bd30     0 SECTION LOCAL  DEFAULT    5 .text
    531: 0037b1a4     4 OBJECT  LOCAL  DEFAULT    5 cp_l
    532: 0037b1a0     4 OBJECT  LOCAL  DEFAULT    5 cp_h
    533: 0037b19c     4 OBJECT  LOCAL  DEFAULT    5 cp
@@ -314,6 +544,8 @@ Symbol table '.symtab' contains 12751 entries:
    540: 0037b184     4 OBJECT  LOCAL  DEFAULT    5 P4
    541: 0037b140     8 OBJECT  LOCAL  DEFAULT    5 dp_l
    542: 0037b138     8 OBJECT  LOCAL  DEFAULT    5 dp_h
+   543: 0021bd30     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   544: 0037b130     0 SECTION LOCAL  DEFAULT    5 .rodata
    545: 0037b188     4 OBJECT  LOCAL  DEFAULT    5 P5
    546: 0037b160     4 OBJECT  LOCAL  DEFAULT    5 L1
    547: 0037b15c     4 OBJECT  LOCAL  DEFAULT    5 tiny
@@ -324,6 +556,7 @@ Symbol table '.symtab' contains 12751 entries:
    552: 0037b1a8     4 OBJECT  LOCAL  DEFAULT    5 ivln2
    553: 0037b168     4 OBJECT  LOCAL  DEFAULT    5 L3
    554: 0037b148     4 OBJECT  LOCAL  DEFAULT    5 zero
+   555: 0021c5c0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    556: 0037b574     4 OBJECT  LOCAL  DEFAULT    5 pio2_3t
    557: 0037b570     4 OBJECT  LOCAL  DEFAULT    5 pio2_3
    558: 0037b56c     4 OBJECT  LOCAL  DEFAULT    5 pio2_2t
@@ -331,99 +564,598 @@ Symbol table '.symtab' contains 12751 entries:
    560: 0037b564     4 OBJECT  LOCAL  DEFAULT    5 pio2_1t
    561: 0037b560     4 OBJECT  LOCAL  DEFAULT    5 pio2_1
    562: 0037b554     4 OBJECT  LOCAL  DEFAULT    5 half
+   563: 0021c5c0     0 SECTION LOCAL  DEFAULT    5 .text
    564: 0037b558     4 OBJECT  LOCAL  DEFAULT    5 two8
    565: 0037b1b8   792 OBJECT  LOCAL  DEFAULT    5 two_over_pi
+   566: 0021c5c0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   567: 0037b1b8     0 SECTION LOCAL  DEFAULT    5 .rodata
    568: 0037b4d0   128 OBJECT  LOCAL  DEFAULT    5 npio2_hw
    569: 0037b55c     4 OBJECT  LOCAL  DEFAULT    5 invpio2
    570: 0037b550     4 OBJECT  LOCAL  DEFAULT    5 zero
+   571: 0021c9a0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   572: 0021c9a0     0 SECTION LOCAL  DEFAULT    5 .text
+   573: 0021c9a0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    574: 0037b590     8 OBJECT  LOCAL  DEFAULT    5 C3
+   575: 0021cad8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    576: 0037b588     8 OBJECT  LOCAL  DEFAULT    5 C2
    577: 0037b578     8 OBJECT  LOCAL  DEFAULT    5 one
    578: 0037b580     8 OBJECT  LOCAL  DEFAULT    5 C1
+   579: 0021cad8     0 SECTION LOCAL  DEFAULT    5 .text
+   580: 0021cad8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   581: 0037b578     0 SECTION LOCAL  DEFAULT    5 .rodata
    582: 0037b5a8     8 OBJECT  LOCAL  DEFAULT    5 C6
    583: 0037b5a0     8 OBJECT  LOCAL  DEFAULT    5 C5
    584: 0037b598     8 OBJECT  LOCAL  DEFAULT    5 C4
+   585: 0021cd28     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    586: 0037b638     8 OBJECT  LOCAL  DEFAULT    5 one
    587: 0037b5f0    64 OBJECT  LOCAL  DEFAULT    5 PIo2
+   588: 0021cd28     0 SECTION LOCAL  DEFAULT    5 .text
    589: 0037b648     8 OBJECT  LOCAL  DEFAULT    5 twon24
    590: 0037b640     8 OBJECT  LOCAL  DEFAULT    5 two24
+   591: 0021cd28     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   592: 0037b5e0     0 SECTION LOCAL  DEFAULT    5 .rodata
    593: 0037b630     8 OBJECT  LOCAL  DEFAULT    5 zero
    594: 0037b5e0    16 OBJECT  LOCAL  DEFAULT    5 init_jk
    595: 0037b668     8 OBJECT  LOCAL  DEFAULT    5 S3
+   596: 0021d890     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    597: 0037b660     8 OBJECT  LOCAL  DEFAULT    5 S2
    598: 0037b650     8 OBJECT  LOCAL  DEFAULT    5 half
    599: 0037b658     8 OBJECT  LOCAL  DEFAULT    5 S1
+   600: 0021d890     0 SECTION LOCAL  DEFAULT    5 .text
+   601: 0021d890     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   602: 0037b650     0 SECTION LOCAL  DEFAULT    5 .rodata
    603: 0037b680     8 OBJECT  LOCAL  DEFAULT    5 S6
    604: 0037b678     8 OBJECT  LOCAL  DEFAULT    5 S5
    605: 0037b670     8 OBJECT  LOCAL  DEFAULT    5 S4
+   606: 0021da68     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    607: 0037b6d0     8 OBJECT  LOCAL  DEFAULT    5 pio4lo
    608: 0037b6c8     8 OBJECT  LOCAL  DEFAULT    5 pio4
    609: 0037b6c0     8 OBJECT  LOCAL  DEFAULT    5 one
+   610: 0021da68     0 SECTION LOCAL  DEFAULT    5 .text
    611: 0037b6d8   104 OBJECT  LOCAL  DEFAULT    5 T
+   612: 0021da68     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   613: 0037b6c0     0 SECTION LOCAL  DEFAULT    5 .rodata
+   614: 0021dee0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   615: 0021dee0     0 SECTION LOCAL  DEFAULT    5 .text
+   616: 0021dee0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   617: 0021e038     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    618: 0037b790     4 OBJECT  LOCAL  DEFAULT    5 one
    619: 0037b760    44 OBJECT  LOCAL  DEFAULT    5 PIo2
+   620: 0021e038     0 SECTION LOCAL  DEFAULT    5 .text
    621: 0037b798     4 OBJECT  LOCAL  DEFAULT    5 twon8
    622: 0037b794     4 OBJECT  LOCAL  DEFAULT    5 two8
+   623: 0021e038     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   624: 0037b750     0 SECTION LOCAL  DEFAULT    5 .rodata
    625: 0037b78c     4 OBJECT  LOCAL  DEFAULT    5 zero
    626: 0037b750    12 OBJECT  LOCAL  DEFAULT    5 init_jk
+   627: 0021e988     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   628: 0021e988     0 SECTION LOCAL  DEFAULT    5 .text
+   629: 0021e988     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   630: 0021ea90     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    631: 0037b7a8     4 OBJECT  LOCAL  DEFAULT    5 pio4lo
    632: 0037b7a4     4 OBJECT  LOCAL  DEFAULT    5 pio4
    633: 0037b7a0     4 OBJECT  LOCAL  DEFAULT    5 one
+   634: 0021ea90     0 SECTION LOCAL  DEFAULT    5 .text
    635: 0037b7b0    52 OBJECT  LOCAL  DEFAULT    5 T
+   636: 0021ea90     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   637: 0037b7a0     0 SECTION LOCAL  DEFAULT    5 .rodata
+   638: 0021ed28     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   639: 0021ed28     0 SECTION LOCAL  DEFAULT    5 .text
+   640: 0021ed28     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   641: 0037b7e8     0 SECTION LOCAL  DEFAULT    5 .rodata
    642: 0037b7e8     8 OBJECT  LOCAL  DEFAULT    5 huge
+   643: 0021eee8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   644: 0021eee8     0 SECTION LOCAL  DEFAULT    5 .text
+   645: 0021eee8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   646: 0021ef30     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   647: 0021ef30     0 SECTION LOCAL  DEFAULT    5 .text
+   648: 0021ef30     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   649: 0021f038     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   650: 0021f038     0 SECTION LOCAL  DEFAULT    5 .text
+   651: 0021f038     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   652: 0021f070     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   653: 0021f070     0 SECTION LOCAL  DEFAULT    5 .text
+   654: 0021f070     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   655: 0021f090     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   656: 0021f090     0 SECTION LOCAL  DEFAULT    5 .text
+   657: 0021f090     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   658: 0037b7f8     0 SECTION LOCAL  DEFAULT    5 .rodata
    659: 0037b7f8     8 OBJECT  LOCAL  DEFAULT    5 huge
+   660: 0037b808     0 SECTION LOCAL  DEFAULT    5 .rodata
+   661: 0021f268     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   662: 0021f268     0 SECTION LOCAL  DEFAULT    5 .text
+   663: 0021f268     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   664: 0021f2b0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   665: 0021f2b0     0 SECTION LOCAL  DEFAULT    5 .text
+   666: 0021f2b0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   667: 0037b810     0 SECTION LOCAL  DEFAULT    5 .rodata
+   668: 0021f2e8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   669: 0021f2e8     0 SECTION LOCAL  DEFAULT    5 .text
+   670: 0021f2e8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   671: 0021f310     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   672: 0021f310     0 SECTION LOCAL  DEFAULT    5 .text
    673: 0037b818    16 OBJECT  LOCAL  DEFAULT    5 TWO52
+   674: 0021f310     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   675: 0037b818     0 SECTION LOCAL  DEFAULT    5 .rodata
+   676: 0021f510     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   677: 0021f510     0 SECTION LOCAL  DEFAULT    5 .text
    678: 0037b830     8 OBJECT  LOCAL  DEFAULT    5 twom54
    679: 0037b828     8 OBJECT  LOCAL  DEFAULT    5 two54
+   680: 0021f510     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   681: 0037b828     0 SECTION LOCAL  DEFAULT    5 .rodata
    682: 0037b840     8 OBJECT  LOCAL  DEFAULT    5 tiny
    683: 0037b838     8 OBJECT  LOCAL  DEFAULT    5 huge
+   684: 0021f6c8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   685: 0021f6c8     0 SECTION LOCAL  DEFAULT    5 .text
+   686: 0021f6c8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   687: 0021f7c0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   688: 0021f7c0     0 SECTION LOCAL  DEFAULT    5 .text
+   689: 0021f7c0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   690: 0021f850     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    691: 0037b8a4     4 OBJECT  LOCAL  DEFAULT    5 one
+   692: 0021f850     0 SECTION LOCAL  DEFAULT    5 .text
+   693: 0021f850     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   694: 0037b858     0 SECTION LOCAL  DEFAULT    5 .rodata
    695: 0037b8a8     4 OBJECT  LOCAL  DEFAULT    5 huge
    696: 0037b878    44 OBJECT  LOCAL  DEFAULT    5 aT
    697: 0037b868    16 OBJECT  LOCAL  DEFAULT    5 atanlo
    698: 0037b858    16 OBJECT  LOCAL  DEFAULT    5 atanhi
+   699: 0021faf8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   700: 0021faf8     0 SECTION LOCAL  DEFAULT    5 .text
+   701: 0021faf8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   702: 0021fb28     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   703: 0021fb28     0 SECTION LOCAL  DEFAULT    5 .text
+   704: 0021fb28     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   705: 0021fc10     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   706: 0021fc10     0 SECTION LOCAL  DEFAULT    5 .text
+   707: 0021fc10     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   708: 0021fc30     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   709: 0021fc30     0 SECTION LOCAL  DEFAULT    5 .text
+   710: 0021fc30     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   711: 0021fc58     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   712: 0021fc58     0 SECTION LOCAL  DEFAULT    5 .text
+   713: 0021fc58     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   714: 0021fd40     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   715: 0021fd40     0 SECTION LOCAL  DEFAULT    5 .text
+   716: 0021fd40     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   717: 0021fd68     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   718: 0021fd68     0 SECTION LOCAL  DEFAULT    5 .text
+   719: 0021fd68     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   720: 0021fec8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   721: 0021fec8     0 SECTION LOCAL  DEFAULT    5 .text
+   722: 0021fec8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   723: 0021ffb8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   724: 0021ffb8     0 SECTION LOCAL  DEFAULT    5 .text
+   725: 0021ffb8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   726: 00220040     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   727: 00220040     0 SECTION LOCAL  DEFAULT    5 .text
+   728: 00220040     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   729: 0037b8b0     0 SECTION LOCAL  DEFAULT    5 .rodata
    730: 0037b8b8     8 OBJECT  LOCAL  DEFAULT    5 o_threshold
+   731: 00220130     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    732: 0037b8c0     8 OBJECT  LOCAL  DEFAULT    5 u_threshold
+   733: 00220130     0 SECTION LOCAL  DEFAULT    5 .text
+   734: 00220130     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   735: 0037b8b8     0 SECTION LOCAL  DEFAULT    5 .rodata
+   736: 00220288     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   737: 00220288     0 SECTION LOCAL  DEFAULT    5 .text
+   738: 00220288     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   739: 0037b8e8     0 SECTION LOCAL  DEFAULT    5 .rodata
+   740: 002203b0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   741: 002203b0     0 SECTION LOCAL  DEFAULT    5 .text
+   742: 002203b0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   743: 0037b8f8     0 SECTION LOCAL  DEFAULT    5 .rodata
+   744: 002204f8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   745: 002204f8     0 SECTION LOCAL  DEFAULT    5 .text
+   746: 002204f8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   747: 0037b908     0 SECTION LOCAL  DEFAULT    5 .rodata
+   748: 00220928     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   749: 00220928     0 SECTION LOCAL  DEFAULT    5 .text
+   750: 00220928     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   751: 0037b928     0 SECTION LOCAL  DEFAULT    5 .rodata
+   752: 00220a38     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   753: 00220a38     0 SECTION LOCAL  DEFAULT    5 .text
+   754: 00220a38     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   755: 0037b938     0 SECTION LOCAL  DEFAULT    5 .rodata
+   756: 00220b38     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   757: 00220b38     0 SECTION LOCAL  DEFAULT    5 .text
+   758: 00220b38     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   759: 0037b940     0 SECTION LOCAL  DEFAULT    5 .rodata
+   760: 00220c38     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   761: 00220c38     0 SECTION LOCAL  DEFAULT    5 .text
+   762: 00220c38     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   763: 0037b948     0 SECTION LOCAL  DEFAULT    5 .rodata
+   764: 00221140     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   765: 00221140     0 SECTION LOCAL  DEFAULT    5 .text
+   766: 00221140     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   767: 00221160     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   768: 00221160     0 SECTION LOCAL  DEFAULT    5 .text
+   769: 00221160     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   770: 00221178     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   771: 00221178     0 SECTION LOCAL  DEFAULT    5 .text
+   772: 00221178     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   773: 00221198     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   774: 00221198     0 SECTION LOCAL  DEFAULT    5 .text
+   775: 00221198     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   776: 002211c0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   777: 002211c0     0 SECTION LOCAL  DEFAULT    5 .text
+   778: 002211c0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   779: 00221280     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   780: 00221280     0 SECTION LOCAL  DEFAULT    5 .text
+   781: 00221280     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   782: 0037b968     0 SECTION LOCAL  DEFAULT    5 .rodata
+   783: 002212d8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   784: 002212d8     0 SECTION LOCAL  DEFAULT    5 .text
    785: 002212d8   532 FUNC    LOCAL  DEFAULT    5 quorem
+   786: 002212d8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   787: 0037ba70     0 SECTION LOCAL  DEFAULT    5 .rodata
+   788: 002226c0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   789: 002226c0     0 SECTION LOCAL  DEFAULT    5 .text
+   790: 002226c0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   791: 002226d0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   792: 002226d0     0 SECTION LOCAL  DEFAULT    5 .text
+   793: 002226d0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   794: 00222780     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   795: 00222780     0 SECTION LOCAL  DEFAULT    5 .text
+   796: 00222780     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   797: 00222888     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   798: 00222888     0 SECTION LOCAL  DEFAULT    5 .text
+   799: 00222888     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   800: 00222990     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   801: 00222990     0 SECTION LOCAL  DEFAULT    5 .text
+   802: 00222990     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   803: 002229d8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   804: 002229d8     0 SECTION LOCAL  DEFAULT    5 .text
+   805: 002229d8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    806: 002229d8    88 FUNC    LOCAL  DEFAULT    5 std
+   807: 00222c30     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   808: 00222c30     0 SECTION LOCAL  DEFAULT    5 .text
+   809: 00222c30     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   810: 00222c68     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   811: 00222c68     0 SECTION LOCAL  DEFAULT    5 .text
+   812: 00222c68     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   813: 00222cf0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   814: 00222cf0     0 SECTION LOCAL  DEFAULT    5 .text
+   815: 00222cf0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   816: 00222e10     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   817: 00222e10     0 SECTION LOCAL  DEFAULT    5 .text
+   818: 00222e10     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   819: 002232a0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   820: 002232a0     0 SECTION LOCAL  DEFAULT    5 .text
+   821: 002232a0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   822: 00223730     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   823: 00223730     0 SECTION LOCAL  DEFAULT    5 .text
+   824: 00223730     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   825: 00223790     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   826: 00223790     0 SECTION LOCAL  DEFAULT    5 .text
+   827: 00223790     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   828: 00223890     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   829: 00223890     0 SECTION LOCAL  DEFAULT    5 .text
+   830: 00223890     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   831: 00223c68     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   832: 00223c68     0 SECTION LOCAL  DEFAULT    5 .text
+   833: 00223c68     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   834: 00371eb8     0 SECTION LOCAL  DEFAULT    5 .data
    835: 00371eb8   748 OBJECT  LOCAL  DEFAULT    5 impure_data
+   836: 0037bac8     0 SECTION LOCAL  DEFAULT    5 .rodata
+   837: 00223d00     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   838: 00223d00     0 SECTION LOCAL  DEFAULT    5 .text
+   839: 00223d00     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   840: 00223d18     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   841: 003721a8     0 SECTION LOCAL  DEFAULT    5 .data
+   842: 00223d18     0 SECTION LOCAL  DEFAULT    5 .text
+   843: 00223d18     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   844: 0037bad0     0 SECTION LOCAL  DEFAULT    5 .rodata
    845: 003721b8     8 OBJECT  LOCAL  DEFAULT    5 last_lc_ctype.4
    846: 003721b0     8 OBJECT  LOCAL  DEFAULT    5 lc_ctype.3
    847: 0037bad0    48 OBJECT  LOCAL  DEFAULT    5 lconv
+   848: 00223e08     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   849: 00223e08     0 SECTION LOCAL  DEFAULT    5 .text
+   850: 00223e08     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   851: 00223e68     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   852: 00223e68     0 SECTION LOCAL  DEFAULT    5 .text
+   853: 00223e68     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   854: 00223fb8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   855: 00223fb8     0 SECTION LOCAL  DEFAULT    5 .text
+   856: 00223fb8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   857: 00223ff0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   858: 003721c0     0 SECTION LOCAL  DEFAULT    5 .data
+   859: 00223ff0     0 SECTION LOCAL  DEFAULT    5 .text
    860: 00223ff0   596 FUNC    LOCAL  DEFAULT    5 malloc_extend_top
+   861: 00223ff0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   862: 002249c0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   863: 002249c0     0 SECTION LOCAL  DEFAULT    5 .text
+   864: 002249c0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   865: 00224ad8     0 NOTYPE  LOCAL  DEFAULT    5 $L31
+   866: 00224abc     0 NOTYPE  LOCAL  DEFAULT    5 $L21
+   867: 00224ad0     0 NOTYPE  LOCAL  DEFAULT    5 $L20
+   868: 00224a60     0 NOTYPE  LOCAL  DEFAULT    5 $L10
+   869: 00224a18     0 NOTYPE  LOCAL  DEFAULT    5 $L6
+   870: 00224aa0     0 NOTYPE  LOCAL  DEFAULT    5 $L2
+   871: 00224a00     0 SECTION LOCAL  DEFAULT    5 .text
+   872: 00224b60     0 NOTYPE  LOCAL  DEFAULT    5 $L11
+   873: 00224b48     0 NOTYPE  LOCAL  DEFAULT    5 $L10
+   874: 00224b6c     0 NOTYPE  LOCAL  DEFAULT    5 $L9
+   875: 00224af8     0 NOTYPE  LOCAL  DEFAULT    5 $L5
+   876: 00224b2c     0 NOTYPE  LOCAL  DEFAULT    5 $L2
+   877: 00224ae0     0 SECTION LOCAL  DEFAULT    5 .text
+   878: 00224c04     0 NOTYPE  LOCAL  DEFAULT    5 $L13
+   879: 00224c20     0 NOTYPE  LOCAL  DEFAULT    5 $L12
+   880: 00224bd4     0 NOTYPE  LOCAL  DEFAULT    5 $L9
+   881: 00224b9c     0 NOTYPE  LOCAL  DEFAULT    5 $L5
+   882: 00224bf8     0 NOTYPE  LOCAL  DEFAULT    5 $L20
+   883: 00224bf4     0 NOTYPE  LOCAL  DEFAULT    5 $L2
+   884: 00224b78     0 SECTION LOCAL  DEFAULT    5 .text
+   885: 00224d08     0 NOTYPE  LOCAL  DEFAULT    5 $L19
+   886: 00224cd8     0 NOTYPE  LOCAL  DEFAULT    5 $L15
+   887: 00224cf8     0 NOTYPE  LOCAL  DEFAULT    5 $L30
+   888: 00224ca0     0 NOTYPE  LOCAL  DEFAULT    5 $L11
+   889: 00224cfc     0 NOTYPE  LOCAL  DEFAULT    5 $L29
+   890: 00224c5c     0 NOTYPE  LOCAL  DEFAULT    5 $L5
+   891: 00224d24     0 NOTYPE  LOCAL  DEFAULT    5 $L7
+   892: 00224c80     0 NOTYPE  LOCAL  DEFAULT    5 $L2
+   893: 00224c28     0 SECTION LOCAL  DEFAULT    5 .text
+   894: 00224dcc     0 NOTYPE  LOCAL  DEFAULT    5 $L20
+   895: 00224de8     0 NOTYPE  LOCAL  DEFAULT    5 $L19
+   896: 00224d90     0 NOTYPE  LOCAL  DEFAULT    5 $L16
+   897: 00224d6c     0 NOTYPE  LOCAL  DEFAULT    5 $L12
+   898: 00224d9c     0 NOTYPE  LOCAL  DEFAULT    5 $L31
+   899: 00224db0     0 NOTYPE  LOCAL  DEFAULT    5 $L2
+   900: 00224d30     0 SECTION LOCAL  DEFAULT    5 .text
+   901: 00224df0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   902: 00224df0     0 SECTION LOCAL  DEFAULT    5 .text
+   903: 00224df0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
    904: 0037bb18    12 OBJECT  LOCAL  DEFAULT    5 p05.27
+   905: 00224e00     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   906: 00224e00     0 SECTION LOCAL  DEFAULT    5 .text
+   907: 00224e00     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   908: 0037bb18     0 SECTION LOCAL  DEFAULT    5 .rodata
+   909: 00225e20     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   910: 00225e20     0 SECTION LOCAL  DEFAULT    5 .text
+   911: 00225e20     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   912: 00225eb0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   913: 00225eb0     0 SECTION LOCAL  DEFAULT    5 .text
+   914: 00225eb0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   915: 002268d8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   916: 002268d8     0 SECTION LOCAL  DEFAULT    5 .text
+   917: 002268d8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   918: 00226918     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   919: 00226918     0 SECTION LOCAL  DEFAULT    5 .text
+   920: 00226918     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   921: 00226978     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   922: 00226978     0 SECTION LOCAL  DEFAULT    5 .text
+   923: 00226978     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   924: 002269a8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   925: 002269a8     0 SECTION LOCAL  DEFAULT    5 .text
+   926: 002269a8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   927: 00226f18     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    928: 00226f18    28 FUNC    LOCAL  DEFAULT    5 lflush
+   929: 00226f18     0 SECTION LOCAL  DEFAULT    5 .text
+   930: 00226f18     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   931: 002270b0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   932: 002270b0     0 SECTION LOCAL  DEFAULT    5 .text
+   933: 002270b0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   934: 002270f8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   935: 002270f8     0 SECTION LOCAL  DEFAULT    5 .text
+   936: 002270f8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   937: 00227158     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   938: 00227158     0 SECTION LOCAL  DEFAULT    5 .text
+   939: 00227158     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   940: 002274a8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   941: 002274a8     0 SECTION LOCAL  DEFAULT    5 .text
+   942: 002274a8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   943: 00227528     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   944: 00227528     0 SECTION LOCAL  DEFAULT    5 .text
+   945: 00227528     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   946: 00227600     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
    947: 00227600     8 FUNC    LOCAL  DEFAULT    5 eofread
+   948: 00227600     0 SECTION LOCAL  DEFAULT    5 .text
+   949: 00227600     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   950: 00227690     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   951: 00227690     0 SECTION LOCAL  DEFAULT    5 .text
+   952: 00227690     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   953: 00227800     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   954: 00227800     0 SECTION LOCAL  DEFAULT    5 .text
+   955: 00227800     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   956: 002279f0     0 NOTYPE  LOCAL  DEFAULT    5 $L22
+   957: 002279c8     0 NOTYPE  LOCAL  DEFAULT    5 $L12
+   958: 002279ac     0 NOTYPE  LOCAL  DEFAULT    5 $L6
+   959: 00227990     0 NOTYPE  LOCAL  DEFAULT    5 $L21
+   960: 002279e8     0 NOTYPE  LOCAL  DEFAULT    5 $L19
+   961: 00227954     0 NOTYPE  LOCAL  DEFAULT    5 $L5
+   962: 00227930     0 NOTYPE  LOCAL  DEFAULT    5 $L2
+   963: 0022797c     0 NOTYPE  LOCAL  DEFAULT    5 $L18
+   964: 002279e8     0 NOTYPE  LOCAL  DEFAULT    5 $L20
+   965: 002278b8     0 SECTION LOCAL  DEFAULT    5 .text
+   966: 00227ac8     0 NOTYPE  LOCAL  DEFAULT    5 $L5
+   967: 00227a7c     0 NOTYPE  LOCAL  DEFAULT    5 $L2
+   968: 00227aec     0 NOTYPE  LOCAL  DEFAULT    5 $L4
+   969: 00227ab0     0 NOTYPE  LOCAL  DEFAULT    5 $L3
+   970: 00227af0     0 NOTYPE  LOCAL  DEFAULT    5 $L7
+   971: 00227a00     0 SECTION LOCAL  DEFAULT    5 .text
+   972: 00227b18     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   973: 00227b18     0 SECTION LOCAL  DEFAULT    5 .text
+   974: 00227b18     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   975: 00227c8c     0 NOTYPE  LOCAL  DEFAULT    5 $L9
+   976: 00227c6c     0 NOTYPE  LOCAL  DEFAULT    5 $L16
+   977: 00227bf0     0 NOTYPE  LOCAL  DEFAULT    5 $L14
+   978: 00227c1c     0 NOTYPE  LOCAL  DEFAULT    5 $L12
+   979: 00227c8c     0 NOTYPE  LOCAL  DEFAULT    5 $L15
+   980: 00227b78     0 SECTION LOCAL  DEFAULT    5 .text
+   981: 00227cb0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   982: 00227cb0     0 SECTION LOCAL  DEFAULT    5 .text
+   983: 00227cb0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   984: 00227ea0     0 NOTYPE  LOCAL  DEFAULT    5 $L16
+   985: 00227e98     0 NOTYPE  LOCAL  DEFAULT    5 $L20
+   986: 00227ebc     0 NOTYPE  LOCAL  DEFAULT    5 $L18
+   987: 00227e38     0 NOTYPE  LOCAL  DEFAULT    5 $L19
+   988: 00227d98     0 NOTYPE  LOCAL  DEFAULT    5 $L39
+   989: 00227e6c     0 NOTYPE  LOCAL  DEFAULT    5 $L5
+   990: 00227d30     0 NOTYPE  LOCAL  DEFAULT    5 $L31
+   991: 00227ddc     0 NOTYPE  LOCAL  DEFAULT    5 $L17
+   992: 00227e70     0 NOTYPE  LOCAL  DEFAULT    5 $L9
+   993: 00227d08     0 SECTION LOCAL  DEFAULT    5 .text
+   994: 00227ec8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   995: 00227ec8     0 SECTION LOCAL  DEFAULT    5 .text
+   996: 00227ec8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+   997: 00227f20     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+   998: 00227f20     0 SECTION LOCAL  DEFAULT    5 .text
+   999: 00227f20     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1000: 0037bc40     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1001: 00228e78     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1002: 00228e78     0 SECTION LOCAL  DEFAULT    5 .text
+  1003: 00228e78     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1004: 002290e8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1005: 002290e8     0 SECTION LOCAL  DEFAULT    5 .text
+  1006: 002290e8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1007: 00229340     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1008: 00229340     0 SECTION LOCAL  DEFAULT    5 .text
+  1009: 00229340     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1010: 00229398     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1011: 00229398     0 SECTION LOCAL  DEFAULT    5 .text
+  1012: 00229398     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1013: 002293f8     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1014: 002293f8     0 SECTION LOCAL  DEFAULT    5 .text
+  1015: 002293f8     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1016: 00229418     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1017: 00229418     0 SECTION LOCAL  DEFAULT    5 .text
+  1018: 00229418     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1019: 00229438     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1020: 00229438     0 SECTION LOCAL  DEFAULT    5 .text
+  1021: 00229438     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
   1022: 002296f8   180 FUNC    LOCAL  DEFAULT    5 __sbprintf
   1023: 002296b0    68 FUNC    LOCAL  DEFAULT    5 __sprint
+  1024: 002296b0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1025: 002296b0     0 SECTION LOCAL  DEFAULT    5 .text
+  1026: 002296b0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1027: 0037bd10     0 SECTION LOCAL  DEFAULT    5 .rodata
   1028: 0022aef0   224 FUNC    LOCAL  DEFAULT    5 exponent
   1029: 0022ad40   432 FUNC    LOCAL  DEFAULT    5 cvt
   1030: 0037bd10    16 OBJECT  LOCAL  DEFAULT    5 blanks.12
   1031: 0037bd20    16 OBJECT  LOCAL  DEFAULT    5 zeroes.13
+  1032: 0022afd0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1033: 0022afd0     0 SECTION LOCAL  DEFAULT    5 .text
   1034: 0037bf20    34 OBJECT  LOCAL  DEFAULT    5 basefix.3
+  1035: 0022afd0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1036: 0037bf20     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1037: 0022bbe0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1038: 0022bbe0     0 SECTION LOCAL  DEFAULT    5 .text
+  1039: 0022bbe0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1040: 0022bc38     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1041: 0022bc38     0 SECTION LOCAL  DEFAULT    5 .text
+  1042: 0022bc38     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1043: 0022bd50     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1044: 0022bd50     0 SECTION LOCAL  DEFAULT    5 .text
+  1045: 0022bd50     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1046: 0022bdb0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1047: 0022bdb0     0 SECTION LOCAL  DEFAULT    5 .text
+  1048: 0022bdb0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
   1049: 0037c390   256 OBJECT  LOCAL  DEFAULT    5 __clz_tab
+  1050: 0022bec0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1051: 0022bec0     0 SECTION LOCAL  DEFAULT    5 .text
+  1052: 0022bec0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1053: 0037c390     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1054: 0022c5b0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1055: 0022c5b0     0 SECTION LOCAL  DEFAULT    5 .text
+  1056: 0022c5b0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1057: 0022c610     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1058: 0022c610     0 SECTION LOCAL  DEFAULT    5 .text
+  1059: 0022c610     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1060: 0022c650     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1061: 0022c650     0 SECTION LOCAL  DEFAULT    5 .text
+  1062: 0022c650     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1063: 0022c740     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1064: 0022c740     0 SECTION LOCAL  DEFAULT    5 .text
+  1065: 0022c740     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1066: 0022c838     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1067: 0022c838     0 SECTION LOCAL  DEFAULT    5 .text
+  1068: 0022c838     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1069: 0022c8d0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1070: 0022c8d0     0 SECTION LOCAL  DEFAULT    5 .text
+  1071: 0022c8d0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
   1072: 0037c490   256 OBJECT  LOCAL  DEFAULT    5 __clz_tab
+  1073: 0022c9b0     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1074: 0022c9b0     0 SECTION LOCAL  DEFAULT    5 .text
+  1075: 0022c9b0     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1076: 0037c490     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1077: 0022d018     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1078: 0022d018     0 SECTION LOCAL  DEFAULT    5 .text
+  1079: 0022d018     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
   1080: 0037c590   256 OBJECT  LOCAL  DEFAULT    5 __clz_tab
+  1081: 0022d078     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1082: 0022d078     0 SECTION LOCAL  DEFAULT    5 .text
+  1083: 0022d078     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1084: 0037c590     0 SECTION LOCAL  DEFAULT    5 .rodata
   1085: 0037c690   256 OBJECT  LOCAL  DEFAULT    5 __clz_tab
+  1086: 0022d648     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1087: 0022d648     0 SECTION LOCAL  DEFAULT    5 .text
+  1088: 0022d648     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1089: 0037c690     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1090: 0022db88     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
   1091: 0022dd58   576 FUNC    LOCAL  DEFAULT    5 _fpadd_parts
+  1092: 0022db88     0 SECTION LOCAL  DEFAULT    5 .text
+  1093: 003994e8     0 NOTYPE  LOCAL  DEFAULT    5 thenan.3
+  1094: 0022db88     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1095: 003994e8     0 SECTION LOCAL  DEFAULT    5 .bss
+  1096: 0022e880     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
   1097: 0022ea20   564 FUNC    LOCAL  DEFAULT    5 _fpadd_parts
+  1098: 0022e880     0 SECTION LOCAL  DEFAULT    5 .text
+  1099: 00399500     0 NOTYPE  LOCAL  DEFAULT    5 thenan.3
+  1100: 0022e880     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1101: 00399500     0 SECTION LOCAL  DEFAULT    5 .bss
+  1102: 0039a580     0 NOTYPE  LOCAL  DEFAULT    5 scmdrdata
   1103: 00230ce8   380 FUNC    LOCAL  DEFAULT    5 scmd_prechk
+  1104: 00399d10     0 NOTYPE  LOCAL  DEFAULT    5 _gt_data
   1105: 0037262c     4 OBJECT  LOCAL  DEFAULT    5 scmd_sema_keep_cmd
   1106: 00372618    16 OBJECT  LOCAL  DEFAULT    5 __ps2_libinfo__
+  1107: 0022f460     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
   1108: 00372658     4 OBJECT  LOCAL  DEFAULT    5 _ncmd_bind
+  1109: 00399578     0 NOTYPE  LOCAL  DEFAULT    5 cb_tp
   1110: 00372634     4 OBJECT  LOCAL  DEFAULT    5 cb_thid
+  1111: 00399680     0 NOTYPE  LOCAL  DEFAULT    5 icmdrdata
+  1112: 0039aab0     0 NOTYPE  LOCAL  DEFAULT    5 _mmode
+  1113: 00399620     0 NOTYPE  LOCAL  DEFAULT    5 icmdcd
+  1114: 00372618     0 SECTION LOCAL  DEFAULT    5 .data
+  1115: 0022f460     0 SECTION LOCAL  DEFAULT    5 .text
+  1116: 0039aaa0     0 NOTYPE  LOCAL  DEFAULT    5 _dr_mode
+  1117: 0039a550     0 NOTYPE  LOCAL  DEFAULT    5 _lbn_prm
+  1118: 00399d40     0 NOTYPE  LOCAL  DEFAULT    5 tocbf
+  1119: 00399648     0 NOTYPE  LOCAL  DEFAULT    5 func_num
   1120: 0037266c     4 OBJECT  LOCAL  DEFAULT    5 c_cnt.78
   1121: 00372664     4 OBJECT  LOCAL  DEFAULT    5 _scmd_bk_bind
   1122: 00372660     4 OBJECT  LOCAL  DEFAULT    5 _scmd_dr_bind
   1123: 0037265c     4 OBJECT  LOCAL  DEFAULT    5 _scmd_bind
+  1124: 003996c0     0 NOTYPE  LOCAL  DEFAULT    5 _sf_data
   1125: 00372650     4 OBJECT  LOCAL  DEFAULT    5 _sf_bind
+  1126: 00399548     0 NOTYPE  LOCAL  DEFAULT    5 my_th_info
+  1127: 00399540     0 NOTYPE  LOCAL  DEFAULT    5 my_thid
+  1128: 0022f460     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1129: 0037c790     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1130: 00399540     0 SECTION LOCAL  DEFAULT    5 .bss
+  1131: 0039aad0     0 NOTYPE  LOCAL  DEFAULT    5 _rs_data
+  1132: 003998c0     0 NOTYPE  LOCAL  DEFAULT    5 _rd_intr_data
+  1133: 00399980     0 NOTYPE  LOCAL  DEFAULT    5 _rd_data
+  1134: 003999c0     0 NOTYPE  LOCAL  DEFAULT    5 _rdc_data
+  1135: 00399d00     0 NOTYPE  LOCAL  DEFAULT    5 _Read_cur_pos
+  1136: 003995c0     0 NOTYPE  LOCAL  DEFAULT    5 ncmdrdata
   1137: 0022fe00   380 FUNC    LOCAL  DEFAULT    5 ncmd_prechk
   1138: 00372654     4 OBJECT  LOCAL  DEFAULT    5 _rd_bind
+  1139: 00399800     0 NOTYPE  LOCAL  DEFAULT    5 sfrdata
   1140: 00372630     4 OBJECT  LOCAL  DEFAULT    5 ncmd_sema_keep_cmd
+  1141: 0039aac0     0 NOTYPE  LOCAL  DEFAULT    5 TrayReq
+  1142: 0039aa90     0 NOTYPE  LOCAL  DEFAULT    5 _i_mode
   1143: 00372668     4 OBJECT  LOCAL  DEFAULT    5 _it_bind
   1144: 0037264c     4 OBJECT  LOCAL  DEFAULT    5 _icmd_bind
   1145: 0022f7a0   136 FUNC    LOCAL  DEFAULT    5 cmd_sem_init
+  1146: 0039aa68     0 NOTYPE  LOCAL  DEFAULT    5 cddr2
+  1147: 0039aa40     0 NOTYPE  LOCAL  DEFAULT    5 cdbk
+  1148: 0039aa18     0 NOTYPE  LOCAL  DEFAULT    5 cddr1
   1149: 00372670     4 OBJECT  LOCAL  DEFAULT    5 stm_status
+  1150: 0039a9f0     0 NOTYPE  LOCAL  DEFAULT    5 cddr
+  1151: 0039a9c8     0 NOTYPE  LOCAL  DEFAULT    5 cdit
+  1152: 0039a9a0     0 NOTYPE  LOCAL  DEFAULT    5 cdrc
+  1153: 00399840     0 NOTYPE  LOCAL  DEFAULT    5 cdrd
+  1154: 00399868     0 NOTYPE  LOCAL  DEFAULT    5 cdrdsf
   1155: 0022f828    92 FUNC    LOCAL  DEFAULT    5 cdvd_exit
   1156: 0022f708   152 FUNC    LOCAL  DEFAULT    5 cd_read_intr
   1157: 0022f9b0   352 FUNC    LOCAL  DEFAULT    5 PowerOffCB
@@ -437,15 +1169,40 @@ Symbol table '.symtab' contains 12751 entries:
   1165: 00232030   152 FUNC    LOCAL  DEFAULT    5 scePadInit2
   1166: 00232ec0   100 FUNC    LOCAL  DEFAULT    5 scePadGetModVersion
   1167: 00372688    16 OBJECT  LOCAL  DEFAULT    5 __ps2_libinfo__
+  1168: 00231e98     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
   1169: 003726a0    32 OBJECT  LOCAL  DEFAULT    5 PadStateStr
+  1170: 0039ab00     0 NOTYPE  LOCAL  DEFAULT    5 padsif
+  1171: 0039ab50     0 NOTYPE  LOCAL  DEFAULT    5 PadData
   1172: 00372698     4 OBJECT  LOCAL  DEFAULT    5 isInit
+  1173: 00372688     0 SECTION LOCAL  DEFAULT    5 .data
+  1174: 00231e98     0 SECTION LOCAL  DEFAULT    5 .text
   1175: 00231e98   132 FUNC    LOCAL  DEFAULT    5 _send_to_iop
+  1176: 00231e98     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1177: 0037cb60     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1178: 0039ab00     0 SECTION LOCAL  DEFAULT    5 .bss
   1179: 003726c0    12 OBJECT  LOCAL  DEFAULT    5 ReqStateStr
+  1180: 0039b180     0 NOTYPE  LOCAL  DEFAULT    5 buffer
   1181: 003726d0    16 OBJECT  LOCAL  DEFAULT    5 __ps2_libinfo__
+  1182: 00232f28     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1183: 0039b230     0 NOTYPE  LOCAL  DEFAULT    5 formAddr
+  1184: 0039b700     0 NOTYPE  LOCAL  DEFAULT    5 sifParamNext
+  1185: 0039b2b0     0 NOTYPE  LOCAL  DEFAULT    5 sifParamFname
+  1186: 0039b280     0 NOTYPE  LOCAL  DEFAULT    5 sifParamOrd
+  1187: 003726d0     0 SECTION LOCAL  DEFAULT    5 .data
+  1188: 00232f28     0 SECTION LOCAL  DEFAULT    5 .text
+  1189: 0039b22c     0 NOTYPE  LOCAL  DEFAULT    5 freeAddr
+  1190: 00232f28     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1191: 0037cc60     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1192: 0039b200     0 SECTION LOCAL  DEFAULT    5 .bss
+  1193: 0039b228     0 NOTYPE  LOCAL  DEFAULT    5 typeAddr
+  1194: 0039b7c0     0 NOTYPE  LOCAL  DEFAULT    5 currentDir
   1195: 00233900   136 FUNC    LOCAL  DEFAULT    5 mceStorePwd
   1196: 00233678    84 FUNC    LOCAL  DEFAULT    5 mceGetInfoApdx
   1197: 002332e8   144 FUNC    LOCAL  DEFAULT    5 mceIntrReadFixAlign
+  1198: 0039b200     0 NOTYPE  LOCAL  DEFAULT    5 mcClientID
   1199: 003726e0     4 OBJECT  LOCAL  DEFAULT    5 mcRunCmdNo
+  1200: 0039b240     0 NOTYPE  LOCAL  DEFAULT    5 buffFileInfo
+  1201: 0039c7c0     0 NOTYPE  LOCAL  DEFAULT    5 retval
   1202: 0038d4c0    56 FUNC    LOCAL  DEFAULT    5 __sinit_cgameapplicationpsx2.cpp
   1203: 0039c800     1 OBJECT  LOCAL  DEFAULT    5 __msl_ios_base_init__3std
   1204: 0037cd00    52 OBJECT  LOCAL  DEFAULT    5 @1663
@@ -477,7 +1234,18 @@ Symbol table '.symtab' contains 12751 entries:
   1230: 0037cd38    10 OBJECT  LOCAL  DEFAULT    5 OS_ApplicationName
   1231: 0039c838    12 OBJECT  LOCAL  DEFAULT    5 @543
   1232: 00394080     4 OBJECT  LOCAL  DEFAULT    5 .p__sinit_initgameapp.cpp
+  1233: 00235368     0 NOTYPE  LOCAL  DEFAULT    5 __gnu_compiled_c
+  1234: 0039c980     0 NOTYPE  LOCAL  DEFAULT    5 sif_buffer
+  1235: 0039c8f8     0 NOTYPE  LOCAL  DEFAULT    5 get_slot_number
+  1236: 0039c8d0     0 NOTYPE  LOCAL  DEFAULT    5 get_connection
+  1237: 00235368     0 SECTION LOCAL  DEFAULT    5 .text
+  1238: 0039c920     0 NOTYPE  LOCAL  DEFAULT    5 change_slot
   1239: 00235368    56 FUNC    LOCAL  DEFAULT    5 DPRINT
+  1240: 00235368     0 NOTYPE  LOCAL  DEFAULT    5 gcc2_compiled.
+  1241: 0037ce38     0 SECTION LOCAL  DEFAULT    5 .rodata
+  1242: 0039c880     0 SECTION LOCAL  DEFAULT    5 .bss
+  1243: 0039c8a8     0 NOTYPE  LOCAL  DEFAULT    5 port_close
+  1244: 0039c880     0 NOTYPE  LOCAL  DEFAULT    5 port_open
   1245: 0038d580    56 FUNC    LOCAL  DEFAULT    5 __sinit_Main.cpp
   1246: 0039ca00     1 OBJECT  LOCAL  DEFAULT    5 __msl_ios_base_init__3std
   1247: 0037cf40    29 OBJECT  LOCAL  DEFAULT    5 @1849
@@ -4973,6 +5741,211 @@ Symbol table '.symtab' contains 12751 entries:
   5737: 0038cbe0    13 OBJECT  LOCAL  DEFAULT    5 @1029
   5738: 00394614     4 OBJECT  LOCAL  DEFAULT    5 .p__sinit_modifier.cpp
   5739: 003dd4f8    12 OBJECT  LOCAL  DEFAULT    5 @632
+  5740: 00370ac8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.88
+  5741: 00370aa8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.87
+  5742: 00370a58     0 NOTYPE  LOCAL  DEFAULT    5 .vu.86
+  5743: 00370a38     0 NOTYPE  LOCAL  DEFAULT    5 .vu.85
+  5744: 00370a28     0 NOTYPE  LOCAL  DEFAULT    5 .vu.84
+  5745: 003709c8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.83
+  5746: 003709b0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.82
+  5747: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 __start_.DVP.overlay..unknvma.1385248536.1395.3
+  5748: 003709a8     0 NOTYPE  LOCAL  DEFAULT    5 .vif.79
+  5749: 00370948     0 NOTYPE  LOCAL  DEFAULT    5 .vu.78
+  5750: 00370930     0 NOTYPE  LOCAL  DEFAULT    5 .vu.77
+  5751: 00370870     0 NOTYPE  LOCAL  DEFAULT    5 .vu.76
+  5752: 003707a0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.75
+  5753: 003706e8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.74
+  5754: 00370688     0 NOTYPE  LOCAL  DEFAULT    5 .vu.73
+  5755: 00370678     0 NOTYPE  LOCAL  DEFAULT    5 .vu.72
+  5756: 00370640     0 NOTYPE  LOCAL  DEFAULT    5 .vu.71
+  5757: 00370608     0 NOTYPE  LOCAL  DEFAULT    5 .vu.70
+  5758: 003705d0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.69
+  5759: 00370598     0 NOTYPE  LOCAL  DEFAULT    5 .vu.68
+  5760: 00370560     0 NOTYPE  LOCAL  DEFAULT    5 .vu.67
+  5761: 00370508     0 NOTYPE  LOCAL  DEFAULT    5 .vu.66
+  5762: 003704b0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.65
+  5763: 00370490     0 NOTYPE  LOCAL  DEFAULT    5 .vu.64
+  5764: 00370468     0 NOTYPE  LOCAL  DEFAULT    5 .vu.63
+  5765: 003703b8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.62
+  5766: 003703a0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.61
+  5767: 00370360     0 NOTYPE  LOCAL  DEFAULT    5 .vu.60
+  5768: 00370320     0 NOTYPE  LOCAL  DEFAULT    5 .vu.59
+  5769: 00370308     0 NOTYPE  LOCAL  DEFAULT    5 .vu.58
+  5770: 003702e8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.57
+  5771: 003702b0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.56
+  5772: 00370240     0 NOTYPE  LOCAL  DEFAULT    5 .vu.55
+  5773: 00370230     0 NOTYPE  LOCAL  DEFAULT    5 .vu.54
+  5774: 00370218     0 NOTYPE  LOCAL  DEFAULT    5 .vu.53
+  5775: 003701d8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.52
+  5776: 003701a8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.51
+  5777: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 __start_.DVP.overlay..unknvma.1385248536.967.2
+  5778: 003701a0     0 NOTYPE  LOCAL  DEFAULT    5 .vif.48
+  5779: 00370190     0 NOTYPE  LOCAL  DEFAULT    5 .vu.47
+  5780: 00370178     0 NOTYPE  LOCAL  DEFAULT    5 .vu.46
+  5781: 00370158     0 NOTYPE  LOCAL  DEFAULT    5 .vu.45
+  5782: 0036ffa8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.44
+  5783: 0036ff98     0 NOTYPE  LOCAL  DEFAULT    5 .vu.43
+  5784: 0036ff60     0 NOTYPE  LOCAL  DEFAULT    5 .vu.42
+  5785: 0036ff28     0 NOTYPE  LOCAL  DEFAULT    5 .vu.41
+  5786: 0036fef0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.40
+  5787: 0036feb8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.39
+  5788: 0036fe38     0 NOTYPE  LOCAL  DEFAULT    5 .vu.38
+  5789: 0036fe28     0 NOTYPE  LOCAL  DEFAULT    5 .vu.37
+  5790: 0036fe00     0 NOTYPE  LOCAL  DEFAULT    5 .vu.36
+  5791: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.35
+  5792: 0036fc88     0 NOTYPE  LOCAL  DEFAULT    5 .vu.34
+  5793: 0036fc30     0 NOTYPE  LOCAL  DEFAULT    5 .vu.33
+  5794: 0036fc10     0 NOTYPE  LOCAL  DEFAULT    5 .vu.32
+  5795: 0036fa68     0 NOTYPE  LOCAL  DEFAULT    5 .vu.31
+  5796: 0036f9d8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.30
+  5797: 0036f9a0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.29
+  5798: 0036f998     0 NOTYPE  LOCAL  DEFAULT    5 .vif.26
+  5799: 0036f990     0 NOTYPE  LOCAL  DEFAULT    5 .vu.25
+  5800: 0036f970     0 NOTYPE  LOCAL  DEFAULT    5 .vu.24
+  5801: 0036f920     0 NOTYPE  LOCAL  DEFAULT    5 .vu.23
+  5802: 0036f8f0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.22
+  5803: 0036f8e0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.21
+  5804: 0036f8d0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.20
+  5805: 0036f830     0 NOTYPE  LOCAL  DEFAULT    5 .vu.19
+  5806: 0036f7d8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.18
+  5807: 0036f7c8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.17
+  5808: 0036f7b8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.16
+  5809: 0036f6d8     0 NOTYPE  LOCAL  DEFAULT    5 .vu.15
+  5810: 0036f6a0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.14
+  5811: 0036f690     0 NOTYPE  LOCAL  DEFAULT    5 .vu.13
+  5812: 0036f680     0 NOTYPE  LOCAL  DEFAULT    5 .vu.12
+  5813: 0036f608     0 NOTYPE  LOCAL  DEFAULT    5 .vu.11
+  5814: 0036f528     0 NOTYPE  LOCAL  DEFAULT    5 .vu.10
+  5815: 0036f4f0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.9
+  5816: 0036f3f0     0 NOTYPE  LOCAL  DEFAULT    5 .vu.8
+  5817: 0036f370     0 NOTYPE  LOCAL  DEFAULT    5 .vu.7
+  5818: 0036f240     0 NOTYPE  LOCAL  DEFAULT    5 .vu.6
+  5819: 0036f198     0 NOTYPE  LOCAL  DEFAULT    5 .vu.5
+  5820: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 __start_.DVP.overlay..0x0.487860003.7.0
+  5821: 0036f188     0 NOTYPE  LOCAL  DEFAULT    5 .vif.2
+  5822: 00504f80     0 SECTION LOCAL  DEFAULT    5 .vubss
+  5823: 0036f180     0 SECTION LOCAL  DEFAULT    5 .vutext
+  5824: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 NO_SHADOW_CLIP
+  5825: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 TEST_ANGLE_FACE
+  5826: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 ZCLIP_DONT_TRANSFORM
+  5827: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_END_NEAR
+  5828: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_GENERATE_VERTEX_NEAR
+  5829: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_1IN_NEAR
+  5830: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_1OUT_NEAR
+  5831: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_NEAR
+  5832: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_WALK_LOOP_NEAR
+  5833: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_FINISH
+  5834: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_END
+  5835: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_GENERATE_VERTEX
+  5836: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_1IN
+  5837: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_CLIP_1OUT
+  5838: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 LEFT_COEF_PROC
+  5839: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 EDGE_WALK_NEAR
+  5840: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 APPLY_UV_MATRIX_LOOP
+  5841: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 GENERATE_COLOR_AND_ALPHA_CONSTANT_LOOP
+  5842: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 GENERATE_ALPHA_CONSTANT_LOOP
+  5843: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 GENERATE_PROJECTED_STQ_LOOP
+  5844: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 PROJECT_CANONICAL_VERTEX_LOOP
+  5845: 0036f180     0 NOTYPE  LOCAL  DEFAULT    5 .dma.1
+  5846: 00000000     0 SECTION LOCAL  DEFAULT    5 .DVP.overlay..unknvma.1385248536.1395.3
+  5847: 00000000     0 SECTION LOCAL  DEFAULT    5 .DVP.overlay..unknvma.1385248536.967.2
+  5848: 00000000     0 SECTION LOCAL  DEFAULT    5 .DVP.overlay..0x0.487860003.7.0
+  5849: 00370ac8     0 NOTYPE  LOCAL  DEFAULT    5 _$GENERATE_COLOR_AND_ALPHA_CONSTANT_LOOP
+  5850: 00370aa8     0 NOTYPE  LOCAL  DEFAULT    5 _$COLOR_AND_ALPHA_CONSTANT
+  5851: 00370a58     0 NOTYPE  LOCAL  DEFAULT    5 _$GENERATE_ALPHA_CONSTANT_LOOP
+  5852: 00370a38     0 NOTYPE  LOCAL  DEFAULT    5 _$ALPHA_CONSTANT
+  5853: 00370a28     0 NOTYPE  LOCAL  DEFAULT    5 _$END_GENERATE_PROJECTED_STQ_LOOP
+  5854: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 END_GENERATE_PROJECTED_STQ_LOOP
+  5855: 003709c8     0 NOTYPE  LOCAL  DEFAULT    5 _$GENERATE_PROJECTED_STQ_LOOP
+  5856: 00370948     0 NOTYPE  LOCAL  DEFAULT    5 _$NO_SHADOW_CLIP
+  5857: 00370930     0 NOTYPE  LOCAL  DEFAULT    5 _$Z_CLIP_NEXT_VERTEX
+  5858: 00370870     0 NOTYPE  LOCAL  DEFAULT    5 _$TEST_ANGLE_FACE
+  5859: 003707a0     0 NOTYPE  LOCAL  DEFAULT    5 _$ZCLIP_DONT_TRANSFORM
+  5860: 003706e8     0 NOTYPE  LOCAL  DEFAULT    5 _$PLANE_CLIP
+  5861: 00370688     0 NOTYPE  LOCAL  DEFAULT    5 _$PROJECT_TEXTURE_PROC
+  5862: 00370678     0 NOTYPE  LOCAL  DEFAULT    5 _$VU_ASSERT
+  5863: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 VU_ASSERT
+  5864: 00370640     0 NOTYPE  LOCAL  DEFAULT    5 _$BOTTOM_COEF_PROC
+  5865: 00370608     0 NOTYPE  LOCAL  DEFAULT    5 _$TOP_COEF_PROC
+  5866: 003705d0     0 NOTYPE  LOCAL  DEFAULT    5 _$LEFT_COEF_PROC
+  5867: 00370598     0 NOTYPE  LOCAL  DEFAULT    5 _$RIGHT_COEF_PROC
+  5868: 00370560     0 NOTYPE  LOCAL  DEFAULT    5 _$NEAR_COEF_PROC
+  5869: 00370508     0 NOTYPE  LOCAL  DEFAULT    5 _$POOL_SWAP_1
+  5870: 003704b0     0 NOTYPE  LOCAL  DEFAULT    5 _$POOL_SWAP_0
+  5871: 00370490     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_FINISH
+  5872: 00370468     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_END_NEAR
+  5873: 003703b8     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_GENERATE_VERTEX_NEAR
+  5874: 003703a0     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_1OUT_NEAR
+  5875: 00370360     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_1IN_NEAR
+  5876: 00370320     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_NEAR
+  5877: 00370308     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_WALK_LOOP_NEAR
+  5878: 003702e8     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_WALK_NEAR
+  5879: 003702b0     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_END
+  5880: 00370240     0 NOTYPE  LOCAL  DEFAULT    5 _$COEF_RETURN
+  5881: 00370230     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_GENERATE_VERTEX
+  5882: 00370218     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_1OUT
+  5883: 003701d8     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP_1IN
+  5884: 00370190     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_CLIP
+  5885: 00370178     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_WALK_LOOP
+  5886: 00370158     0 NOTYPE  LOCAL  DEFAULT    5 _$EDGE_WALK
+  5887: 0036ffa8     0 NOTYPE  LOCAL  DEFAULT    5 _$INTEGER_CONVERT_LOOP
+  5888: 0036ff98     0 NOTYPE  LOCAL  DEFAULT    5 _$INTEGER_CONVERT
+  5889: 0036ff98     0 NOTYPE  LOCAL  DEFAULT    5 _$CLIP_DRAWING
+  5890: 0036ff60     0 NOTYPE  LOCAL  DEFAULT    5 _$CLIP_BOTTOM
+  5891: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 TOP_COEF_PROC
+  5892: 0036ff28     0 NOTYPE  LOCAL  DEFAULT    5 _$CLIP_TOP
+  5893: 0036fef0     0 NOTYPE  LOCAL  DEFAULT    5 _$CLIP_LEFT
+  5894: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 RIGHT_COEF_PROC
+  5895: 0036feb8     0 NOTYPE  LOCAL  DEFAULT    5 _$CLIP_RIGHT
+  5896: 0036fe38     0 NOTYPE  LOCAL  DEFAULT    5 _$W_DIVIDE_LOOP
+  5897: 0036fe28     0 NOTYPE  LOCAL  DEFAULT    5 _$W_DIVIDE
+  5898: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 NEAR_COEF_PROC
+  5899: 0036fe00     0 NOTYPE  LOCAL  DEFAULT    5 _$CLIP_NEAR
+  5900: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 _$TRIANGLE_CLIP
+  5901: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_CLIPPED_INDEXED_STRIP
+  5902: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_INDEXED_STRIP
+  5903: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_CLIPPED_STRIP
+  5904: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_STRIP
+  5905: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_CLIPPED_INDEXED_TRIANGLES
+  5906: 0036fcd8     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_INDEXED_TRIANGLES
+  5907: 0036fc88     0 NOTYPE  LOCAL  DEFAULT    5 _$END
+  5908: 0036fc30     0 NOTYPE  LOCAL  DEFAULT    5 _$VERTEX_KICK
+  5909: 0036fc10     0 NOTYPE  LOCAL  DEFAULT    5 _$TRIANGLE_LIST_LOOPBACK
+  5910: 0036fa68     0 NOTYPE  LOCAL  DEFAULT    5 _$TRIANGLE_LIST_NO_CLIP
+  5911: 0036f9d8     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_CLIPPED_TRIANGLE_LIST_LOOP
+  5912: 0036f990     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_CLIPPED_TRIANGLE_LIST
+  5913: 0036f970     0 NOTYPE  LOCAL  DEFAULT    5 _$SEND_TRIANGLE_LIST
+  5914: 0036f920     0 NOTYPE  LOCAL  DEFAULT    5 _$APPLY_UV_MATRIX_LOOP
+  5915: 0036f8f0     0 NOTYPE  LOCAL  DEFAULT    5 _$APPLY_UV_MATRIX
+  5916: 0036f8e0     0 NOTYPE  LOCAL  DEFAULT    5 _$APPLY_UV_MATRIX_ON_NORMAL_AND_GENERATE_UVS
+  5917: 0036f8d0     0 NOTYPE  LOCAL  DEFAULT    5 _$APPLY_UV_PERSPECTIVE_CORRECTION
+  5918: 0036f830     0 NOTYPE  LOCAL  DEFAULT    5 _$LIGHT_VERTEX_LOOP
+  5919: 0036f7d8     0 NOTYPE  LOCAL  DEFAULT    5 _$LIGHT_VERTEX
+  5920: 0036f7c8     0 NOTYPE  LOCAL  DEFAULT    5 _$LIGHT_NONE
+  5921: 0036f7b8     0 NOTYPE  LOCAL  DEFAULT    5 _$ALPHA_FALLOFF
+  5922: 0036f7b8     0 NOTYPE  LOCAL  DEFAULT    5 _$GENERATE_COLOR_FOG
+  5923: 0036f7b8     0 NOTYPE  LOCAL  DEFAULT    5 _$LIGHT_SPECULAR
+  5924: 0036f6d8     0 NOTYPE  LOCAL  DEFAULT    5 _$PROJECT_CANONICAL_VERTEX_LOOP
+  5925: 0036f6a0     0 NOTYPE  LOCAL  DEFAULT    5 _$PROJECT_CANONICAL_VERTEX
+  5926: 0036f690     0 NOTYPE  LOCAL  DEFAULT    5 _$PROJECT_SCREEN_VERTEX
+  5927: 0036f680     0 NOTYPE  LOCAL  DEFAULT    5 _$SPRITE_DISPLAY
+  5928: 0036f608     0 NOTYPE  LOCAL  DEFAULT    5 _$OPTIMIZED_NL_LOOP
+  5929: 0036f528     0 NOTYPE  LOCAL  DEFAULT    5 _$OPTIMIZED_NL_PRELOOP
+  5930: 0036f4f0     0 NOTYPE  LOCAL  DEFAULT    5 _$OPTIMIZED_PROJECT_NO_LIGHT
+  5931: 0036f3f0     0 NOTYPE  LOCAL  DEFAULT    5 _$OPTIMIZED_SP_4P_LOOP
+  5932: 0036f370     0 NOTYPE  LOCAL  DEFAULT    5 _$OPTIMIZED_PROJECT_LIGHT_NO_CLIP_4_PARRALLEL
+  5933: 0036f240     0 NOTYPE  LOCAL  DEFAULT    5 _$DISPLAY_JUMP_BLOCK
+  5934: 0036f198     0 NOTYPE  LOCAL  DEFAULT    5 _$DISPLAY_LOOP_BEGIN
+  5935: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 PLANE_CLIP
+  5936: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 COEF_RETURN
+  5937: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 Z_CLIP_NEXT_VERTEX
+  5938: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 BOTTOM_COEF_PROC
+  5939: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 LIGHT_VERTEX_LOOP
+  5940: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 POOL_SWAP_0
+  5941: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 POOL_SWAP_1
+  5942: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 OPTIMIZED_NL_LOOP
+  5943: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 OPTIMIZED_NL_PRELOOP
+  5944: 00000000     0 NOTYPE  LOCAL  DEFAULT    5 OPTIMIZED_SP_4P_LOOP
   5945: 00393600    56 FUNC    LOCAL  DEFAULT    5 __sinit_psx2debug.cpp
   5946: 003dd578     1 OBJECT  LOCAL  DEFAULT    5 __msl_ios_base_init__3std
   5947: 00394618     4 OBJECT  LOCAL  DEFAULT    5 .p__sinit_psx2debug.cpp
@@ -5064,6 +6037,11 @@ Symbol table '.symtab' contains 12751 entries:
   6033: 003e2780     1 OBJECT  LOCAL  DEFAULT    5 init$1535
   6034: 003e2778     1 OBJECT  LOCAL  DEFAULT    5 bEven$1534
   6035: 003e2770     1 OBJECT  LOCAL  DEFAULT    5 init$1511
+  6036: 00370b38     0 NOTYPE  LOCAL  DEFAULT    5 .vu.5
+  6037: 00370b28     0 NOTYPE  LOCAL  DEFAULT    5 .vif.2
+  6038: 00504f80     0 SECTION LOCAL  DEFAULT    5 .vubss
+  6039: 00370b20     0 SECTION LOCAL  DEFAULT    5 .vutext
+  6040: 00370b20     0 NOTYPE  LOCAL  DEFAULT    5 .dma.1
   6041: 00393830   152 FUNC    LOCAL  DEFAULT    5 __sinit_skin.cpp
   6042: 003e27a8     1 OBJECT  LOCAL  DEFAULT    5 __msl_ios_base_init__3std
   6043: 003f41b0     1 OBJECT  LOCAL  DEFAULT    5 bFirstTime$1196
@@ -5387,6 +6365,8 @@ Symbol table '.symtab' contains 12751 entries:
   6361: 00214b00    16 FUNC    GLOBAL DEFAULT    5 GsGetIMR
   6362: 0032b510    80 FUNC    GLOBAL DEFAULT    5 FindFirst__14CMCFileManagerFPCc
   6363: 002488e0   556 FUNC    GLOBAL DEFAULT    5 Fill__10COriParamsFUcP16WP_tdstWayPoint_
+  6364: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 DISPLAY_LOOP_BEGIN
+  6365: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 DISPLAY_JUMP_BLOCK
   6366: 0032d710   236 FUNC    GLOBAL DEFAULT    5 FindAndSplit__14CMemChunkDListFPvUiUi
   6367: 0032cf30   100 FUNC    GLOBAL DEFAULT    5 FindAssociatedMetaPage__16CHybridAllocatorFPv
   6368: 0032b560   248 FUNC    GLOBAL DEFAULT    5 FindNext__14CMCFileManagerFv
@@ -5493,6 +6473,8 @@ Symbol table '.symtab' contains 12751 entries:
   6469: 002bee80   528 FUNC    GLOBAL DEFAULT    5 DLG_LoadCBaseUD__FP18BinarizationObject
   6470: 002bebd0   688 FUNC    GLOBAL DEFAULT    5 DLG_LoadDialogInstanceUD__FP18BinarizationObject
   6471: 002beb30   160 FUNC    GLOBAL DEFAULT    5 DLG_LoadDLGFileUD__FP18BinarizationObject
+  6472: 00370b20     0 NOTYPE  GLOBAL DEFAULT    5 DMA_LoadDeformation_u
+  6473: 0036f180     0 NOTYPE  GLOBAL DEFAULT    5 DMA_LoadDisplayPipe
   6474: 002acff0   288 FUNC    GLOBAL DEFAULT    5 DNM_fn_vChangeIdCard__FP20HIE_tdstSuperObject_PP10CMechanicsP8CMecCard
   6475: 002b3ef0    84 FUNC    GLOBAL DEFAULT    5 DNM_fn_vInitLinkTableOfIdCard__Fv
   6476: 002b3f50     8 FUNC    GLOBAL DEFAULT    5 DNM_fn_vInitLoadIdCard__Fv
@@ -5653,6 +6635,7 @@ Symbol table '.symtab' contains 12751 entries:
   6631: 003b6200   200 OBJECT  GLOBAL DEFAULT    5 GlobalLoopInit
   6632: 003b6130   200 OBJECT  GLOBAL DEFAULT    5 GlobalLoopTree
   6633: 003b6060   200 OBJECT  GLOBAL DEFAULT    5 GlobalLoopCpt
+  6634: 00200008     0 NOTYPE  GLOBAL DEFAULT    5 ENTRYPOINT
   6635: 0024e6c0  1464 FUNC    GLOBAL DEFAULT    5 GoToNextBP__8RCamRailFv
   6636: 004fe900     4 OBJECT  GLOBAL DEFAULT    5 DataBuffer
   6637: 00248c60    68 FUNC    <processor specific>: 13 DEFAULT    5 EqualWithEpsilon__Ffff
@@ -5855,6 +6838,7 @@ Symbol table '.symtab' contains 12751 entries:
   6834: 002b7c30   220 FUNC    GLOBAL DEFAULT    5 GEO_fn_hCreateMatrix
   6835: 002b7d10    28 FUNC    GLOBAL DEFAULT    5 GEO_fn_vDestroyMatrix
   6836: 0032cfb0     8 FUNC    GLOBAL DEFAULT    5 DumpStatistics__16CHybridAllocatorFUi
+  6837: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 GENERATE_COLOR_FOG
   6838: 00331460   332 FUNC    GLOBAL DEFAULT    5 GEO_vComputeCenterOfSprite__FP24GEO_tdstGeometricObject_P18stElementSprites2d
   6839: 00331190   716 FUNC    GLOBAL DEFAULT    5 GEO_vComputeCenterOfIndexedTriangle__FP24GEO_tdstGeometricObject_P32GEO_tdstElementIndexedTriangles_
   6840: 003315b0   208 FUNC    GLOBAL DEFAULT    5 GEO_vComputeElementCenters__FP24GEO_tdstGeometricObject_
@@ -5890,6 +6874,9 @@ Symbol table '.symtab' contains 12751 entries:
   6870: 002149e0    16 FUNC    GLOBAL DEFAULT    5 EnableDmacHandler
   6871: 002149a0    16 FUNC    GLOBAL DEFAULT    5 EnableIntcHandler
   6872: 00214660    16 FUNC    GLOBAL DEFAULT    5 EnableDispatchThread
+  6873: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 APPLY_UV_MATRIX
+  6874: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 APPLY_UV_PERSPECTIVE_CORRECTION
+  6875: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 APPLY_UV_MATRIX_ON_NORMAL_AND_GENERATE_UVS
   6876: 00214a70    16 FUNC    GLOBAL DEFAULT    5 CpuConfig
   6877: 0038ba60    16 OBJECT  GLOBAL DEFAULT    5 BaseK__8CVector3
   6878: 0039ce70   160 OBJECT  GLOBAL DEFAULT    5 BackupCameraValues
@@ -6026,8 +7013,10 @@ Symbol table '.symtab' contains 12751 entries:
   7009: 0025b240   120 FUNC    GLOBAL DEFAULT    5 Clear__13CInputFactoryFv
   7010: 00254920    80 FUNC    GLOBAL DEFAULT    5 Close__6CInputFv
   7011: 0025d7b0   108 FUNC    GLOBAL DEFAULT    5 Clear__13CInputSettingFv
+  7012: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 ALPHA_CONSTANT
   7013: 00363e80   124 FUNC    GLOBAL DEFAULT    5 CleanUpEmitters__Fv
   7014: 003528d0   140 FUNC    GLOBAL DEFAULT    5 ClearListOfCharacters__16CRenderBatchUnitFv
+  7015: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 ALPHA_FALLOFF
   7016: 00260240    76 FUNC    GLOBAL DEFAULT    5 Close__10CInputPSX2Fv
   7017: 0027c300   100 FUNC    GLOBAL DEFAULT    5 ANI_fn_vUnFreeze
   7018: 0027c2a0    92 FUNC    GLOBAL DEFAULT    5 ANI_fn_vFreeze
@@ -6225,6 +7214,7 @@ Symbol table '.symtab' contains 12751 entries:
   7210: 00291e40   432 FUNC    GLOBAL DEFAULT    5 COL_fn_bDetectCollisionDynamicGeomObjWithStaticGeomObj
   7211: 002922a0    52 FUNC    GLOBAL DEFAULT    5 COL_fn_vInitCollisionTable__Fv
   7212: 002695e0   720 FUNC    GLOBAL DEFAULT    5 COL_lHaveITakeSThgIntoTheMugForChannel__FP17DNM_stMecObstacleP20HIE_tdstSuperObject_P20HIE_tdstSuperObject_P22POS_stCompletePositionP22POS_stCompletePosition
+  7213: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 COLOR_AND_ALPHA_CONSTANT
   7214: 002a9950   640 FUNC    GLOBAL DEFAULT    5 COL_fn_vExploreRecursiveOctreeWithSegment
   7215: 002a9740   456 FUNC    GLOBAL DEFAULT    5 COL_fn_vExploreRecursiveOctreeWithBox
   7216: 003b1898     4 OBJECT  GLOBAL DEFAULT    5 COL_g_d_xSelectedFaceIndexList
@@ -6268,6 +7258,9 @@ Symbol table '.symtab' contains 12751 entries:
   7254: 00275f40   100 FUNC    GLOBAL DEFAULT    5 MSWay_fn_vSetPath
   7255: 00275ee0     8 FUNC    GLOBAL DEFAULT    5 MSWay_fn_vInitPath
   7256: 0028c500    88 FUNC    GLOBAL DEFAULT    5 LGT_fn_bInitLGTLoading__Fv
+  7257: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 LIGHT_VERTEX
+  7258: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 LIGHT_SPECULAR
+  7259: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 LIGHT_NONE
   7260: 002383c0    96 FUNC    <processor specific>: 13 DEFAULT    5 Normalize__8CVector3Fv
   7261: 00248d70    80 FUNC    <processor specific>: 13 DEFAULT    5 Norm__8CVector3CFv
   7262: 00248f00    92 FUNC    <processor specific>: 13 DEFAULT    5 Norm__11CQuaternionCFv
@@ -6457,6 +7450,8 @@ Symbol table '.symtab' contains 12751 entries:
   7446: 00368900    68 FUNC    GLOBAL DEFAULT    5 MpegPlay__Fv
   7447: 003688a0    84 FUNC    GLOBAL DEFAULT    5 MpegInit__FPci
   7448: 00368980    40 FUNC    GLOBAL DEFAULT    5 MpegMainThread__Fv
+  7449: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 OPTIMIZED_PROJECT_NO_LIGHT
+  7450: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 OPTIMIZED_PROJECT_LIGHT_NO_CLIP_4_PARRALLEL
   7451: 00235830   476 FUNC    GLOBAL DEFAULT    5 OS_main__FiPPc
   7452: 003cf3f8     4 OBJECT  GLOBAL DEFAULT    5 LevelHeap
   7453: 0024aef0   148 FUNC    <processor specific>: 13 DEFAULT    5 Mul__FR9CMatrix33RC9CMatrix33RC9CMatrix33
@@ -7146,6 +8141,9 @@ Symbol table '.symtab' contains 12751 entries:
   8137: 00257a10   104 FUNC    GLOBAL DEFAULT    5 Save__22CInputCommandControlIDCFP5IFile
   8138: 002577e0    96 FUNC    GLOBAL DEFAULT    5 Save__23CInputCommandDeviceDataCFP5IFile
   8139: 002575d0    80 FUNC    GLOBAL DEFAULT    5 Save__21CInputCommandDeviceIDCFP5IFile
+  8140: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 PROJECT_TEXTURE_PROC
+  8141: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 PROJECT_CANONICAL_VERTEX
+  8142: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 PROJECT_SCREEN_VERTEX
   8143: 0024f130   280 FUNC    GLOBAL DEFAULT    5 ScalePos__8RCamRailFf
   8144: 00214c20    16 FUNC    GLOBAL DEFAULT    5 PSMode
   8145: 00248f90    84 FUNC    <processor specific>: 13 DEFAULT    5 SetColumns__9CMatrix33FRC8CVector3RC8CVector3RC8CVector3
@@ -7277,6 +8275,7 @@ Symbol table '.symtab' contains 12751 entries:
   8271: 00352b10   264 FUNC    GLOBAL DEFAULT    5 Sort__16CRenderBatchUnitFv
   8272: 002f6560   400 FUNC    <processor specific>: 13 DEFAULT    5 SoundUpdate__FP11tdsCinSoundP20HIE_tdstSuperObject_
   8273: 00372ab8     4 OBJECT  GLOBAL DEFAULT    5 SPO_g_fGlobalTransparency
+  8274: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 SPRITE_DISPLAY
   8275: 003cf410     4 OBJECT  GLOBAL DEFAULT    5 RAM
   8276: 002462c0   160 FUNC    <processor specific>: 13 DEFAULT    5 RAM_vMemSet__FPvcUi
   8277: 00240620   168 FUNC    <processor specific>: 13 DEFAULT    5 RAM_vMemCopy__FPvPCvUi
@@ -7378,6 +8377,7 @@ Symbol table '.symtab' contains 12751 entries:
   8373: 002b4b80   656 FUNC    GLOBAL DEFAULT    5 SECT_fn_bIsInBorderBox
   8374: 002b3f60   376 FUNC    GLOBAL DEFAULT    5 SECT_fn_vSendLightsFromWhereIAmToViewport
   8375: 002b5c30   272 FUNC    GLOBAL DEFAULT    5 SECT_fn_bInitSectorLoading
+  8376: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 SEND_CLIPPED_TRIANGLE_LIST
   8377: 002b58d0    56 FUNC    GLOBAL DEFAULT    5 SECT_fn_vAddDynamicLightToSector
   8378: 002b5220   828 FUNC    GLOBAL DEFAULT    5 SECT_fn_vMoveNodeToTailOfCharacterList
   8379: 002b5560   828 FUNC    GLOBAL DEFAULT    5 SECT_fn_vMoveNodeToHeadOfCharacterList
@@ -7386,6 +8386,7 @@ Symbol table '.symtab' contains 12751 entries:
   8382: 002b6040    12 FUNC    GLOBAL DEFAULT    5 SECT_fn_vGetMinOfBorder
   8383: 002b58a0    44 FUNC    GLOBAL DEFAULT    5 SECT_fn_vRemoveDynamicLightFromSector
   8384: 002b51f0    44 FUNC    GLOBAL DEFAULT    5 SECT_fn_vIsolateCharListNode
+  8385: 00000000     0 NOTYPE  GLOBAL DEFAULT    5 SEND_TRIANGLE_LIST
   8386: 0032c0d0    44 FUNC    <processor specific>: 13 DEFAULT    5 PushBack__13SBigAllocListFP29SBigAllocIntegrityHeaderFront
   8387: 0031f5d0    36 FUNC    GLOBAL DEFAULT    5 PushAddr__14Cpsx2AllocatorFP1
   8388: 003b1b40     4 OBJECT  GLOBAL DEFAULT    5 SECT_stLinkTable
@@ -7572,6 +8573,8 @@ Symbol table '.symtab' contains 12751 entries:
   8569: 00224ff0   328 FUNC    GLOBAL DEFAULT    5 _s2b
   8570: 0031cf60   176 FUNC    GLOBAL DEFAULT    5 _snprintf__FPciPCce
   8571: 002270f8    92 FUNC    GLOBAL DEFAULT    5 _sbrk_r
+  8572: 00080000     0 NOTYPE  GLOBAL DEFAULT    5 _stack_size
+  8573: 01f80000     0 NOTYPE  GLOBAL DEFAULT    5 _stack
   8574: 00231678   232 FUNC    GLOBAL DEFAULT    5 _sceCdRM
   8575: 002315a0   216 FUNC    GLOBAL DEFAULT    5 _sceCdRI
   8576: 00229398    52 FUNC    GLOBAL DEFAULT    5 _system_r
@@ -7587,6 +8590,7 @@ Symbol table '.symtab' contains 12751 entries:
   8586: 00212238   108 FUNC    GLOBAL DEFAULT    5 _system_header
   8587: 003713f0    64 OBJECT  GLOBAL DEFAULT    5 _showCount
   8588: 0020fd98   108 FUNC    GLOBAL DEFAULT    5 _sliceB
+  8589: 00200008     0 NOTYPE  GLOBAL DEFAULT    5 _start
   8590: 00371644     4 OBJECT  GLOBAL DEFAULT    5 _totalFrames
   8591: 003716a8     4 OBJECT  GLOBAL DEFAULT    5 _transfer_characteristics
   8592: 00371504     4 OBJECT  GLOBAL DEFAULT    5 _theSceMpeg
@@ -7626,6 +8630,7 @@ Symbol table '.symtab' contains 12751 entries:
   8626: 00212e48    12 FUNC    GLOBAL DEFAULT    5 _alalcFree
   8627: 00371670     4 OBJECT  GLOBAL DEFAULT    5 _aspect_ratio_information
   8628: 00371df8     4 OBJECT  GLOBAL DEFAULT    5 _alternate_scan
+  8629: 00000080     0 NOTYPE  GLOBAL DEFAULT    5 _align_segment
   8630: 00212ec0    24 FUNC    GLOBAL DEFAULT    5 _alalcRest
   8631: 00212e38    12 FUNC    GLOBAL DEFAULT    5 _alalcSetDynamic
   8632: 00212e20    20 FUNC    GLOBAL DEFAULT    5 _alalcInit
@@ -7699,6 +8704,8 @@ Symbol table '.symtab' contains 12751 entries:
   8700: 0020e630    28 FUNC    GLOBAL DEFAULT    5 _dmVector
   8701: 0020e650   396 FUNC    GLOBAL DEFAULT    5 _dualPrimeVector
   8702: 0020fff8   188 FUNC    GLOBAL DEFAULT    5 _extensionAndUserData
+  8703: 002000a8     0 NOTYPE  GLOBAL DEFAULT    5 _exit
+  8704: 00580000     0 NOTYPE  GLOBAL DEFAULT    7 _end
   8705: 002102e8    52 FUNC    GLOBAL DEFAULT    5 _extrainfo
   8706: 0037154c     4 OBJECT  GLOBAL DEFAULT    5 _forwTop
   8707: 00371558     4 OBJECT  GLOBAL DEFAULT    5 _forwBot
@@ -7717,7 +8724,9 @@ Symbol table '.symtab' contains 12751 entries:
   8720: 00222e10   796 FUNC    GLOBAL DEFAULT    5 _free_r
   8721: 00223730    92 FUNC    GLOBAL DEFAULT    5 _fstat_r
   8722: 00223c68   148 FUNC    GLOBAL DEFAULT    5 _fwalk
+  8723: 00395e00     0 NOTYPE  GLOBAL DEFAULT    5 _fbss
   8724: 0020fab0   260 FUNC    GLOBAL DEFAULT    5 _flushBuf
+  8725: 0039dd70     0 NOTYPE  GLOBAL DEFAULT    5 _gp
   8726: 00227508    28 FUNC    GLOBAL DEFAULT    5 _getpid_r
   8727: 002103f0   228 FUNC    GLOBAL DEFAULT    5 _groupOfPicturesHeader
   8728: 0020d098  1060 FUNC    GLOBAL DEFAULT    5 _getRef0
@@ -7727,6 +8736,7 @@ Symbol table '.symtab' contains 12751 entries:
   8732: 00371dd0     8 OBJECT  GLOBAL DEFAULT    5 _headerDts
   8733: 00371dc8     8 OBJECT  GLOBAL DEFAULT    5 _headerPts
   8734: 00225138   132 FUNC    GLOBAL DEFAULT    5 _hi0bits
+  8735: ffffffff     0 NOTYPE  GLOBAL DEFAULT    5 _heap_size
   8736: 003721a4     4 OBJECT  GLOBAL DEFAULT    5 _impure_ptr
   8737: 0037165c     4 OBJECT  GLOBAL DEFAULT    5 _isSecondField
   8738: 00371dc0     4 OBJECT  GLOBAL DEFAULT    5 _isOutputPicture
@@ -7785,6 +8795,7 @@ Symbol table '.symtab' contains 12751 entries:
   8791: 0020fd30   104 FUNC    GLOBAL DEFAULT    5 _nextStartCode
   8792: 002107f8   184 FUNC    GLOBAL DEFAULT    5 _outputFrame
   8793: 0037174c     4 OBJECT  GLOBAL DEFAULT    5 _original_or_copy
+  8794: 00395d70     0 NOTYPE  GLOBAL DEFAULT    5 _overlay_group_addreses
   8795: 002122a8  1404 FUNC    GLOBAL DEFAULT    5 _PES_packet
   8796: 00214570    16 FUNC    GLOBAL DEFAULT    5 _ReleaseAlarm
   8797: 00214560    16 FUNC    GLOBAL DEFAULT    5 _SetAlarm
@@ -8097,6 +9108,10 @@ Symbol table '.symtab' contains 12751 entries:
   9104: 00224df0     8 FUNC    GLOBAL DEFAULT    5 __malloc_lock
   9105: 0032cfc0    32 FUNC    GLOBAL DEFAULT    5 __ct__16CMallocAllocatorFv
   9106: 00200b00    84 FUNC    GLOBAL DEFAULT    5 __initialize_cpp_rts
+  9107: 00395d64     0 NOTYPE  GLOBAL DEFAULT    5 __exception_table_end__
+  9108: 00395d64     0 NOTYPE  GLOBAL DEFAULT    5 __exception_table_start__
+  9109: 003946a8     0 NOTYPE  GLOBAL DEFAULT    5 __static_init_end
+  9110: 00394070     0 NOTYPE  GLOBAL DEFAULT    5 __static_init
   9111: 00202930    48 FUNC    <processor specific>: 13 DEFAULT    5 __or__3stdFQ33std8ios_base7iostateQ33std8ios_base7iostate
   9112: 002028d0    84 FUNC    <processor specific>: 13 DEFAULT    5 __aor__3stdFRQ33std8ios_base7iostateQ33std8ios_base7iostate
   9113: 002028a0    48 FUNC    <processor specific>: 13 DEFAULT    5 __ad__3stdFQ33std8ios_base7iostateQ33std8ios_base7iostate
@@ -8157,6 +9172,12 @@ Symbol table '.symtab' contains 12751 entries:
   9168: 0022c9b0  1640 FUNC    GLOBAL DEFAULT    5 __moddi3
   9169: 0022e7f8    44 FUNC    GLOBAL DEFAULT    5 __make_dp
   9170: 0022f3f0    44 FUNC    GLOBAL DEFAULT    5 __make_fp
+  9171: 00395e5d     0 NOTYPE  GLOBAL DEFAULT    5 __bss_start
+  9172: 00580000     0 NOTYPE  GLOBAL DEFAULT    5 __bss_end
+  9173: 001ea1a3     0 NOTYPE  GLOBAL DEFAULT    5 __bss_size
+  9174: 00370c80     0 NOTYPE  GLOBAL DEFAULT    5 __data_start
+  9175: 00395d74     0 NOTYPE  GLOBAL DEFAULT    5 __data_end
+  9176: 000250f4     0 NOTYPE  GLOBAL DEFAULT    5 __data_size
   9177: 0039cb88     4 OBJECT  GLOBAL DEFAULT    5 __lzo_init_done
   9178: 00244820   148 FUNC    GLOBAL DEFAULT    5 __lzo_align_gap
   9179: 002447f0    44 FUNC    GLOBAL DEFAULT    5 __lzo_ptr_linear
@@ -10123,6 +11144,7 @@ Symbol table '.symtab' contains 12751 entries:
  11140: 00205980    28 FUNC    <processor specific>: 13 DEFAULT    5 egptr__Q23std41basic_streambuf<c,Q23std14char_traits<c>>CFv
  11141: 0024e080     8 FUNC    <processor specific>: 13 DEFAULT    5 end__Q23std32list<PCv,20ubiSTLAllocator<PCv>>Fv
  11142: 00366620    20 FUNC    GLOBAL DEFAULT    5 endDisplay__Fv
+ 11143: 00580000     0 NOTYPE  GLOBAL DEFAULT    7 end
  11144: 002d37c0    16 FUNC    <processor specific>: 13 DEFAULT    5 end__Q23std33slist<PCv,20ubiSTLAllocator<PCv>>Fv
  11145: 00254d20   304 FUNC    WEAK   DEFAULT    5 end__Q23std59basic_string<c,Q23std14char_traits<c>,18ubiSTLAllocator<c>>Fv
  11146: 0024e000    52 FUNC    <processor specific>: 13 DEFAULT    5 end__Q23std57list<Pv,46ubiSTLAllocatorLevelHeap<P17WP_tdstGraphNode_>>Fv
