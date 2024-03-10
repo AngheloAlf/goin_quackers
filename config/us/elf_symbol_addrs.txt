@@ -320,8 +320,8 @@ copy_backward<PPCv,PPCv>__3stdFPPCvPPCvPPCv = 0x00208B10; // size:0x58 type:func
 capacity__Q23std34vector<PCv,Q23std14allocator<PCv>>CFv = 0x00208B70; // size:0x1C type:func bind = <processor specific> 13
 max_size__Q23std34vector<PCv,Q23std14allocator<PCv>>CFv = 0x00208B90; // size:0x28 type:func bind = <processor specific> 13
 max_size__Q23std14allocator<PCv>CFv = 0x00208BC0; // size:0x54 type:func bind = <processor specific> 13
-@8@72@__dt__Q23std39basic_ostream<c,Q23std14char_traits<c>>Fv = 0x00208C20; // size:0x10 type:func bind = <processor specific> 13
-@24@72@__dt__Q23std39basic_istream<c,Q23std14char_traits<c>>Fv = 0x00208C30; // size:0x10 type:func bind = <processor specific> 13
+// @8@72@__dt__Q23std39basic_ostream<c,Q23std14char_traits<c>>Fv = 0x00208C20; // size:0x10 type:func bind = <processor specific> 13
+// @24@72@__dt__Q23std39basic_istream<c,Q23std14char_traits<c>>Fv = 0x00208C30; // size:0x10 type:func bind = <processor specific> 13
 __ct__Q23std6localeFRCQ23std80_RefCountedPtr<Q23std15__locale_imp<1>,Q23std32_Single<Q23std15__locale_imp<1>>> = 0x00208C40; // size:0x34 type:func bind = <processor specific> 13
 classic__Q23std6localeFv = 0x00208C80; // size:0x78 type:func bind = GLOBAL
 make_classic__Q23std6localeFv = 0x00208D00; // size:0xA4 type:func bind = GLOBAL
@@ -2904,7 +2904,7 @@ __partition_const_ref<PP12CSpaceObject,Q23std52__binder2nd_const_ref<Q23std21les
 __partition_const_ref<PP12CSpaceObject,Q23std74unary_negate<Q23std52__binder1st_const_ref<Q23std21less<P12CSpaceObject>>>>__3stdFPP12CSpaceObjectPP12CSpaceObjectRCQ23std74unary_negate<Q23std52__binder1st_const_ref<Q23std21less<P12CSpaceObject>>> = 0x0028EC40; // size:0x1D0 type:func bind = WEAK
 __selection_sort<PP12CSpaceObject>__3stdFPP12CSpaceObjectPP12CSpaceObject = 0x0028EE10; // size:0x88 type:func bind = WEAK
 insert_node_at__Q23std234__tree<Q23std25pair<CUi,P12CSpaceObject>,Q33std106multimap<Ui,P12CSpaceObject,Q23std8less<Ui>,59ubiSTLAllocatorLevelHeap<Q23std25pair<CUi,P12CSpaceObject>>>13value_compare,59ubiSTLAllocatorLevelHeap<Q23std25pair<CUi,P12CSpaceObject>>>FPQ33std234__tree<Q23std25pair<CUi,P12CSpaceObject>,Q33std106multimap<Ui,P12CSpaceObject,Q23std8less<Ui>,59ubiSTLAllocatorLevelHeap<Q23std25pair<CUi,P12CSpaceObject>>>13value_compare,59ubiSTLAllocatorLevelHeap<Q23std25pair<CUi,P12CSpaceObject>>>4nodebbRCQ23std25pair<CUi,P12CSpaceObject> = 0x0028EEA0; // size:0x110 type:func bind = WEAK
-@20@Draw__10CSpaceGridFiiiPv = 0x0028EFB0; // size:0x8 type:func bind = <processor specific> 13
+// @20@Draw__10CSpaceGridFiiiPv = 0x0028EFB0; // size:0x8 type:func bind = <processor specific> 13
 Enable__12CSpaceLoaderFv = 0x0028EFC0; // size:0x88 type:func bind = GLOBAL
 LoadSpaceGridUD__12CSpaceLoaderFP18BinarizationObject = 0x0028F050; // size:0x70 type:func bind = GLOBAL
 LoadSpaceObjectUD__12CSpaceLoaderFP18BinarizationObject = 0x0028F0C0; // size:0x5C type:func bind = GLOBAL
@@ -5897,18 +5897,18 @@ DMA_LoadDeformation_u = 0x00370B20; // bind = GLOBAL
 __throws_bad_alloc__3std = 0x00370C88; // size:0x1 bind = GLOBAL
 thandler__3std = 0x00370C90; // size:0x4 bind = LOCAL
 uhandler__3std = 0x00370C98; // size:0x4 bind = LOCAL
-@589 = 0x00370CA0; // size:0x2A bind = LOCAL
-@590 = 0x00370CD0; // size:0x1A bind = LOCAL
-@766 = 0x00370CF0; // size:0xE bind = LOCAL
-@767 = 0x00370D00; // size:0xF bind = LOCAL
-@770 = 0x00370D10; // size:0x17 bind = LOCAL
-@884 = 0x00370D30; // size:0x13 bind = LOCAL
-@686 = 0x00370D50; // size:0x31 bind = LOCAL
-@688 = 0x00370D88; // size:0xE bind = LOCAL
-@689 = 0x00370DA0; // size:0x2D bind = LOCAL
-@691 = 0x00370DD0; // size:0x31 bind = LOCAL
-@693 = 0x00370E10; // size:0x33 bind = LOCAL
-@694 = 0x00370E50; // size:0x31 bind = LOCAL
+// @589 = 0x00370CA0; // size:0x2A bind = LOCAL
+// @590 = 0x00370CD0; // size:0x1A bind = LOCAL
+// @766 = 0x00370CF0; // size:0xE bind = LOCAL
+// @767 = 0x00370D00; // size:0xF bind = LOCAL
+// @770 = 0x00370D10; // size:0x17 bind = LOCAL
+// @884 = 0x00370D30; // size:0x13 bind = LOCAL
+// @686 = 0x00370D50; // size:0x31 bind = LOCAL
+// @688 = 0x00370D88; // size:0xE bind = LOCAL
+// @689 = 0x00370DA0; // size:0x2D bind = LOCAL
+// @691 = 0x00370DD0; // size:0x31 bind = LOCAL
+// @693 = 0x00370E10; // size:0x33 bind = LOCAL
+// @694 = 0x00370E50; // size:0x31 bind = LOCAL
 // @1281 = 0x00370E88; // size:0xF bind = LOCAL
 // @1452 = 0x00370EA0; // size:0x37 bind = LOCAL
 // @1453 = 0x00370EE0; // size:0x21 bind = LOCAL
@@ -5918,10 +5918,10 @@ uhandler__3std = 0x00370C98; // size:0x4 bind = LOCAL
 // @1661 = 0x00370F90; // size:0x33 bind = LOCAL
 // @1775 = 0x00370FD0; // size:0x1C bind = LOCAL
 __mask_map__3std = 0x00370FF0; // size:0x100 bind = GLOBAL
-@1032 = 0x003710F0; // size:0x13 bind = LOCAL
-@1044 = 0x00371110; // size:0x10 bind = LOCAL
+// @1032 = 0x003710F0; // size:0x13 bind = LOCAL
+// @1044 = 0x00371110; // size:0x10 bind = LOCAL
 // @1045 = 0x00371120; // size:0x11 bind = LOCAL
-@1071 = 0x00371140; // size:0x27 bind = LOCAL
+// @1071 = 0x00371140; // size:0x27 bind = LOCAL
 // @1073 = 0x00371170; // size:0x12 bind = LOCAL
 // @1074 = 0x00371190; // size:0x1E bind = LOCAL
 // @1405 = 0x003711B0; // size:0x37 bind = LOCAL
@@ -6137,20 +6137,20 @@ mcRunCmdNo = 0x003726E0; // size:0x4 bind = LOCAL
 // @1668 = 0x00372710; // size:0x4 bind = LOCAL
 // @1696 = 0x00372718; // size:0x4 bind = LOCAL
 // @1936 = 0x00372720; // size:0x1 bind = LOCAL
-@2320 = 0x00372728; // size:0x1 bind = LOCAL
-@2326 = 0x00372730; // size:0x1 bind = LOCAL
+// @2320 = 0x00372728; // size:0x1 bind = LOCAL
+// @2326 = 0x00372730; // size:0x1 bind = LOCAL
 // @2330 = 0x00372738; // size:0x1 bind = LOCAL
 RigidBodyImpulseBefore__16CMechanicsObject = 0x00372740; // size:0x4 bind = GLOBAL
 RigidBodyImpulseAfter__16CMechanicsObject = 0x00372748; // size:0x4 bind = GLOBAL
-@176 = 0x00372750; // size:0xC bind = LOCAL
-@1628 = 0x00372760; // size:0x4 bind = LOCAL
-@1634 = 0x00372768; // size:0x4 bind = LOCAL
-@2234 = 0x00372770; // size:0x4 bind = LOCAL
-@2240 = 0x00372778; // size:0x4 bind = LOCAL
-@2256 = 0x00372780; // size:0x1 bind = LOCAL
-@2257 = 0x00372788; // size:0x1 bind = LOCAL
-@2282 = 0x00372790; // size:0x1 bind = LOCAL
-@2283 = 0x00372798; // size:0x1 bind = LOCAL
+// @176 = 0x00372750; // size:0xC bind = LOCAL
+// @1628 = 0x00372760; // size:0x4 bind = LOCAL
+// @1634 = 0x00372768; // size:0x4 bind = LOCAL
+// @2234 = 0x00372770; // size:0x4 bind = LOCAL
+// @2240 = 0x00372778; // size:0x4 bind = LOCAL
+// @2256 = 0x00372780; // size:0x1 bind = LOCAL
+// @2257 = 0x00372788; // size:0x1 bind = LOCAL
+// @2282 = 0x00372790; // size:0x1 bind = LOCAL
+// @2283 = 0x00372798; // size:0x1 bind = LOCAL
 // @1875 = 0x003727A0; // size:0x4 bind = LOCAL
 // @1911 = 0x003727A8; // size:0x4 bind = LOCAL
 INPUT_PSX2_BUTTON_NAME = 0x003727B0; // size:0x6C bind = GLOBAL
@@ -6159,20 +6159,20 @@ INPUT_PSX2_AXIS_NAME = 0x00372820; // size:0x14 bind = GLOBAL
 // @1714 = 0x00372840; // size:0x4 bind = LOCAL
 g_stAlways = 0x00372850; // size:0x14 bind = GLOBAL
 // @1741 = 0x00372870; // size:0x10 bind = LOCAL
-@2022 = 0x00372880; // size:0x4 bind = LOCAL
-@2024 = 0x00372888; // size:0x4 bind = LOCAL
+// @2022 = 0x00372880; // size:0x4 bind = LOCAL
+// @2024 = 0x00372888; // size:0x4 bind = LOCAL
 // @2029 = 0x00372890; // size:0x4 bind = LOCAL
-@2324 = 0x00372898; // size:0x4 bind = LOCAL
-@2339 = 0x003728A0; // size:0x4 bind = LOCAL
-@2351 = 0x003728A8; // size:0x1 bind = LOCAL
-@2352 = 0x003728B0; // size:0x1 bind = LOCAL
+// @2324 = 0x00372898; // size:0x4 bind = LOCAL
+// @2339 = 0x003728A0; // size:0x4 bind = LOCAL
+// @2351 = 0x003728A8; // size:0x1 bind = LOCAL
+// @2352 = 0x003728B0; // size:0x1 bind = LOCAL
 DeltaTimeMaximum = 0x003728B8; // size:0x8 bind = GLOBAL
 DeltaTimeMinimum = 0x003728C0; // size:0x8 bind = GLOBAL
 g_u32PreviousDT = 0x003728C8; // size:0x4 bind = GLOBAL
 bUseSpacePartitionner = 0x003728D0; // size:0x1 bind = GLOBAL
 g_a_stStructureHandleFunction = 0x003728E0; // size:0x138 bind = GLOBAL
 // @1329 = 0x00372A18; // size:0x4 bind = LOCAL
-@3237 = 0x00372A20; // size:0x4 bind = LOCAL
+// @3237 = 0x00372A20; // size:0x4 bind = LOCAL
 // @1394 = 0x00372A28; // size:0x4 bind = LOCAL
 // @1397 = 0x00372A30; // size:0x4 bind = LOCAL
 // @1279 = 0x00372A38; // size:0x1 bind = LOCAL
@@ -6180,8 +6180,8 @@ g_a_stStructureHandleFunction = 0x003728E0; // size:0x138 bind = GLOBAL
 // @1579 = 0x00372A48; // size:0x1 bind = LOCAL
 // @1338 = 0x00372A50; // size:0x4 bind = LOCAL
 // @1827 = 0x00372A58; // size:0x4 bind = LOCAL
-@1903 = 0x00372A60; // size:0x4 bind = LOCAL
-@2070 = 0x00372A68; // size:0x4 bind = LOCAL
+// @1903 = 0x00372A60; // size:0x4 bind = LOCAL
+// @2070 = 0x00372A68; // size:0x4 bind = LOCAL
 xEps = 0x00372A70; // size:0x4 bind = GLOBAL
 xOneSubEps = 0x00372A78; // size:0x4 bind = GLOBAL
 MaxMorphTask = 0x00372A80; // size:0x4 bind = GLOBAL
@@ -6204,11 +6204,11 @@ g_bAllowSkipMovie = 0x00372B00; // size:0x1 bind = GLOBAL
 // @1183 = 0x00372B08; // size:0x4 bind = LOCAL
 // @1427 = 0x00372B10; // size:0x4 bind = LOCAL
 g_xWidthOfScreenAtZero = 0x00372B18; // size:0x4 bind = GLOBAL
-@3240 = 0x00372B20; // size:0x4 bind = LOCAL
+// @3240 = 0x00372B20; // size:0x4 bind = LOCAL
 g_eLocation = 0x00372B28; // size:0x4 bind = GLOBAL
 // @2247 = 0x00372B30; // size:0x4 bind = LOCAL
-@2253 = 0x00372B38; // size:0x4 bind = LOCAL
-@4420 = 0x00372B40; // size:0x4 bind = LOCAL
+// @2253 = 0x00372B38; // size:0x4 bind = LOCAL
+// @4420 = 0x00372B40; // size:0x4 bind = LOCAL
 g_ulMode = 0x00372B48; // size:0x4 bind = GLOBAL
 g_ulOverRideRayTraceSpoMask = 0x00372B50; // size:0x4 bind = GLOBAL
 g_cJoystickXmin = 0x00372B58; // size:0x1 bind = GLOBAL
@@ -6217,7 +6217,7 @@ g_cJoystickYmin = 0x00372B68; // size:0x1 bind = GLOBAL
 g_cJoystickYmax = 0x00372B70; // size:0x1 bind = GLOBAL
 g_stPadOutputDsgvars = 0x00372B80; // size:0x1C bind = GLOBAL
 // @2330 = 0x00372BA0; // size:0x4 bind = LOCAL
-@2124 = 0x00372BA8; // size:0x8 bind = LOCAL
+// @2124 = 0x00372BA8; // size:0x8 bind = LOCAL
 // @1491 = 0x00372BB0; // size:0x4 bind = LOCAL
 // @1524 = 0x00372BB8; // size:0x4 bind = LOCAL
 // @1332 = 0x00372BC0; // size:0x4 bind = LOCAL
@@ -6226,20 +6226,20 @@ a_stTypeTable = 0x00372BD0; // size:0x9C bind = GLOBAL
 szAutorizedTypeParam = 0x00372C70; // size:0x2D bind = GLOBAL
 s_szPrimaryPath__15CBigFileManager = 0x00372CA0; // size:0x104 bind = GLOBAL
 s_szSecondaryPath__15CBigFileManager = 0x00372DB0; // size:0x104 bind = GLOBAL
-@2752 = 0x00372EB8; // size:0x1 bind = LOCAL
-@2768 = 0x00372EC0; // size:0x1 bind = LOCAL
-@2783 = 0x00372EC8; // size:0x1 bind = LOCAL
-@4245 = 0x00372ED0; // size:0x4 bind = LOCAL
-@4257 = 0x00372ED8; // size:0x1 bind = LOCAL
-@4258 = 0x00372EE0; // size:0x1 bind = LOCAL
-@4285 = 0x00372EE8; // size:0x4 bind = LOCAL
-@5672 = 0x00372EF0; // size:0x1 bind = LOCAL
+// @2752 = 0x00372EB8; // size:0x1 bind = LOCAL
+// @2768 = 0x00372EC0; // size:0x1 bind = LOCAL
+// @2783 = 0x00372EC8; // size:0x1 bind = LOCAL
+// @4245 = 0x00372ED0; // size:0x4 bind = LOCAL
+// @4257 = 0x00372ED8; // size:0x1 bind = LOCAL
+// @4258 = 0x00372EE0; // size:0x1 bind = LOCAL
+// @4285 = 0x00372EE8; // size:0x4 bind = LOCAL
+// @5672 = 0x00372EF0; // size:0x1 bind = LOCAL
 // @1698 = 0x00372EF8; // size:0x4 bind = LOCAL
 // @1710 = 0x00372F00; // size:0x1 bind = LOCAL
 // @1711 = 0x00372F08; // size:0x1 bind = LOCAL
 K_EmptyString = 0x00372F10; // size:0x2 bind = LOCAL
 // @1544 = 0x00372F18; // size:0x4 bind = LOCAL
-@1611 = 0x00372F20; // size:0x4 bind = LOCAL
+// @1611 = 0x00372F20; // size:0x4 bind = LOCAL
 LOCAL_gs_LanguageList = 0x00372F30; // size:0x2C bind = LOCAL
 // @1671 = 0x00372F60; // size:0x4 bind = LOCAL
 next$1368 = 0x00372F68; // size:0xC bind = LOCAL
@@ -6251,16 +6251,16 @@ gs_LoadMode = 0x00373098; // size:0x4 bind = GLOBAL
 // @1748 = 0x003730A0; // size:0x4 bind = LOCAL
 // @1760 = 0x003730A8; // size:0x1 bind = LOCAL
 // @1761 = 0x003730B0; // size:0x1 bind = LOCAL
-@1600 = 0x003730B8; // size:0x4 bind = LOCAL
-@1602 = 0x003730C0; // size:0x4 bind = LOCAL
-@1607 = 0x003730C8; // size:0x4 bind = LOCAL
+// @1600 = 0x003730B8; // size:0x4 bind = LOCAL
+// @1602 = 0x003730C0; // size:0x4 bind = LOCAL
+// @1607 = 0x003730C8; // size:0x4 bind = LOCAL
 // @1831 = 0x003730D0; // size:0x4 bind = LOCAL
-@4701 = 0x003730D8; // size:0x1 bind = LOCAL
-@4708 = 0x003730E0; // size:0x1 bind = LOCAL
-@4715 = 0x003730E8; // size:0x1 bind = LOCAL
-@4722 = 0x003730F0; // size:0x1 bind = LOCAL
-@4729 = 0x003730F8; // size:0x1 bind = LOCAL
-@4736 = 0x00373100; // size:0x1 bind = LOCAL
+// @4701 = 0x003730D8; // size:0x1 bind = LOCAL
+// @4708 = 0x003730E0; // size:0x1 bind = LOCAL
+// @4715 = 0x003730E8; // size:0x1 bind = LOCAL
+// @4722 = 0x003730F0; // size:0x1 bind = LOCAL
+// @4729 = 0x003730F8; // size:0x1 bind = LOCAL
+// @4736 = 0x00373100; // size:0x1 bind = LOCAL
 hostName$1416 = 0x00373110; // size:0x20 bind = LOCAL
 bgcolor$1454 = 0x00373130; // size:0x40 bind = LOCAL
 lightdir$1455 = 0x00373170; // size:0x30 bind = LOCAL
@@ -6375,8 +6375,8 @@ char125 = 0x00374840; // size:0x20 bind = LOCAL
 char126 = 0x00374860; // size:0x20 bind = LOCAL
 font = 0x00374880; // size:0x400 bind = LOCAL
 texture_font_data = 0x00374C80; // size:0x4000 bind = LOCAL
-@1047 = 0x00378C80; // size:0x10 bind = LOCAL
-@1048 = 0x00378C90; // size:0x10 bind = LOCAL
+// @1047 = 0x00378C80; // size:0x10 bind = LOCAL
+// @1048 = 0x00378C90; // size:0x10 bind = LOCAL
 framecounter = 0x00378CA0; // size:0x4 bind = GLOBAL
 // @1347 = 0x00378CB0; // size:0x10 bind = LOCAL
 // @1348 = 0x00378CC0; // size:0x10 bind = LOCAL
@@ -6405,10 +6405,10 @@ a_stPixFormatTransTable = 0x003796D0; // size:0x46 bind = LOCAL
 gs_a_u8_BlockOrder32or8bits = 0x00379730; // size:0x40 bind = LOCAL
 gs_a_u8_BlockOrder16or4bits = 0x00379770; // size:0x40 bind = LOCAL
 gs_a_LuminancePalette = 0x003797B0; // size:0x400 bind = LOCAL
-@2246 = 0x00379BB0; // size:0x4 bind = LOCAL
-@2272 = 0x00379BB8; // size:0x4 bind = LOCAL
+// @2246 = 0x00379BB0; // size:0x4 bind = LOCAL
+// @2272 = 0x00379BB8; // size:0x4 bind = LOCAL
 // @2330 = 0x00379BC0; // size:0x2 bind = LOCAL
-@883 = 0x00379BC8; // size:0xC bind = LOCAL
+// @883 = 0x00379BC8; // size:0xC bind = LOCAL
 // @1843 = 0x00379BD8; // size:0x4 bind = LOCAL
 // @1200 = 0x00379BE0; // size:0xC bind = LOCAL
 // @1202 = 0x00379BF0; // size:0xC bind = LOCAL
@@ -6419,58 +6419,58 @@ g_astTypeObjectSoundInfosDefault = 0x00379C30; // size:0x20 bind = LOCAL
 g_astChannelSoundInfosDefault = 0x00379C50; // size:0x10 bind = LOCAL
 HandleCallback = 0x00379C60; // size:0x4 bind = LOCAL
 g_bDopplerActive = 0x00379C68; // size:0x4 bind = LOCAL
-@48 = 0x00379C70; // size:0x2 bind = LOCAL
-@237 = 0x00379C80; // size:0xF bind = LOCAL
+// @48 = 0x00379C70; // size:0x2 bind = LOCAL
+// @237 = 0x00379C80; // size:0xF bind = LOCAL
 // __RTTI__Q23std9exception = 0x00379C90; // size:0x8 bind = LOCAL
-@245 = 0x00379C98; // size:0xA bind = LOCAL
-@45 = 0x00379CB0; // size:0x22 bind = LOCAL
-@61 = 0x00379CD8; // size:0xF bind = LOCAL
-@63 = 0x00379CE8; // size:0xF bind = LOCAL
+// @245 = 0x00379C98; // size:0xA bind = LOCAL
+// @45 = 0x00379CB0; // size:0x22 bind = LOCAL
+// @61 = 0x00379CD8; // size:0xF bind = LOCAL
+// @63 = 0x00379CE8; // size:0xF bind = LOCAL
 // __RTTI__Q23std9exception = 0x00379CF8; // size:0x8 bind = LOCAL
 // @62 = 0x00379D00; // size:0xC bind = LOCAL
 __RTTI__Q23std9bad_alloc = 0x00379D10; // size:0x8 bind = LOCAL
-@65 = 0x00379D18; // size:0xA bind = LOCAL
+// @65 = 0x00379D18; // size:0xA bind = LOCAL
 // @62 = 0x00379D30; // size:0x22 bind = LOCAL
-@375 = 0x00379D60; // size:0x40 bind = LOCAL
-@424 = 0x00379DA0; // size:0x16 bind = LOCAL
-@425 = 0x00379DC0; // size:0x26 bind = LOCAL
-@479 = 0x00379DF0; // size:0x40 bind = LOCAL
-@716 = 0x00379E30; // size:0x40 bind = LOCAL
-@979 = 0x00379E70; // size:0x40 bind = LOCAL
-@1035 = 0x00379EB0; // size:0x13 bind = LOCAL
-@1037 = 0x00379EC8; // size:0xF bind = LOCAL
+// @375 = 0x00379D60; // size:0x40 bind = LOCAL
+// @424 = 0x00379DA0; // size:0x16 bind = LOCAL
+// @425 = 0x00379DC0; // size:0x26 bind = LOCAL
+// @479 = 0x00379DF0; // size:0x40 bind = LOCAL
+// @716 = 0x00379E30; // size:0x40 bind = LOCAL
+// @979 = 0x00379E70; // size:0x40 bind = LOCAL
+// @1035 = 0x00379EB0; // size:0x13 bind = LOCAL
+// @1037 = 0x00379EC8; // size:0xF bind = LOCAL
 // __RTTI__Q23std9exception = 0x00379ED8; // size:0x8 bind = LOCAL
-@1036 = 0x00379EE0; // size:0xC bind = LOCAL
+// @1036 = 0x00379EE0; // size:0xC bind = LOCAL
 __RTTI__Q23std13bad_exception = 0x00379EF0; // size:0x8 bind = LOCAL
-@1039 = 0x00379EF8; // size:0xE bind = LOCAL
+// @1039 = 0x00379EF8; // size:0xE bind = LOCAL
 // __RTTI__Q23std8ios_base = 0x00379F08; // size:0x8 bind = LOCAL
 // __RTTI__Q23std9exception = 0x00379F10; // size:0x8 bind = LOCAL
-@771 = 0x00379F18; // size:0xC bind = LOCAL
+// @771 = 0x00379F18; // size:0xC bind = LOCAL
 __RTTI__Q33std8ios_base7failure = 0x00379F28; // size:0x8 bind = LOCAL
 // __RTTI__Q33std6locale5facet = 0x00379F30; // size:0x8 bind = LOCAL
 // __RTTI__Q23std8ios_base = 0x00379F38; // size:0x8 bind = LOCAL
-@690 = 0x00379F40; // size:0xC bind = LOCAL
+// @690 = 0x00379F40; // size:0xC bind = LOCAL
 __RTTI__Q23std35basic_ios<c,Q23std14char_traits<c>> = 0x00379F50; // size:0x8 bind = LOCAL
-@687 = 0x00379F60; // size:0x14 bind = LOCAL
+// @687 = 0x00379F60; // size:0x14 bind = LOCAL
 __RTTI__Q23std39basic_istream<c,Q23std14char_traits<c>> = 0x00379F78; // size:0x8 bind = LOCAL
-@692 = 0x00379F80; // size:0x14 bind = LOCAL
+// @692 = 0x00379F80; // size:0x14 bind = LOCAL
 __RTTI__Q23std39basic_ostream<c,Q23std14char_traits<c>> = 0x00379F98; // size:0x8 bind = LOCAL
 __RTTI__Q23std41basic_streambuf<c,Q23std14char_traits<c>> = 0x00379FA0; // size:0x8 bind = LOCAL
-@695 = 0x00379FA8; // size:0xC bind = LOCAL
+// @695 = 0x00379FA8; // size:0xC bind = LOCAL
 __RTTI__Q23std39basic_filebuf<c,Q23std14char_traits<c>> = 0x00379FB8; // size:0x8 bind = LOCAL
 // __RTTI__Q23std9exception = 0x00379FC0; // size:0x8 bind = LOCAL
 // @1563 = 0x00379FC8; // size:0xC bind = LOCAL
 __RTTI__Q23std11logic_error = 0x00379FD8; // size:0x8 bind = LOCAL
-@1568 = 0x00379FE0; // size:0x14 bind = LOCAL
+// @1568 = 0x00379FE0; // size:0x14 bind = LOCAL
 __RTTI__Q23std12length_error = 0x00379FF8; // size:0x8 bind = LOCAL
 // __RTTI__Q33std6locale5facet = 0x0037A000; // size:0x8 bind = LOCAL
 __RTTI__Q23std10ctype_base = 0x0037A008; // size:0x8 bind = LOCAL
-@1046 = 0x0037A010; // size:0x14 bind = LOCAL
+// @1046 = 0x0037A010; // size:0x14 bind = LOCAL
 __RTTI__Q23std8ctype<c> = 0x0037A028; // size:0x8 bind = LOCAL
 __RTTI__Q23std12codecvt_base = 0x0037A030; // size:0x8 bind = LOCAL
-@1072 = 0x0037A040; // size:0x14 bind = LOCAL
+// @1072 = 0x0037A040; // size:0x14 bind = LOCAL
 __RTTI__Q23std23_Generic_codecvt<c,c,i> = 0x0037A058; // size:0x8 bind = LOCAL
-@1075 = 0x0037A060; // size:0x1C bind = LOCAL
+// @1075 = 0x0037A060; // size:0x1C bind = LOCAL
 __RTTI__Q23std14codecvt<c,c,i> = 0x0037A080; // size:0x8 bind = LOCAL
 // one = 0x0037A9C0; // size:0x8 bind = LOCAL
 pi = 0x0037A9C8; // size:0x8 bind = LOCAL
@@ -6677,8 +6677,8 @@ OS_BuildNumber = 0x0037CD48; // size:0x4 bind = LOCAL
 // @1400 = 0x0037CF00; // size:0x1F bind = LOCAL
 // @1528 = 0x0037CF20; // size:0x1E bind = LOCAL
 // @1849 = 0x0037CF40; // size:0x1D bind = LOCAL
-@2295 = 0x0037CF60; // size:0x1D bind = LOCAL
-@2370 = 0x0037CF80; // size:0x20 bind = LOCAL
+// @2295 = 0x0037CF60; // size:0x1D bind = LOCAL
+// @2370 = 0x0037CF80; // size:0x20 bind = LOCAL
 // @1452 = 0x0037CFA0; // size:0xF bind = LOCAL
 ms_InfoCMecCardObject__14CMecCardObject = 0x0037CFB0; // size:0x10 bind = GLOBAL
 // @1342 = 0x0037CFC0; // size:0xB bind = LOCAL
@@ -6897,68 +6897,68 @@ ms_InfoCMecCardObject__14CMecCardObject = 0x0037CFB0; // size:0x10 bind = GLOBAL
 // @1880 = 0x0037EA90; // size:0x9 bind = LOCAL
 // @1881 = 0x0037EAA0; // size:0x2 bind = LOCAL
 // @1882 = 0x0037EAA8; // size:0xE bind = LOCAL
-@1883 = 0x0037EAB8; // size:0xB bind = LOCAL
-@1884 = 0x0037EAC8; // size:0x5 bind = LOCAL
-@1885 = 0x0037EAD0; // size:0x9 bind = LOCAL
+// @1883 = 0x0037EAB8; // size:0xB bind = LOCAL
+// @1884 = 0x0037EAC8; // size:0x5 bind = LOCAL
+// @1885 = 0x0037EAD0; // size:0x9 bind = LOCAL
 // @1886 = 0x0037EAE0; // size:0x9 bind = LOCAL
-@1887 = 0x0037EAF0; // size:0x9 bind = LOCAL
-@1888 = 0x0037EB00; // size:0xD bind = LOCAL
-@1889 = 0x0037EB10; // size:0x13 bind = LOCAL
+// @1887 = 0x0037EAF0; // size:0x9 bind = LOCAL
+// @1888 = 0x0037EB00; // size:0xD bind = LOCAL
+// @1889 = 0x0037EB10; // size:0x13 bind = LOCAL
 // @1890 = 0x0037EB30; // size:0x15 bind = LOCAL
 // @1906 = 0x0037EB48; // size:0xB bind = LOCAL
-@1907 = 0x0037EB58; // size:0xF bind = LOCAL
-@1928 = 0x0037EB68; // size:0xE bind = LOCAL
-@1929 = 0x0037EB78; // size:0xD bind = LOCAL
-@2197 = 0x0037EB90; // size:0x26 bind = LOCAL
+// @1907 = 0x0037EB58; // size:0xF bind = LOCAL
+// @1928 = 0x0037EB68; // size:0xE bind = LOCAL
+// @1929 = 0x0037EB78; // size:0xD bind = LOCAL
+// @2197 = 0x0037EB90; // size:0x26 bind = LOCAL
 // @2247 = 0x0037EBC0; // size:0x22 bind = LOCAL
-@2689 = 0x0037EBF0; // size:0x28 bind = LOCAL
-@2690 = 0x0037EC20; // size:0x1C bind = LOCAL
-@2805 = 0x0037EC40; // size:0x28 bind = LOCAL
-@2836 = 0x0037EC70; // size:0x1B bind = LOCAL
-@2904 = 0x0037EC90; // size:0x1B bind = LOCAL
+// @2689 = 0x0037EBF0; // size:0x28 bind = LOCAL
+// @2690 = 0x0037EC20; // size:0x1C bind = LOCAL
+// @2805 = 0x0037EC40; // size:0x28 bind = LOCAL
+// @2836 = 0x0037EC70; // size:0x1B bind = LOCAL
+// @2904 = 0x0037EC90; // size:0x1B bind = LOCAL
 // @1452 = 0x0037ECB0; // size:0x11 bind = LOCAL
 ms_InfoCMechanicsObject__16CMechanicsObject = 0x0037ECD0; // size:0x10 bind = GLOBAL
-@3207 = 0x0037ECE0; // size:0x1B bind = LOCAL
+// @3207 = 0x0037ECE0; // size:0x1B bind = LOCAL
 // @1656 = 0x0037ED00; // size:0xD bind = LOCAL
 ms_InfoCMecCardRCam__12CMecCardRCam = 0x0037ED10; // size:0x10 bind = GLOBAL
 // @1651 = 0x0037ED20; // size:0xA bind = LOCAL
 // @1652 = 0x0037ED30; // size:0xF bind = LOCAL
 // @1653 = 0x0037ED40; // size:0x1 bind = LOCAL
 // @1654 = 0x0037ED48; // size:0x2 bind = LOCAL
-@1655 = 0x0037ED50; // size:0x12 bind = LOCAL
+// @1655 = 0x0037ED50; // size:0x12 bind = LOCAL
 // @1656 = 0x0037ED70; // size:0x17 bind = LOCAL
-@1657 = 0x0037ED90; // size:0x10 bind = LOCAL
+// @1657 = 0x0037ED90; // size:0x10 bind = LOCAL
 // @1658 = 0x0037EDA0; // size:0x15 bind = LOCAL
-@1659 = 0x0037EDB8; // size:0x2 bind = LOCAL
-@1660 = 0x0037EDC0; // size:0x10 bind = LOCAL
+// @1659 = 0x0037EDB8; // size:0x2 bind = LOCAL
+// @1660 = 0x0037EDC0; // size:0x10 bind = LOCAL
 // @1661 = 0x0037EDD0; // size:0x15 bind = LOCAL
-@1662 = 0x0037EDF0; // size:0x10 bind = LOCAL
+// @1662 = 0x0037EDF0; // size:0x10 bind = LOCAL
 // @1663 = 0x0037EE00; // size:0x15 bind = LOCAL
-@1664 = 0x0037EE20; // size:0x13 bind = LOCAL
-@1665 = 0x0037EE40; // size:0x18 bind = LOCAL
-@1666 = 0x0037EE60; // size:0x13 bind = LOCAL
-@1667 = 0x0037EE80; // size:0x18 bind = LOCAL
+// @1664 = 0x0037EE20; // size:0x13 bind = LOCAL
+// @1665 = 0x0037EE40; // size:0x18 bind = LOCAL
+// @1666 = 0x0037EE60; // size:0x13 bind = LOCAL
+// @1667 = 0x0037EE80; // size:0x18 bind = LOCAL
 // @1668 = 0x0037EEA0; // size:0x13 bind = LOCAL
-@1669 = 0x0037EEC0; // size:0x18 bind = LOCAL
+// @1669 = 0x0037EEC0; // size:0x18 bind = LOCAL
 // @1670 = 0x0037EED8; // size:0xD bind = LOCAL
 // @1671 = 0x0037EEF0; // size:0x12 bind = LOCAL
 // @1672 = 0x0037EF08; // size:0xC bind = LOCAL
-@1673 = 0x0037EF20; // size:0x11 bind = LOCAL
+// @1673 = 0x0037EF20; // size:0x11 bind = LOCAL
 // @1674 = 0x0037EF38; // size:0xE bind = LOCAL
 // @1675 = 0x0037EF50; // size:0x13 bind = LOCAL
-@1676 = 0x0037EF68; // size:0x5 bind = LOCAL
-@1677 = 0x0037EF70; // size:0xE bind = LOCAL
+// @1676 = 0x0037EF68; // size:0x5 bind = LOCAL
+// @1677 = 0x0037EF70; // size:0xE bind = LOCAL
 // @1678 = 0x0037EF80; // size:0x13 bind = LOCAL
-@1679 = 0x0037EF98; // size:0x2 bind = LOCAL
-@1680 = 0x0037EFA0; // size:0xC bind = LOCAL
+// @1679 = 0x0037EF98; // size:0x2 bind = LOCAL
+// @1680 = 0x0037EFA0; // size:0xC bind = LOCAL
 // @1681 = 0x0037EFB0; // size:0x11 bind = LOCAL
-@1682 = 0x0037EFC8; // size:0x3 bind = LOCAL
-@1683 = 0x0037EFD0; // size:0x13 bind = LOCAL
-@1684 = 0x0037EFF0; // size:0x18 bind = LOCAL
-@1685 = 0x0037F010; // size:0x11 bind = LOCAL
+// @1682 = 0x0037EFC8; // size:0x3 bind = LOCAL
+// @1683 = 0x0037EFD0; // size:0x13 bind = LOCAL
+// @1684 = 0x0037EFF0; // size:0x18 bind = LOCAL
+// @1685 = 0x0037F010; // size:0x11 bind = LOCAL
 // @1686 = 0x0037F030; // size:0x16 bind = LOCAL
-@1687 = 0x0037F050; // size:0x13 bind = LOCAL
-@1688 = 0x0037F070; // size:0x18 bind = LOCAL
+// @1687 = 0x0037F050; // size:0x13 bind = LOCAL
+// @1688 = 0x0037F070; // size:0x18 bind = LOCAL
 // @1689 = 0x0037F088; // size:0x6 bind = LOCAL
 // @1690 = 0x0037F090; // size:0xF bind = LOCAL
 // @1691 = 0x0037F0A0; // size:0x14 bind = LOCAL
@@ -7022,13 +7022,13 @@ ms_InfoCMecCardRCam__12CMecCardRCam = 0x0037ED10; // size:0x10 bind = GLOBAL
 // @1749 = 0x0037F740; // size:0x13 bind = LOCAL
 // @1750 = 0x0037F760; // size:0x18 bind = LOCAL
 // @1751 = 0x0037F780; // size:0x15 bind = LOCAL
-@1752 = 0x0037F7A0; // size:0x1A bind = LOCAL
+// @1752 = 0x0037F7A0; // size:0x1A bind = LOCAL
 // @1753 = 0x0037F7C0; // size:0x11 bind = LOCAL
-@1754 = 0x0037F7E0; // size:0x16 bind = LOCAL
+// @1754 = 0x0037F7E0; // size:0x16 bind = LOCAL
 // @1755 = 0x0037F800; // size:0x12 bind = LOCAL
-@1756 = 0x0037F820; // size:0x17 bind = LOCAL
+// @1756 = 0x0037F820; // size:0x17 bind = LOCAL
 // @1757 = 0x0037F838; // size:0x3 bind = LOCAL
-@1758 = 0x0037F840; // size:0x13 bind = LOCAL
+// @1758 = 0x0037F840; // size:0x13 bind = LOCAL
 // @1759 = 0x0037F860; // size:0x18 bind = LOCAL
 // @1760 = 0x0037F880; // size:0x15 bind = LOCAL
 // @1761 = 0x0037F8A0; // size:0x1A bind = LOCAL
@@ -7036,22 +7036,22 @@ ms_InfoCMecCardRCam__12CMecCardRCam = 0x0037ED10; // size:0x10 bind = GLOBAL
 // @1763 = 0x0037F8E0; // size:0x1A bind = LOCAL
 // @1764 = 0x0037F900; // size:0x2 bind = LOCAL
 // @1765 = 0x0037F910; // size:0x13 bind = LOCAL
-@1766 = 0x0037F930; // size:0x18 bind = LOCAL
+// @1766 = 0x0037F930; // size:0x18 bind = LOCAL
 // @1767 = 0x0037F950; // size:0x11 bind = LOCAL
-@1768 = 0x0037F970; // size:0x16 bind = LOCAL
+// @1768 = 0x0037F970; // size:0x16 bind = LOCAL
 // @1769 = 0x0037F988; // size:0x4 bind = LOCAL
-@1770 = 0x0037F990; // size:0x14 bind = LOCAL
-@1771 = 0x0037F9B0; // size:0x19 bind = LOCAL
-@1772 = 0x0037F9D0; // size:0x11 bind = LOCAL
-@1773 = 0x0037F9F0; // size:0x16 bind = LOCAL
-@1774 = 0x0037FA08; // size:0x4 bind = LOCAL
+// @1770 = 0x0037F990; // size:0x14 bind = LOCAL
+// @1771 = 0x0037F9B0; // size:0x19 bind = LOCAL
+// @1772 = 0x0037F9D0; // size:0x11 bind = LOCAL
+// @1773 = 0x0037F9F0; // size:0x16 bind = LOCAL
+// @1774 = 0x0037FA08; // size:0x4 bind = LOCAL
 // @1775 = 0x0037FA10; // size:0x13 bind = LOCAL
-@1776 = 0x0037FA30; // size:0x18 bind = LOCAL
+// @1776 = 0x0037FA30; // size:0x18 bind = LOCAL
 // @1777 = 0x0037FA50; // size:0x12 bind = LOCAL
-@1778 = 0x0037FA70; // size:0x17 bind = LOCAL
-@1779 = 0x0037FA88; // size:0x5 bind = LOCAL
-@1814 = 0x0037FA90; // size:0x8 bind = LOCAL
-@1815 = 0x0037FA98; // size:0x8 bind = LOCAL
+// @1778 = 0x0037FA70; // size:0x17 bind = LOCAL
+// @1779 = 0x0037FA88; // size:0x5 bind = LOCAL
+// @1814 = 0x0037FA90; // size:0x8 bind = LOCAL
+// @1815 = 0x0037FA98; // size:0x8 bind = LOCAL
 // @1816 = 0x0037FAA0; // size:0x8 bind = LOCAL
 // @1817 = 0x0037FAA8; // size:0xB bind = LOCAL
 // @1818 = 0x0037FAB8; // size:0xB bind = LOCAL
@@ -7061,21 +7061,21 @@ ms_InfoCMecCardRCam__12CMecCardRCam = 0x0037ED10; // size:0x10 bind = GLOBAL
 // @1822 = 0x0037FAF8; // size:0xC bind = LOCAL
 // @1823 = 0x0037FB08; // size:0x6 bind = LOCAL
 // @1824 = 0x0037FB10; // size:0xD bind = LOCAL
-@1825 = 0x0037FB20; // size:0xE bind = LOCAL
+// @1825 = 0x0037FB20; // size:0xE bind = LOCAL
 // @1826 = 0x0037FB30; // size:0x11 bind = LOCAL
 // @1827 = 0x0037FB48; // size:0xC bind = LOCAL
-@1828 = 0x0037FB58; // size:0xD bind = LOCAL
-@1829 = 0x0037FB70; // size:0x10 bind = LOCAL
-@1830 = 0x0037FB80; // size:0xE bind = LOCAL
+// @1828 = 0x0037FB58; // size:0xD bind = LOCAL
+// @1829 = 0x0037FB70; // size:0x10 bind = LOCAL
+// @1830 = 0x0037FB80; // size:0xE bind = LOCAL
 // @1831 = 0x0037FB90; // size:0xF bind = LOCAL
-@1832 = 0x0037FBA0; // size:0xC bind = LOCAL
-@1833 = 0x0037FBB0; // size:0xE bind = LOCAL
-@1834 = 0x0037FBC0; // size:0x10 bind = LOCAL
+// @1832 = 0x0037FBA0; // size:0xC bind = LOCAL
+// @1833 = 0x0037FBB0; // size:0xE bind = LOCAL
+// @1834 = 0x0037FBC0; // size:0x10 bind = LOCAL
 // @1835 = 0x0037FBD0; // size:0x11 bind = LOCAL
 // @1836 = 0x0037FBE8; // size:0xE bind = LOCAL
-@1837 = 0x0037FC00; // size:0x10 bind = LOCAL
-@1838 = 0x0037FC10; // size:0x15 bind = LOCAL
-@1839 = 0x0037FC30; // size:0x14 bind = LOCAL
+// @1837 = 0x0037FC00; // size:0x10 bind = LOCAL
+// @1838 = 0x0037FC10; // size:0x15 bind = LOCAL
+// @1839 = 0x0037FC30; // size:0x14 bind = LOCAL
 // @1840 = 0x0037FC50; // size:0x10 bind = LOCAL
 // @1841 = 0x0037FC60; // size:0x10 bind = LOCAL
 // @1842 = 0x0037FC70; // size:0xE bind = LOCAL
@@ -7103,13 +7103,13 @@ ms_InfoCMechanicsRCam__14CMechanicsRCam = 0x0037FD00; // size:0x10 bind = GLOBAL
 // @1751 = 0x0037FE30; // size:0x13 bind = LOCAL
 // @1755 = 0x0037FE50; // size:0x11 bind = LOCAL
 // @1777 = 0x0037FE70; // size:0x13 bind = LOCAL
-@1785 = 0x0037FE90; // size:0x2E bind = LOCAL
-@1787 = 0x0037FEC0; // size:0xF bind = LOCAL
-@1789 = 0x0037FED0; // size:0x12 bind = LOCAL
-@1796 = 0x0037FEE8; // size:0xE bind = LOCAL
-@1801 = 0x0037FEF8; // size:0xC bind = LOCAL
-@1806 = 0x0037FF10; // size:0x10 bind = LOCAL
-@1811 = 0x0037FF20; // size:0x10 bind = LOCAL
+// @1785 = 0x0037FE90; // size:0x2E bind = LOCAL
+// @1787 = 0x0037FEC0; // size:0xF bind = LOCAL
+// @1789 = 0x0037FED0; // size:0x12 bind = LOCAL
+// @1796 = 0x0037FEE8; // size:0xE bind = LOCAL
+// @1801 = 0x0037FEF8; // size:0xC bind = LOCAL
+// @1806 = 0x0037FF10; // size:0x10 bind = LOCAL
+// @1811 = 0x0037FF20; // size:0x10 bind = LOCAL
 // @1816 = 0x0037FF30; // size:0x10 bind = LOCAL
 // @1821 = 0x0037FF40; // size:0x13 bind = LOCAL
 // @1826 = 0x0037FF60; // size:0x13 bind = LOCAL
@@ -7125,28 +7125,28 @@ ms_InfoCMechanicsRCam__14CMechanicsRCam = 0x0037FD00; // size:0x10 bind = GLOBAL
 // @1876 = 0x00380090; // size:0x15 bind = LOCAL
 // @1881 = 0x003800B0; // size:0x18 bind = LOCAL
 // @1886 = 0x003800D0; // size:0x14 bind = LOCAL
-@1891 = 0x003800F0; // size:0x13 bind = LOCAL
-@1896 = 0x00380110; // size:0x11 bind = LOCAL
-@1901 = 0x00380130; // size:0x13 bind = LOCAL
+// @1891 = 0x003800F0; // size:0x13 bind = LOCAL
+// @1896 = 0x00380110; // size:0x11 bind = LOCAL
+// @1901 = 0x00380130; // size:0x13 bind = LOCAL
 // @1906 = 0x00380150; // size:0x16 bind = LOCAL
 // @1911 = 0x00380170; // size:0x15 bind = LOCAL
-@1916 = 0x00380190; // size:0x13 bind = LOCAL
-@1921 = 0x003801B0; // size:0x15 bind = LOCAL
-@1927 = 0x003801D0; // size:0x11 bind = LOCAL
+// @1916 = 0x00380190; // size:0x13 bind = LOCAL
+// @1921 = 0x003801B0; // size:0x15 bind = LOCAL
+// @1927 = 0x003801D0; // size:0x11 bind = LOCAL
 // @1936 = 0x003801F0; // size:0x12 bind = LOCAL
 // @1940 = 0x00380210; // size:0x13 bind = LOCAL
-@1949 = 0x00380230; // size:0x15 bind = LOCAL
+// @1949 = 0x00380230; // size:0x15 bind = LOCAL
 // @1954 = 0x00380250; // size:0x15 bind = LOCAL
 // @1959 = 0x00380270; // size:0x13 bind = LOCAL
-@1964 = 0x00380290; // size:0x11 bind = LOCAL
+// @1964 = 0x00380290; // size:0x11 bind = LOCAL
 // @1970 = 0x003802B0; // size:0x14 bind = LOCAL
 // @1975 = 0x003802D0; // size:0x11 bind = LOCAL
 // @1981 = 0x003802F0; // size:0x13 bind = LOCAL
-@1987 = 0x00380310; // size:0x12 bind = LOCAL
-@1994 = 0x00380330; // size:0x10 bind = LOCAL
-@1999 = 0x00380340; // size:0x10 bind = LOCAL
+// @1987 = 0x00380310; // size:0x12 bind = LOCAL
+// @1994 = 0x00380330; // size:0x10 bind = LOCAL
+// @1999 = 0x00380340; // size:0x10 bind = LOCAL
 // @1718 = 0x00380350; // size:0x39 bind = LOCAL
-@1985 = 0x00380390; // size:0x1F bind = LOCAL
+// @1985 = 0x00380390; // size:0x1F bind = LOCAL
 // @1696 = 0x003803B0; // size:0xE bind = LOCAL
 ms_InfoCMecCardCam2D__13CMecCardCam2D = 0x003803C0; // size:0x10 bind = GLOBAL
 // @1690 = 0x003803D0; // size:0xB bind = LOCAL
@@ -7210,44 +7210,44 @@ ms_InfoCMecCardCam2D__13CMecCardCam2D = 0x003803C0; // size:0x10 bind = GLOBAL
 // @1748 = 0x00380A10; // size:0x13 bind = LOCAL
 // @1749 = 0x00380A30; // size:0x19 bind = LOCAL
 // @1750 = 0x00380A50; // size:0x1E bind = LOCAL
-@1950 = 0x00380A70; // size:0x9 bind = LOCAL
-@1951 = 0x00380A80; // size:0xC bind = LOCAL
-@1952 = 0x00380A90; // size:0x9 bind = LOCAL
+// @1950 = 0x00380A70; // size:0x9 bind = LOCAL
+// @1951 = 0x00380A80; // size:0xC bind = LOCAL
+// @1952 = 0x00380A90; // size:0x9 bind = LOCAL
 // @1953 = 0x00380AA0; // size:0x9 bind = LOCAL
 // @1954 = 0x00380AB0; // size:0xB bind = LOCAL
-@1955 = 0x00380AC0; // size:0x9 bind = LOCAL
-@1956 = 0x00380AD0; // size:0x14 bind = LOCAL
-@1957 = 0x00380AE8; // size:0x9 bind = LOCAL
+// @1955 = 0x00380AC0; // size:0x9 bind = LOCAL
+// @1956 = 0x00380AD0; // size:0x14 bind = LOCAL
+// @1957 = 0x00380AE8; // size:0x9 bind = LOCAL
 // @1973 = 0x00380AF8; // size:0xB bind = LOCAL
 // @1974 = 0x00380B08; // size:0xE bind = LOCAL
-@1995 = 0x00380B18; // size:0xA bind = LOCAL
-@1996 = 0x00380B30; // size:0x10 bind = LOCAL
+// @1995 = 0x00380B18; // size:0xA bind = LOCAL
+// @1996 = 0x00380B30; // size:0x10 bind = LOCAL
 // @1696 = 0x00380B40; // size:0x10 bind = LOCAL
 ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOBAL
 // @1462 = 0x00380B60; // size:0x8 bind = LOCAL
 // @1539 = 0x00380B70; // size:0x2A bind = LOCAL
 // @1540 = 0x00380BA0; // size:0x2F bind = LOCAL
 // @1541 = 0x00380BD0; // size:0x2F bind = LOCAL
-@1590 = 0x00380C00; // size:0x1 bind = LOCAL
+// @1590 = 0x00380C00; // size:0x1 bind = LOCAL
 // @1970 = 0x00380C10; // size:0x22 bind = LOCAL
 // @1471 = 0x00380C40; // size:0x1D bind = LOCAL
 // @1493 = 0x00380C60; // size:0x15 bind = LOCAL
 // @1494 = 0x00380C80; // size:0x44 bind = LOCAL
-@2503 = 0x00380CD0; // size:0x1B bind = LOCAL
+// @2503 = 0x00380CD0; // size:0x1B bind = LOCAL
 // @1748 = 0x00380CF0; // size:0x52 bind = LOCAL
 // @1816 = 0x00380D50; // size:0x4E bind = LOCAL
 // @1836 = 0x00380DA0; // size:0x42 bind = LOCAL
 // @1864 = 0x00380DF0; // size:0x3E bind = LOCAL
-@1939 = 0x00380E30; // size:0x13 bind = LOCAL
+// @1939 = 0x00380E30; // size:0x13 bind = LOCAL
 // @1940 = 0x00380E50; // size:0x27 bind = LOCAL
-@1941 = 0x00380E80; // size:0x13 bind = LOCAL
-@1942 = 0x00380EA0; // size:0x27 bind = LOCAL
-@3265 = 0x00380ED0; // size:0x1B bind = LOCAL
+// @1941 = 0x00380E80; // size:0x13 bind = LOCAL
+// @1942 = 0x00380EA0; // size:0x27 bind = LOCAL
+// @3265 = 0x00380ED0; // size:0x1B bind = LOCAL
 // @1455 = 0x00380EF0; // size:0x13 bind = LOCAL
 // @1456 = 0x00380F08; // size:0x7 bind = LOCAL
 // @1457 = 0x00380F10; // size:0x9 bind = LOCAL
 // @1458 = 0x00380F20; // size:0x67 bind = LOCAL
-@2555 = 0x00380F90; // size:0x1B bind = LOCAL
+// @2555 = 0x00380F90; // size:0x1B bind = LOCAL
 // @1427 = 0x00380FB0; // size:0x16 bind = LOCAL
 // @1428 = 0x00380FD0; // size:0x10 bind = LOCAL
 // @1429 = 0x00380FE0; // size:0x8 bind = LOCAL
@@ -7262,7 +7262,7 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1529 = 0x003810C8; // size:0x7 bind = LOCAL
 // @1530 = 0x003810D0; // size:0x9 bind = LOCAL
 // @1531 = 0x003810E0; // size:0x54 bind = LOCAL
-@3082 = 0x00381140; // size:0x1B bind = LOCAL
+// @3082 = 0x00381140; // size:0x1B bind = LOCAL
 // @1840 = 0x00381160; // size:0x7 bind = LOCAL
 // @1841 = 0x00381168; // size:0xA bind = LOCAL
 // @1842 = 0x00381178; // size:0x4 bind = LOCAL
@@ -7279,23 +7279,23 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1853 = 0x003811F0; // size:0x3 bind = LOCAL
 // @1854 = 0x003811F8; // size:0x4 bind = LOCAL
 // @1855 = 0x00381200; // size:0x9 bind = LOCAL
-@2557 = 0x00381210; // size:0x1B bind = LOCAL
+// @2557 = 0x00381210; // size:0x1B bind = LOCAL
 // @1359 = 0x00381230; // size:0x4 bind = LOCAL
 // @1523 = 0x00381240; // size:0x1D bind = LOCAL
 // @1753 = 0x00381260; // size:0x1 bind = LOCAL
 // @1872 = 0x00381270; // size:0x13 bind = LOCAL
-@2027 = 0x00381288; // size:0xF bind = LOCAL
-@2028 = 0x00381298; // size:0x5 bind = LOCAL
+// @2027 = 0x00381288; // size:0xF bind = LOCAL
+// @2028 = 0x00381298; // size:0x5 bind = LOCAL
 // @2029 = 0x003812A0; // size:0x6 bind = LOCAL
-@2030 = 0x003812B0; // size:0x14 bind = LOCAL
-@2031 = 0x003812D0; // size:0x33 bind = LOCAL
-@2077 = 0x00381310; // size:0x3A bind = LOCAL
+// @2030 = 0x003812B0; // size:0x14 bind = LOCAL
+// @2031 = 0x003812D0; // size:0x33 bind = LOCAL
+// @2077 = 0x00381310; // size:0x3A bind = LOCAL
 // @2078 = 0x00381350; // size:0x14 bind = LOCAL
-@2173 = 0x00381370; // size:0x2A bind = LOCAL
-@2174 = 0x003813A0; // size:0xE bind = LOCAL
-@2175 = 0x003813B0; // size:0xF bind = LOCAL
-@2229 = 0x003813C0; // size:0x14 bind = LOCAL
-@2277 = 0x003813E0; // size:0x2A bind = LOCAL
+// @2173 = 0x00381370; // size:0x2A bind = LOCAL
+// @2174 = 0x003813A0; // size:0xE bind = LOCAL
+// @2175 = 0x003813B0; // size:0xF bind = LOCAL
+// @2229 = 0x003813C0; // size:0x14 bind = LOCAL
+// @2277 = 0x003813E0; // size:0x2A bind = LOCAL
 // @1357 = 0x00381410; // size:0x8 bind = LOCAL
 // @1358 = 0x00381418; // size:0x5 bind = LOCAL
 // @1359 = 0x00381420; // size:0x5 bind = LOCAL
@@ -7339,7 +7339,7 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1854 = 0x00381620; // size:0xA bind = LOCAL
 // @1855 = 0x00381630; // size:0xB bind = LOCAL
 // @1856 = 0x00381640; // size:0x8 bind = LOCAL
-@1857 = 0x00381648; // size:0xC bind = LOCAL
+// @1857 = 0x00381648; // size:0xC bind = LOCAL
 // @1858 = 0x00381658; // size:0xB bind = LOCAL
 // @1859 = 0x00381668; // size:0xC bind = LOCAL
 // @1860 = 0x00381678; // size:0xE bind = LOCAL
@@ -7347,16 +7347,16 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1862 = 0x00381698; // size:0xC bind = LOCAL
 // @1863 = 0x003816A8; // size:0x8 bind = LOCAL
 // @1864 = 0x003816B0; // size:0x8 bind = LOCAL
-@1865 = 0x003816B8; // size:0x8 bind = LOCAL
+// @1865 = 0x003816B8; // size:0x8 bind = LOCAL
 // @1866 = 0x003816C0; // size:0x8 bind = LOCAL
-@1867 = 0x003816C8; // size:0xB bind = LOCAL
-@1868 = 0x003816D8; // size:0xB bind = LOCAL
+// @1867 = 0x003816C8; // size:0xB bind = LOCAL
+// @1868 = 0x003816D8; // size:0xB bind = LOCAL
 // @1869 = 0x003816E8; // size:0xC bind = LOCAL
-@1870 = 0x003816F8; // size:0x9 bind = LOCAL
+// @1870 = 0x003816F8; // size:0x9 bind = LOCAL
 // @1871 = 0x00381708; // size:0xD bind = LOCAL
 // @1872 = 0x00381718; // size:0xC bind = LOCAL
-@1873 = 0x00381728; // size:0xD bind = LOCAL
-@1874 = 0x00381738; // size:0xF bind = LOCAL
+// @1873 = 0x00381728; // size:0xD bind = LOCAL
+// @1874 = 0x00381738; // size:0xF bind = LOCAL
 // @1875 = 0x00381748; // size:0x9 bind = LOCAL
 // @1876 = 0x00381758; // size:0x9 bind = LOCAL
 // @1877 = 0x00381768; // size:0x9 bind = LOCAL
@@ -7368,13 +7368,13 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1442 = 0x003817C8; // size:0x9 bind = LOCAL
 // @1443 = 0x003817D8; // size:0xB bind = LOCAL
 // @1890 = 0x003817E8; // size:0xA bind = LOCAL
-@1948 = 0x003817F8; // size:0xC bind = LOCAL
+// @1948 = 0x003817F8; // size:0xC bind = LOCAL
 // @1460 = 0x00381810; // size:0x1A bind = LOCAL
 // @1461 = 0x00381830; // size:0x10 bind = LOCAL
 // @1462 = 0x00381840; // size:0x13 bind = LOCAL
 // @1463 = 0x00381860; // size:0x19 bind = LOCAL
-@1614 = 0x00381880; // size:0x14 bind = LOCAL
-@1615 = 0x003818A0; // size:0x14 bind = LOCAL
+// @1614 = 0x00381880; // size:0x14 bind = LOCAL
+// @1615 = 0x003818A0; // size:0x14 bind = LOCAL
 // @1711 = 0x003818C0; // size:0x2C bind = LOCAL
 // @1712 = 0x003818F0; // size:0x18 bind = LOCAL
 // @1722 = 0x00381908; // size:0x7 bind = LOCAL
@@ -7389,9 +7389,9 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1764 = 0x00381980; // size:0x4 bind = LOCAL
 // @1765 = 0x00381990; // size:0x10 bind = LOCAL
 // @1767 = 0x003819A0; // size:0x10 bind = LOCAL
-@1966 = 0x003819B0; // size:0xA bind = LOCAL
-@2187 = 0x003819C0; // size:0x26 bind = LOCAL
-@2289 = 0x003819F0; // size:0x2D bind = LOCAL
+// @1966 = 0x003819B0; // size:0xA bind = LOCAL
+// @2187 = 0x003819C0; // size:0x26 bind = LOCAL
+// @2289 = 0x003819F0; // size:0x2D bind = LOCAL
 // @1145 = 0x00381A20; // size:0x18 bind = LOCAL
 // @1689 = 0x00381A40; // size:0x18 bind = LOCAL
 // @1690 = 0x00381A60; // size:0x28 bind = LOCAL
@@ -7403,12 +7403,12 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1861 = 0x00381AF8; // size:0x8 bind = LOCAL
 // @1862 = 0x00381B00; // size:0xA bind = LOCAL
 // @1863 = 0x00381B10; // size:0xD bind = LOCAL
-@2242 = 0x00381B20; // size:0x19 bind = LOCAL
-@2243 = 0x00381B40; // size:0x16 bind = LOCAL
-@2262 = 0x00381B60; // size:0x13 bind = LOCAL
-@2263 = 0x00381B78; // size:0x6 bind = LOCAL
-@2264 = 0x00381B80; // size:0x1 bind = LOCAL
-@2953 = 0x00381B90; // size:0x1B bind = LOCAL
+// @2242 = 0x00381B20; // size:0x19 bind = LOCAL
+// @2243 = 0x00381B40; // size:0x16 bind = LOCAL
+// @2262 = 0x00381B60; // size:0x13 bind = LOCAL
+// @2263 = 0x00381B78; // size:0x6 bind = LOCAL
+// @2264 = 0x00381B80; // size:0x1 bind = LOCAL
+// @2953 = 0x00381B90; // size:0x1B bind = LOCAL
 // @1818 = 0x00381BB0; // size:0xB bind = LOCAL
 // @1819 = 0x00381BC0; // size:0xB bind = LOCAL
 // @1820 = 0x00381BD0; // size:0xB bind = LOCAL
@@ -7429,9 +7429,9 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1155 = 0x00381CC0; // size:0x20 bind = LOCAL
 // @1156 = 0x00381CE0; // size:0xD bind = LOCAL
 // @1312 = 0x00381CF0; // size:0x28 bind = LOCAL
-@2148 = 0x00381D20; // size:0x3A bind = LOCAL
-@2516 = 0x00381D60; // size:0x51 bind = LOCAL
-@2673 = 0x00381DC0; // size:0x51 bind = LOCAL
+// @2148 = 0x00381D20; // size:0x3A bind = LOCAL
+// @2516 = 0x00381D60; // size:0x51 bind = LOCAL
+// @2673 = 0x00381DC0; // size:0x51 bind = LOCAL
 // @1305 = 0x00381E20; // size:0x18 bind = LOCAL
 // @1159 = 0x00381E40; // size:0x18 bind = LOCAL
 // @1198 = 0x00381E60; // size:0x18 bind = LOCAL
@@ -7485,7 +7485,7 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1458 = 0x00382180; // size:0x1B bind = LOCAL
 // @1206 = 0x003821A0; // size:0x6 bind = LOCAL
 // @1556 = 0x003821B0; // size:0x32 bind = LOCAL
-@2046 = 0x003821F0; // size:0x28 bind = LOCAL
+// @2046 = 0x003821F0; // size:0x28 bind = LOCAL
 // @1405 = 0x00382220; // size:0x1E bind = LOCAL
 // @1286 = 0x00382240; // size:0x6 bind = LOCAL
 // @1287 = 0x00382248; // size:0x9 bind = LOCAL
@@ -7544,7 +7544,7 @@ ms_InfoCMechanicsCam2D__15CMechanicsCam2D = 0x00380B50; // size:0x10 bind = GLOB
 // @1113 = 0x00382640; // size:0xF bind = LOCAL
 // @1114 = 0x00382650; // size:0xF bind = LOCAL
 // @1110 = 0x00382660; // size:0x10 bind = LOCAL
-@2547 = 0x00382670; // size:0x1B bind = LOCAL
+// @2547 = 0x00382670; // size:0x1B bind = LOCAL
 // @1110 = 0x00382690; // size:0xA bind = LOCAL
 // @1111 = 0x003826A0; // size:0xB bind = LOCAL
 // @1112 = 0x003826B0; // size:0xC bind = LOCAL
@@ -7568,7 +7568,7 @@ ms_InfoCMechanics__10CMechanics = 0x00382830; // size:0x10 bind = GLOBAL
 // @1557 = 0x00382850; // size:0xD bind = LOCAL
 // @1558 = 0x00382860; // size:0x11 bind = LOCAL
 // @1559 = 0x00382878; // size:0xF bind = LOCAL
-@2058 = 0x00382890; // size:0x1B bind = LOCAL
+// @2058 = 0x00382890; // size:0x1B bind = LOCAL
 // @1817 = 0x003828B0; // size:0x1B bind = LOCAL
 // @1150 = 0x003828D0; // size:0x7 bind = LOCAL
 // @1151 = 0x003828D8; // size:0x8 bind = LOCAL
@@ -7602,54 +7602,54 @@ ms_InfoCMechanics__10CMechanics = 0x00382830; // size:0x10 bind = GLOBAL
 // @1367 = 0x00382AD0; // size:0x32 bind = LOCAL
 // @1368 = 0x00382B10; // size:0x18 bind = LOCAL
 // @1408 = 0x00382B28; // size:0x1 bind = LOCAL
-@1968 = 0x00382B30; // size:0xB bind = LOCAL
-@1969 = 0x00382B40; // size:0xF bind = LOCAL
+// @1968 = 0x00382B30; // size:0xB bind = LOCAL
+// @1969 = 0x00382B40; // size:0xF bind = LOCAL
 // @1970 = 0x00382B50; // size:0x9 bind = LOCAL
-@1971 = 0x00382B60; // size:0xB bind = LOCAL
-@1972 = 0x00382B70; // size:0xC bind = LOCAL
+// @1971 = 0x00382B60; // size:0xB bind = LOCAL
+// @1972 = 0x00382B70; // size:0xC bind = LOCAL
 // @1973 = 0x00382B80; // size:0xB bind = LOCAL
 // @1974 = 0x00382B90; // size:0xB bind = LOCAL
 // @1975 = 0x00382BA0; // size:0xB bind = LOCAL
-@1976 = 0x00382BB0; // size:0xC bind = LOCAL
-@1977 = 0x00382BC0; // size:0xD bind = LOCAL
-@1978 = 0x00382BD0; // size:0xA bind = LOCAL
-@1979 = 0x00382BE0; // size:0x9 bind = LOCAL
-@1980 = 0x00382BF0; // size:0xF bind = LOCAL
+// @1976 = 0x00382BB0; // size:0xC bind = LOCAL
+// @1977 = 0x00382BC0; // size:0xD bind = LOCAL
+// @1978 = 0x00382BD0; // size:0xA bind = LOCAL
+// @1979 = 0x00382BE0; // size:0x9 bind = LOCAL
+// @1980 = 0x00382BF0; // size:0xF bind = LOCAL
 // @1981 = 0x00382C00; // size:0xD bind = LOCAL
-@2764 = 0x00382C10; // size:0x1B bind = LOCAL
+// @2764 = 0x00382C10; // size:0x1B bind = LOCAL
 // @1424 = 0x00382C30; // size:0x9 bind = LOCAL
 // @1425 = 0x00382C40; // size:0x5 bind = LOCAL
 // @1426 = 0x00382C48; // size:0xF bind = LOCAL
-@2298 = 0x00382C60; // size:0x1B bind = LOCAL
+// @2298 = 0x00382C60; // size:0x1B bind = LOCAL
 // @1367 = 0x00382C80; // size:0x1 bind = LOCAL
 // @1377 = 0x00382C88; // size:0x9 bind = LOCAL
 // @1378 = 0x00382C98; // size:0x9 bind = LOCAL
 // @1379 = 0x00382CA8; // size:0xF bind = LOCAL
 // @1551 = 0x00382CB8; // size:0x1 bind = LOCAL
-@2894 = 0x00382CC0; // size:0x2 bind = LOCAL
-@2895 = 0x00382CC8; // size:0x1 bind = LOCAL
+// @2894 = 0x00382CC0; // size:0x2 bind = LOCAL
+// @2895 = 0x00382CC8; // size:0x1 bind = LOCAL
 // @1355 = 0x00382CD0; // size:0x1 bind = LOCAL
 // @1380 = 0x00382CD8; // size:0x1 bind = LOCAL
-@2786 = 0x00382CE0; // size:0x2 bind = LOCAL
-@3911 = 0x00382CF0; // size:0x1A bind = LOCAL
+// @2786 = 0x00382CE0; // size:0x2 bind = LOCAL
+// @3911 = 0x00382CF0; // size:0x1A bind = LOCAL
 // @1578 = 0x00382D10; // size:0x8 bind = LOCAL
 // @1675 = 0x00382D18; // size:0x8 bind = LOCAL
 // @1869 = 0x00382D20; // size:0x2 bind = LOCAL
-@4891 = 0x00382D30; // size:0x1A bind = LOCAL
+// @4891 = 0x00382D30; // size:0x1A bind = LOCAL
 // @1350 = 0x00382D50; // size:0xB bind = LOCAL
 // @1482 = 0x00382D60; // size:0x3 bind = LOCAL
 // @1369 = 0x00382D68; // size:0x1 bind = LOCAL
-@1620 = 0x00382D70; // size:0xB bind = LOCAL
-@1621 = 0x00382D80; // size:0xC bind = LOCAL
-@1622 = 0x00382D90; // size:0xF bind = LOCAL
-@1623 = 0x00382DA0; // size:0xD bind = LOCAL
+// @1620 = 0x00382D70; // size:0xB bind = LOCAL
+// @1621 = 0x00382D80; // size:0xC bind = LOCAL
+// @1622 = 0x00382D90; // size:0xF bind = LOCAL
+// @1623 = 0x00382DA0; // size:0xD bind = LOCAL
 // @1624 = 0x00382DB0; // size:0x10 bind = LOCAL
 // @1541 = 0x00382DC0; // size:0x3 bind = LOCAL
-@1595 = 0x00382DC8; // size:0x7 bind = LOCAL
-@1596 = 0x00382DD0; // size:0x5 bind = LOCAL
+// @1595 = 0x00382DC8; // size:0x7 bind = LOCAL
+// @1596 = 0x00382DD0; // size:0x5 bind = LOCAL
 // @1597 = 0x00382DD8; // size:0x6 bind = LOCAL
 // @1598 = 0x00382DE0; // size:0x4 bind = LOCAL
-@1650 = 0x00382DE8; // size:0x6 bind = LOCAL
+// @1650 = 0x00382DE8; // size:0x6 bind = LOCAL
 // @1651 = 0x00382DF0; // size:0x4 bind = LOCAL
 // @1652 = 0x00382DF8; // size:0x5 bind = LOCAL
 // @1653 = 0x00382E00; // size:0x3 bind = LOCAL
@@ -7657,13 +7657,13 @@ ms_InfoCMechanics__10CMechanics = 0x00382830; // size:0x10 bind = GLOBAL
 // @1707 = 0x00382E10; // size:0x4 bind = LOCAL
 // @1708 = 0x00382E18; // size:0x5 bind = LOCAL
 // @1709 = 0x00382E20; // size:0x3 bind = LOCAL
-@1604 = 0x00382E28; // size:0x3 bind = LOCAL
+// @1604 = 0x00382E28; // size:0x3 bind = LOCAL
 // @1681 = 0x00382E30; // size:0xC bind = LOCAL
-@2303 = 0x00382E40; // size:0x1C bind = LOCAL
-@2435 = 0x00382E60; // size:0x1C bind = LOCAL
-@3476 = 0x00382E80; // size:0x18 bind = LOCAL
-@3828 = 0x00382EA0; // size:0x18 bind = LOCAL
-@3845 = 0x00382EC0; // size:0x18 bind = LOCAL
+// @2303 = 0x00382E40; // size:0x1C bind = LOCAL
+// @2435 = 0x00382E60; // size:0x1C bind = LOCAL
+// @3476 = 0x00382E80; // size:0x18 bind = LOCAL
+// @3828 = 0x00382EA0; // size:0x18 bind = LOCAL
+// @3845 = 0x00382EC0; // size:0x18 bind = LOCAL
 // @1306 = 0x00382EE0; // size:0x20 bind = LOCAL
 // @1111 = 0x00382F00; // size:0x14 bind = LOCAL
 // @1112 = 0x00382F20; // size:0x16 bind = LOCAL
@@ -8327,21 +8327,21 @@ ms_InfoCMechanics__10CMechanics = 0x00382830; // size:0x10 bind = GLOBAL
 // @1549 = 0x00387600; // size:0x18 bind = LOCAL
 // @1550 = 0x00387620; // size:0x19 bind = LOCAL
 // @1551 = 0x00387640; // size:0x19 bind = LOCAL
-@1552 = 0x00387660; // size:0x1A bind = LOCAL
-@1553 = 0x00387680; // size:0xD bind = LOCAL
-@1554 = 0x00387690; // size:0x11 bind = LOCAL
-@1555 = 0x003876B0; // size:0x12 bind = LOCAL
+// @1552 = 0x00387660; // size:0x1A bind = LOCAL
+// @1553 = 0x00387680; // size:0xD bind = LOCAL
+// @1554 = 0x00387690; // size:0x11 bind = LOCAL
+// @1555 = 0x003876B0; // size:0x12 bind = LOCAL
 // @1556 = 0x003876D0; // size:0x16 bind = LOCAL
 // @1557 = 0x003876F0; // size:0x11 bind = LOCAL
 // @1558 = 0x00387710; // size:0x15 bind = LOCAL
 // @1559 = 0x00387728; // size:0xD bind = LOCAL
-@1560 = 0x00387740; // size:0x12 bind = LOCAL
-@1561 = 0x00387758; // size:0x6 bind = LOCAL
+// @1560 = 0x00387740; // size:0x12 bind = LOCAL
+// @1561 = 0x00387758; // size:0x6 bind = LOCAL
 // @1562 = 0x00387760; // size:0xD bind = LOCAL
 // @1563 = 0x00387770; // size:0x12 bind = LOCAL
-@1564 = 0x00387790; // size:0x15 bind = LOCAL
-@1565 = 0x003877B0; // size:0x1A bind = LOCAL
-@1566 = 0x003877D0; // size:0x1C bind = LOCAL
+// @1564 = 0x00387790; // size:0x15 bind = LOCAL
+// @1565 = 0x003877B0; // size:0x1A bind = LOCAL
+// @1566 = 0x003877D0; // size:0x1C bind = LOCAL
 // @1567 = 0x003877F0; // size:0x21 bind = LOCAL
 // @1111 = 0x00387820; // size:0x13 bind = LOCAL
 // @1112 = 0x00387840; // size:0x10 bind = LOCAL
@@ -8787,7 +8787,7 @@ ms_InfoCMechanics__10CMechanics = 0x00382830; // size:0x10 bind = GLOBAL
 // @1139 = 0x0038A290; // size:0xE bind = LOCAL
 // @1140 = 0x0038A2A0; // size:0xD bind = LOCAL
 // @1141 = 0x0038A2B0; // size:0x12 bind = LOCAL
-@2203 = 0x0038A2D0; // size:0x1B bind = LOCAL
+// @2203 = 0x0038A2D0; // size:0x1B bind = LOCAL
 // @1491 = 0x0038A2F0; // size:0x3 bind = LOCAL
 // @1693 = 0x0038A300; // size:0x1B bind = LOCAL
 // @1408 = 0x0038A320; // size:0x22 bind = LOCAL
@@ -9096,32 +9096,32 @@ ms_InfoCMechanics__10CMechanics = 0x00382830; // size:0x10 bind = GLOBAL
 // @1232 = 0x0038B540; // size:0x11 bind = LOCAL
 K_s64TIMERFREQUENCY__8CTimerLP = 0x0038B558; // size:0x8 bind = GLOBAL
 // @1537 = 0x0038B560; // size:0xC bind = LOCAL
-@1798 = 0x0038B570; // size:0xA0 bind = LOCAL
-@2037 = 0x0038B610; // size:0x27 bind = LOCAL
+// @1798 = 0x0038B570; // size:0xA0 bind = LOCAL
+// @2037 = 0x0038B610; // size:0x27 bind = LOCAL
 // K_szTempFilename = 0x0038B638; // size:0xC bind = LOCAL
 K_szDirectorySeparator = 0x0038B648; // size:0x2 bind = LOCAL
 // K_szTempFilename = 0x0038B650; // size:0xC bind = LOCAL
 // @1384 = 0x0038B660; // size:0x9 bind = LOCAL
 // @1403 = 0x0038B670; // size:0xB bind = LOCAL
 // @1849 = 0x0038B680; // size:0x3 bind = LOCAL
-@3084 = 0x0038B688; // size:0x4 bind = LOCAL
-@3085 = 0x0038B690; // size:0x4 bind = LOCAL
-@3086 = 0x0038B698; // size:0x3 bind = LOCAL
-@3087 = 0x0038B6A0; // size:0x4 bind = LOCAL
-@3088 = 0x0038B6A8; // size:0x2 bind = LOCAL
-@3385 = 0x0038B6B0; // size:0x4 bind = LOCAL
-@4977 = 0x0038B6C0; // size:0x22 bind = LOCAL
-@5138 = 0x0038B6F0; // size:0x1B bind = LOCAL
-@5139 = 0x0038B710; // size:0x1A bind = LOCAL
-@6437 = 0x0038B730; // size:0x1B bind = LOCAL
-@2541 = 0x0038B750; // size:0x1B bind = LOCAL
+// @3084 = 0x0038B688; // size:0x4 bind = LOCAL
+// @3085 = 0x0038B690; // size:0x4 bind = LOCAL
+// @3086 = 0x0038B698; // size:0x3 bind = LOCAL
+// @3087 = 0x0038B6A0; // size:0x4 bind = LOCAL
+// @3088 = 0x0038B6A8; // size:0x2 bind = LOCAL
+// @3385 = 0x0038B6B0; // size:0x4 bind = LOCAL
+// @4977 = 0x0038B6C0; // size:0x22 bind = LOCAL
+// @5138 = 0x0038B6F0; // size:0x1B bind = LOCAL
+// @5139 = 0x0038B710; // size:0x1A bind = LOCAL
+// @6437 = 0x0038B730; // size:0x1B bind = LOCAL
+// @2541 = 0x0038B750; // size:0x1B bind = LOCAL
 // @1959 = 0x0038B770; // size:0x20 bind = LOCAL
-@2014 = 0x0038B790; // size:0x1E bind = LOCAL
+// @2014 = 0x0038B790; // size:0x1E bind = LOCAL
 // @1250 = 0x0038B7B0; // size:0x3 bind = LOCAL
 // @1277 = 0x0038B7C0; // size:0x34 bind = LOCAL
 // @1278 = 0x0038B7F8; // size:0xC bind = LOCAL
 // @1279 = 0x0038B808; // size:0x8 bind = LOCAL
-@2228 = 0x0038B810; // size:0x1B bind = LOCAL
+// @2228 = 0x0038B810; // size:0x1B bind = LOCAL
 // @1234 = 0x0038B830; // size:0x8 bind = LOCAL
 // @1235 = 0x0038B838; // size:0xB bind = LOCAL
 // @1236 = 0x0038B848; // size:0x7 bind = LOCAL
@@ -9134,7 +9134,7 @@ K_szDirectorySeparator = 0x0038B648; // size:0x2 bind = LOCAL
 // @1243 = 0x0038B880; // size:0x7 bind = LOCAL
 // @1244 = 0x0038B888; // size:0x8 bind = LOCAL
 // @1412 = 0x0038B890; // size:0x5 bind = LOCAL
-@3051 = 0x0038B8A0; // size:0x1B bind = LOCAL
+// @3051 = 0x0038B8A0; // size:0x1B bind = LOCAL
 Zero__10CAngleAxis = 0x0038B8C0; // size:0x20 bind = GLOBAL
 Zero__9CMatrix33 = 0x0038B8E0; // size:0x40 bind = GLOBAL
 Identity__9CMatrix33 = 0x0038B920; // size:0x40 bind = GLOBAL
@@ -9175,11 +9175,11 @@ BaseL__8CVector4 = 0x0038BAC0; // size:0x10 bind = GLOBAL
 // @1713 = 0x0038BE70; // size:0x4D bind = LOCAL
 // @1714 = 0x0038BEC0; // size:0x43 bind = LOCAL
 // @1715 = 0x0038BF10; // size:0x58 bind = LOCAL
-@2447 = 0x0038BF70; // size:0x1B bind = LOCAL
+// @2447 = 0x0038BF70; // size:0x1B bind = LOCAL
 // @1446 = 0x0038BF90; // size:0x12 bind = LOCAL
 // @1468 = 0x0038BFA8; // size:0xD bind = LOCAL
 // @1736 = 0x0038BFC0; // size:0x1C bind = LOCAL
-@2374 = 0x0038BFE0; // size:0x1D bind = LOCAL
+// @2374 = 0x0038BFE0; // size:0x1D bind = LOCAL
 // @1421 = 0x0038C000; // size:0x6 bind = LOCAL
 // @1246 = 0x0038C010; // size:0x1E bind = LOCAL
 // @1406 = 0x0038C030; // size:0x3 bind = LOCAL
@@ -9194,11 +9194,11 @@ BaseL__8CVector4 = 0x0038BAC0; // size:0x10 bind = GLOBAL
 // @1532 = 0x0038C098; // size:0x1 bind = LOCAL
 // @1316 = 0x0038C0A0; // size:0x15 bind = LOCAL
 // @1070 = 0x0038C0C0; // size:0x40 bind = LOCAL
-@1028 = 0x0038C100; // size:0x15 bind = LOCAL
+// @1028 = 0x0038C100; // size:0x15 bind = LOCAL
 // @1029 = 0x0038C120; // size:0x15 bind = LOCAL
 // @1073 = 0x0038C140; // size:0x12 bind = LOCAL
 // @1074 = 0x0038C160; // size:0x1C bind = LOCAL
-@1106 = 0x0038C180; // size:0x15 bind = LOCAL
+// @1106 = 0x0038C180; // size:0x15 bind = LOCAL
 // @1338 = 0x0038C1A0; // size:0x3C bind = LOCAL
 // @1339 = 0x0038C1E0; // size:0x3E bind = LOCAL
 // @1340 = 0x0038C220; // size:0x3E bind = LOCAL
@@ -9226,17 +9226,17 @@ BaseL__8CVector4 = 0x0038BAC0; // size:0x10 bind = GLOBAL
 // @1822 = 0x0038C7C8; // size:0x4 bind = LOCAL
 // @1823 = 0x0038C7D0; // size:0x4 bind = LOCAL
 // @1824 = 0x0038C7D8; // size:0xC bind = LOCAL
-@2052 = 0x0038C7F0; // size:0x1B bind = LOCAL
+// @2052 = 0x0038C7F0; // size:0x1B bind = LOCAL
 // @1505 = 0x0038C810; // size:0x14 bind = LOCAL
 // @1506 = 0x0038C830; // size:0x1E bind = LOCAL
-@1584 = 0x0038C850; // size:0x15 bind = LOCAL
-@1585 = 0x0038C868; // size:0xC bind = LOCAL
+// @1584 = 0x0038C850; // size:0x15 bind = LOCAL
+// @1585 = 0x0038C868; // size:0xC bind = LOCAL
 // @1886 = 0x0038C880; // size:0x16 bind = LOCAL
-@1992 = 0x0038C8A0; // size:0x1E bind = LOCAL
-@1993 = 0x0038C8C0; // size:0x60 bind = LOCAL
-@2023 = 0x0038C920; // size:0x1E bind = LOCAL
-@2140 = 0x0038C940; // size:0x19 bind = LOCAL
-@2141 = 0x0038C960; // size:0x20 bind = LOCAL
+// @1992 = 0x0038C8A0; // size:0x1E bind = LOCAL
+// @1993 = 0x0038C8C0; // size:0x60 bind = LOCAL
+// @2023 = 0x0038C920; // size:0x1E bind = LOCAL
+// @2140 = 0x0038C940; // size:0x19 bind = LOCAL
+// @2141 = 0x0038C960; // size:0x20 bind = LOCAL
 // @1142 = 0x0038C980; // size:0x8 bind = LOCAL
 // @1143 = 0x0038C990; // size:0x15 bind = LOCAL
 // @1311 = 0x0038C9B0; // size:0x2A bind = LOCAL
@@ -9248,57 +9248,57 @@ BaseL__8CVector4 = 0x0038BAC0; // size:0x10 bind = GLOBAL
 // @1540 = 0x0038CA78; // size:0xD bind = LOCAL
 // @1541 = 0x0038CA90; // size:0x13 bind = LOCAL
 // @1542 = 0x0038CAB0; // size:0x2C bind = LOCAL
-@1059 = 0x0038CAE0; // size:0xD bind = LOCAL
-@1060 = 0x0038CAF0; // size:0x15 bind = LOCAL
+// @1059 = 0x0038CAE0; // size:0xD bind = LOCAL
+// @1060 = 0x0038CAF0; // size:0x15 bind = LOCAL
 // @1362 = 0x0038CB08; // size:0xC bind = LOCAL
 // @1363 = 0x0038CB20; // size:0x18 bind = LOCAL
 // @1364 = 0x0038CB40; // size:0x16 bind = LOCAL
 // @1378 = 0x0038CB60; // size:0x11 bind = LOCAL
-@1582 = 0x0038CB80; // size:0x1B bind = LOCAL
-@1583 = 0x0038CBA0; // size:0x1A bind = LOCAL
+// @1582 = 0x0038CB80; // size:0x1B bind = LOCAL
+// @1583 = 0x0038CBA0; // size:0x1A bind = LOCAL
 // @1269 = 0x0038CBC0; // size:0x1A bind = LOCAL
 // @1029 = 0x0038CBE0; // size:0xD bind = LOCAL
-@1030 = 0x0038CBF0; // size:0x19 bind = LOCAL
-@1041 = 0x0038CC10; // size:0x18 bind = LOCAL
-@1082 = 0x0038CC30; // size:0x20 bind = LOCAL
+// @1030 = 0x0038CBF0; // size:0x19 bind = LOCAL
+// @1041 = 0x0038CC10; // size:0x18 bind = LOCAL
+// @1082 = 0x0038CC30; // size:0x20 bind = LOCAL
 // @1149 = 0x0038CC50; // size:0x14 bind = LOCAL
 // @1070 = 0x0038CC70; // size:0x46 bind = LOCAL
 // @1297 = 0x0038CCC0; // size:0x2E bind = LOCAL
 // @1298 = 0x0038CCF0; // size:0x22 bind = LOCAL
 // @1329 = 0x0038CD20; // size:0x68 bind = LOCAL
-@1592 = 0x0038CD88; // size:0xF bind = LOCAL
+// @1592 = 0x0038CD88; // size:0xF bind = LOCAL
 // @1323 = 0x0038CDA0; // size:0x11 bind = LOCAL
-@1085 = 0x0038CDB8; // size:0x5 bind = LOCAL
+// @1085 = 0x0038CDB8; // size:0x5 bind = LOCAL
 // @1599 = 0x0038CDC0; // size:0x24 bind = LOCAL
-@2233 = 0x0038CDF0; // size:0x20 bind = LOCAL
+// @2233 = 0x0038CDF0; // size:0x20 bind = LOCAL
 // @1296 = 0x0038CE10; // size:0x51 bind = LOCAL
 // @1297 = 0x0038CE70; // size:0x51 bind = LOCAL
 // @1319 = 0x0038CED0; // size:0x2C bind = LOCAL
 // @1435 = 0x0038CF00; // size:0xC bind = LOCAL
-@3369 = 0x0038CF10; // size:0x1B bind = LOCAL
-@2208 = 0x0038CF30; // size:0x4 bind = LOCAL
+// @3369 = 0x0038CF10; // size:0x1B bind = LOCAL
+// @2208 = 0x0038CF30; // size:0x4 bind = LOCAL
 // @1697 = 0x0038CF38; // size:0x4 bind = LOCAL
 // @1543 = 0x0038CF40; // size:0x4 bind = LOCAL
 // @1520 = 0x0038CF48; // size:0x4 bind = LOCAL
 // @1519 = 0x0038CF50; // size:0x4 bind = LOCAL
 // @1484 = 0x0038CF58; // size:0x4 bind = LOCAL
 // @1483 = 0x0038CF60; // size:0x4 bind = LOCAL
-@950 = 0x0038CF68; // size:0x8 bind = LOCAL
+// @950 = 0x0038CF68; // size:0x8 bind = LOCAL
 // @1171 = 0x0038CF70; // size:0x4 bind = LOCAL
 // @1174 = 0x0038CF78; // size:0x4 bind = LOCAL
 // @1653 = 0x0038CF80; // size:0x1B bind = LOCAL
 // @1654 = 0x0038CFA0; // size:0x1A bind = LOCAL
-@842 = 0x0038CFC0; // size:0x4 bind = LOCAL
+// @842 = 0x0038CFC0; // size:0x4 bind = LOCAL
 // @1197 = 0x0038CFC8; // size:0x4 bind = LOCAL
 // @1196 = 0x0038CFD0; // size:0x4 bind = LOCAL
 // @1195 = 0x0038CFD8; // size:0x4 bind = LOCAL
-@1049 = 0x0038CFE0; // size:0x15 bind = LOCAL
+// @1049 = 0x0038CFE0; // size:0x15 bind = LOCAL
 // @1133 = 0x0038D000; // size:0x14 bind = LOCAL
 // @1301 = 0x0038D020; // size:0x14 bind = LOCAL
 // @1302 = 0x0038D040; // size:0x14 bind = LOCAL
-@1091 = 0x0038D060; // size:0x18 bind = LOCAL
-@1092 = 0x0038D080; // size:0x21 bind = LOCAL
-@1094 = 0x0038D0A8; // size:0x4 bind = LOCAL
+// @1091 = 0x0038D060; // size:0x18 bind = LOCAL
+// @1092 = 0x0038D080; // size:0x21 bind = LOCAL
+// @1094 = 0x0038D0A8; // size:0x4 bind = LOCAL
 // @1233 = 0x0038D0B0; // size:0xD bind = LOCAL
 // @1244 = 0x0038D0C0; // size:0x16 bind = LOCAL
 // @1245 = 0x0038D0E0; // size:0x16 bind = LOCAL
@@ -9306,19 +9306,19 @@ BaseL__8CVector4 = 0x0038BAC0; // size:0x10 bind = GLOBAL
 // @1247 = 0x0038D120; // size:0x14 bind = LOCAL
 // @1248 = 0x0038D140; // size:0x14 bind = LOCAL
 // @1249 = 0x0038D158; // size:0xC bind = LOCAL
-@368 = 0x0038D168; // size:0x1 bind = LOCAL
-@16 = 0x0038D170; // size:0x10 bind = LOCAL
-@124 = 0x0038D180; // size:0x1 bind = LOCAL
-@721 = 0x0038D188; // size:0xA bind = LOCAL
-@1078 = 0x0038D1A0; // size:0x30 bind = LOCAL
-@173 = 0x0038D1D0; // size:0x1C bind = LOCAL
-@174 = 0x0038D1F0; // size:0x1E bind = LOCAL
-@77 = 0x0038D210; // size:0x1F bind = LOCAL
-@29 = 0x0038D230; // size:0x33 bind = LOCAL
-@30 = 0x0038D270; // size:0x3B bind = LOCAL
-@31 = 0x0038D2B0; // size:0x34 bind = LOCAL
-@32 = 0x0038D2F0; // size:0x3C bind = LOCAL
-@33 = 0x0038D330; // size:0x1B bind = LOCAL
+// @368 = 0x0038D168; // size:0x1 bind = LOCAL
+// @16 = 0x0038D170; // size:0x10 bind = LOCAL
+// @124 = 0x0038D180; // size:0x1 bind = LOCAL
+// @721 = 0x0038D188; // size:0xA bind = LOCAL
+// @1078 = 0x0038D1A0; // size:0x30 bind = LOCAL
+// @173 = 0x0038D1D0; // size:0x1C bind = LOCAL
+// @174 = 0x0038D1F0; // size:0x1E bind = LOCAL
+// @77 = 0x0038D210; // size:0x1F bind = LOCAL
+// @29 = 0x0038D230; // size:0x33 bind = LOCAL
+// @30 = 0x0038D270; // size:0x3B bind = LOCAL
+// @31 = 0x0038D2B0; // size:0x34 bind = LOCAL
+// @32 = 0x0038D2F0; // size:0x3C bind = LOCAL
+// @33 = 0x0038D330; // size:0x1B bind = LOCAL
 __sinit_gcc_wrapper.c = 0x0038D380; // size:0x38 type:func bind = LOCAL
 __sinit_locale.cpp = 0x0038D3C0; // size:0x100 type:func bind = LOCAL
 __sinit_cgameapplicationpsx2.cpp = 0x0038D4C0; // size:0x38 type:func bind = LOCAL
@@ -10250,9 +10250,9 @@ _overlay_group_addreses = 0x00395D70; // bind = GLOBAL
 __data_end = 0x00395D74; // bind = GLOBAL
 // @1304 = 0x00395D80; // size:0x1 bind = LOCAL
 // @1331 = 0x00395D84; // size:0x1 bind = LOCAL
-@1580 = 0x00395D88; // size:0x1 bind = LOCAL
-@449 = 0x00395D8C; // size:0x4 bind = LOCAL
-@583 = 0x00395D90; // size:0x2 bind = LOCAL
+// @1580 = 0x00395D88; // size:0x1 bind = LOCAL
+// @449 = 0x00395D8C; // size:0x4 bind = LOCAL
+// @583 = 0x00395D90; // size:0x2 bind = LOCAL
 // @609 = 0x00395D94; // size:0x2 bind = LOCAL
 // @1658 = 0x00395D98; // size:0x1 bind = LOCAL
 // _fbss = 0x00395E00; // bind = GLOBAL
@@ -10285,14 +10285,14 @@ cin__3std = 0x00395FF0; // size:0x68 bind = GLOBAL
 cout__3std = 0x00396060; // size:0x58 bind = GLOBAL
 clog__3std = 0x003960C0; // size:0x58 bind = GLOBAL
 cerr__3std = 0x00396120; // size:0x58 bind = GLOBAL
-@595 = 0x00396178; // size:0xC bind = LOCAL
+// @595 = 0x00396178; // size:0xC bind = LOCAL
 fin$594 = 0x00396190; // size:0x40 bind = LOCAL
-@599 = 0x003961D0; // size:0xC bind = LOCAL
+// @599 = 0x003961D0; // size:0xC bind = LOCAL
 fout$598 = 0x003961E0; // size:0x40 bind = LOCAL
-@603 = 0x00396220; // size:0xC bind = LOCAL
+// @603 = 0x00396220; // size:0xC bind = LOCAL
 ferr$602 = 0x00396230; // size:0x40 bind = LOCAL
-@570 = 0x00396270; // size:0xC bind = LOCAL
-@593 = 0x00396280; // size:0xC bind = LOCAL
+// @570 = 0x00396270; // size:0xC bind = LOCAL
+// @593 = 0x00396280; // size:0xC bind = LOCAL
 _sprtagdata = 0x003962C0; // size:0x200 bind = LOCAL
 _bstag = 0x003964C0; // size:0x810 bind = LOCAL
 userarea = 0x00396CD0; // bind = LOCAL
@@ -11966,7 +11966,7 @@ gs_u32_CLUTend = 0x003F43B8; // size:0x4 bind = LOCAL
 // @632 = 0x003F43C8; // size:0xC bind = LOCAL
 // __msl_ios_base_init__3std = 0x003F43D8; // size:0x1 bind = LOCAL
 // @632 = 0x003F43E0; // size:0xC bind = LOCAL
-@1031 = 0x003F43F0; // size:0xC bind = LOCAL
+// @1031 = 0x003F43F0; // size:0xC bind = LOCAL
 // __msl_ios_base_init__3std = 0x004F4520; // size:0x1 bind = LOCAL
 // @495 = 0x004F4528; // size:0xC bind = LOCAL
 // __msl_ios_base_init__3std = 0x004F4538; // size:0x1 bind = LOCAL
@@ -11991,7 +11991,7 @@ s$1132 = 0x004F45F8; // size:0x1 bind = LOCAL
 // @495 = 0x004F4620; // size:0xC bind = LOCAL
 // __msl_ios_base_init__3std = 0x004F4630; // size:0x1 bind = LOCAL
 // @495 = 0x004F4638; // size:0xC bind = LOCAL
-@877 = 0x004F4648; // size:0xC bind = LOCAL
+// @877 = 0x004F4648; // size:0xC bind = LOCAL
 g_Emitters = 0x004F4660; // size:0x10 bind = GLOBAL
 g_theCollisionPool = 0x004F4670; // size:0x9C50 bind = GLOBAL
 id$880 = 0x004FE2C0; // size:0x8 bind = LOCAL

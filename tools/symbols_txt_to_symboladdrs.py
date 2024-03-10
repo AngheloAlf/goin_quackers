@@ -64,7 +64,9 @@ for address, size, typ, bind, name in syms:
 
     comment_out = ""
 
-    if address in duped_addresses[bind] or name in duped_names[bind]:
+    if name.startswith("@"):
+        comment_out = "// "
+    elif address in duped_addresses[bind] or name in duped_names[bind]:
         comment_out = "// "
     else:
         bind_index = sym_binds.index(bind)

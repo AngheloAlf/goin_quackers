@@ -180,7 +180,7 @@ all: rom
 rom: $(ROM)
 ifneq ($(COMPARE),0)
 	@md5sum $(ROM)
-	@md5sum -c $(TARGET).$(VERSION).md5
+	@md5sum -c config/$(VERSION)/$(TARGET).$(VERSION).md5
 endif
 
 clean:
