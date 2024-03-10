@@ -54,6 +54,7 @@ options:
 
   section_order:
     - .text
+    - .vutext
     - .data
     - .rodata
     - .init
@@ -64,6 +65,7 @@ options:
     - .sdata
     - .sbss
     - .bss
+    - .vubss
 
   auto_all_sections:
     - .data
@@ -76,9 +78,11 @@ options:
     - .sdata
     - .sbss
     - .bss
+    - .vubss
 
   ld_section_labels:
     - .text
+    - .vutext
     - .data
     - .rodata
     - .init
@@ -89,6 +93,7 @@ options:
     - .sdata
     - .sbss
     - .bss
+    - .vubss
 
 segments:
   - [0x000000, databin, elf_stuff]
@@ -108,6 +113,8 @@ segments:
     subalign: null
     subsegments:
       - [0x000100, asm, main/000100]
+      - [0x002680, asm, main/gcc_wrapper] # c # maybe larger
+      - [0x0052E0, asm, main/0052E0]
       - [0x009D78, asm, main/009D78]
       - [0x009EC8, asm, main/009EC8]
       - [0x009F30, asm, main/009F30]
@@ -291,8 +298,9 @@ segments:
       - [0x031F98, asm, main/031F98]
       - [0x033028, asm, main/033028]
       - [0x035468, asm, main/035468]
-      - [0x16F280, textbin, main/16F280] # vutext
-      - [0x170C20, textbin, main/170C20] # vutext
+      - [0x16F280, vutext, main/16F280]
+      - [0x170C20, vutext, main/170C20]
+      - [0x170D80, data, main/170D80]
       - [0x171350, data, main/000100]
       - [0x171370, data, main/009D78]
       - [0x171390, data, main/00A950]
@@ -1171,7 +1179,10 @@ segments:
       - [0x1947B0, vtables, main/1947B0]
       - [0x195E70, overlay_info, main/195E70]
       - [0x195E80, sdata, main/195E80]
+      - { type: ps2_sbss, vram: 0x00395E00, name: main/00395E00 }
       - { type: bss, vram: 0x00395E80, name: main/000100 }
+      - { type: bss, vram: 0x00395FC8, name: main/gcc_wrapper } # larger?
+      - { type: bss, vram: 0x00395FE0, name: main/00395FE0 }
       - { type: bss, vram: 0x003962C0, name: main/013490 }
       - { type: bss, vram: 0x00396CD0, name: main/015718 }
       - { type: bss, vram: 0x00396D00, name: main/0158F8 }
