@@ -98,7 +98,7 @@ IINC       := -Iinclude
 CFLAGS          += 
 
 WARNINGS        := 
-ASFLAGS         := -march=r5900 -mabi=eabi -no-pad-sections
+ASFLAGS         := -march=r5900 -mabi=eabi -G8 -no-pad-sections
 COMMON_DEFINES  := 
 AS_DEFINES      := 
 C_DEFINES       := 
@@ -148,7 +148,7 @@ O_FILES       := $(foreach f,$(C_FILES:.c=.o),$(BUILD_DIR)/$f) \
                  $(foreach f,$(S_FILES:.s=.o),$(BUILD_DIR)/$f)
 
 # LINKER_SCRIPTS   := $(LD_SCRIPT) $(BUILD_DIR)/linker_scripts/$(VERSION)/hardware_regs.ld $(BUILD_DIR)/linker_scripts/$(VERSION)/undefined_syms.ld $(BUILD_DIR)/linker_scripts/common_undef_syms.ld
-LINKER_SCRIPTS   := $(LD_SCRIPT)
+LINKER_SCRIPTS   := $(LD_SCRIPT) linker_scripts/us/auto/undefined_funcs_auto.ld linker_scripts/us/auto/undefined_syms_auto.ld
 
 
 ### Automatic dependency files ###

@@ -4,6 +4,7 @@ options:
   base_path: ../../
   basename: goin_quackers
   target_path: disk/us/SLUS_200.77
+  elf_path: build/us/goin_quackers.us.elf
   ld_script_path: linker_scripts/us/goin_quackers.us.ld
   compiler: GCC
   find_file_boundaries: False
@@ -17,11 +18,11 @@ options:
   reloc_addrs_path:
     - config/us/reloc_addrs.txt
 
-  ld_partial_linking: False
+  ld_dependencies: True
 
   asm_path: asm/us
   src_path: src
-  build_path: build
+  build_path: build/us
   asset_path: bin/us
   extensions_path: tools/splat_ext
   # mips_abi_float_regs: o32
@@ -321,6 +322,7 @@ segments:
       - [0x172718, data, main/02E980]
       - [0x172788, data, main/02F560]
       - [0x1727D0, data, main/031F98]
+      - [0x179D70, rodata, main/179D70] # maybe fake?
       - [0x17A188, rodata, main/009F30]
       - [0x17A1C0, rodata, main/00A950]
       - [0x17A2E0, rodata, main/00AB38]
