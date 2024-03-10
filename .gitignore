@@ -5,3 +5,6 @@ disk/
 
 SLUS_200.77
 .splat/
+
+__pycache__
+*.pyc

@@ -1,6 +1,8 @@
 from pathlib import Path
 import re
 
+# TODO: check multiple sections are not named the same
+
 regex = re.compile(r"\s*[0-9]+: (?P<address>[0-9a-fA-F]{8}) .+5 (?P<section>[^ ]+)")
 
 ADDRESS = 0x00200000
