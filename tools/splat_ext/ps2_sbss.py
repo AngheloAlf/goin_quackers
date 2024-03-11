@@ -10,3 +10,7 @@ from splat.segtypes.common.bss import CommonSegBss
 class PS2SegPs2_sbss(CommonSegBss):
     def get_linker_section(self) -> str:
         return ".sbss"
+
+    @staticmethod
+    def is_noload() -> bool:
+        return True

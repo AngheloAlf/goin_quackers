@@ -76,7 +76,9 @@ GCC             := $(CROSS)gcc
 CPP             := $(CROSS)cpp
 STRIP           := $(CROSS)strip
 
-SPLAT             ?= python3 -m splat split
+PYTHON          ?= python3
+
+SPLAT             ?= $(PYTHON) -m splat split
 SPLAT_YAML        ?= config/$(VERSION)/$(TARGET).$(VERSION).yaml
 
 SPLAT_FLAGS       ?=
@@ -148,7 +150,7 @@ O_FILES       := $(foreach f,$(C_FILES:.c=.o),$(BUILD_DIR)/$f) \
                  $(foreach f,$(S_FILES:.s=.o),$(BUILD_DIR)/$f)
 
 # LINKER_SCRIPTS   := $(LD_SCRIPT) $(BUILD_DIR)/linker_scripts/$(VERSION)/hardware_regs.ld $(BUILD_DIR)/linker_scripts/$(VERSION)/undefined_syms.ld $(BUILD_DIR)/linker_scripts/common_undef_syms.ld
-LINKER_SCRIPTS   := $(LD_SCRIPT) linker_scripts/us/auto/undefined_funcs_auto.ld linker_scripts/us/auto/undefined_syms_auto.ld
+LINKER_SCRIPTS   := $(LD_SCRIPT) $(BUILD_DIR)/linker_scripts/$(VERSION)/linker_script_extra.$(VERSION).ld linker_scripts/$(VERSION)/auto/undefined_funcs_auto.ld linker_scripts/$(VERSION)/auto/undefined_syms_auto.ld
 
 
 ### Automatic dependency files ###
@@ -169,7 +171,7 @@ DEP_FILES := $(LD_SCRIPT:.ld=.d)
 
 ## Create build directories
 
-# $(shell mkdir -p $(BUILD_DIR)/linker_scripts/$(VERSION) $(BUILD_DIR)/linker_scripts/$(VERSION)/auto $(BUILD_DIR)/segments)
+$(shell mkdir -p $(BUILD_DIR)/linker_scripts/$(VERSION))
 $(shell mkdir -p $(foreach dir,$(SRC_DIRS) $(ASM_DIRS) $(BIN_DIRS),$(BUILD_DIR)/$(dir)))
 
 
@@ -232,7 +234,7 @@ $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
 
 $(ELF): $(LINKER_SCRIPTS)
-	$(LD) $(ENDIAN) $(LDFLAGS) -Map $(LD_MAP) $(foreach ld, $(LINKER_SCRIPTS), -T $(ld)) -o $@ $(filter %.o, $^)
+	$(LD) $(ENDIAN) $(LDFLAGS) -G8 -Map $(LD_MAP) $(foreach ld, $(LINKER_SCRIPTS), -T $(ld)) -o $@ $(filter %.o, $^)
 
 
 ## Order-only prerequisites
@@ -249,6 +251,7 @@ $(BUILD_DIR)/%.ld: %.ld
 
 $(BUILD_DIR)/%.o: %.s
 	$(CPP) $(CPPFLAGS) $(BUILD_DEFINES) $(IINC) -I $(dir $*) -I $(BUILD_DIR)/$(dir $*) $(COMMON_DEFINES) $(AS_DEFINES) $(COMP_VERBOSE_FLAG) $< | $(AS) $(ASFLAGS) $(ENDIAN) $(IINC) -I $(dir $*) -I $(BUILD_DIR)/$(dir $*) $(COMP_VERBOSE_FLAG) -o $@
+	$(PYTHON) tools/buildtools/elf_patcher.py $@
 	$(OBJDUMP_CMD)
 
 

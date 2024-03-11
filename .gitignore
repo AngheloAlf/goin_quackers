@@ -10,3 +10,11 @@ build/
 
 __pycache__
 *.pyc
+
+
+asm/
+bin/
+linker_scripts/**/auto
+linker_scripts/**/goin_quackers.*.ld
+linker_scripts/**/goin_quackers.*.d
+*.o

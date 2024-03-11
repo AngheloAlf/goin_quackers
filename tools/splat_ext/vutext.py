@@ -7,10 +7,12 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from splat.segtypes.ps2.asm import Ps2SegAsm
+# from splat.segtypes.ps2.asm import Ps2SegAsm
+from splat.segtypes.common.data import CommonSegData
 from splat.util import options
 
-class PS2SegVutext(Ps2SegAsm):
+class PS2SegVutext(CommonSegData):
+    """
     def get_file_header(self):
         ret = []
 
@@ -27,6 +29,7 @@ class PS2SegVutext(Ps2SegAsm):
         ret.append("")
 
         return ret
+    """
 
     def get_section_flags(self):
         return "ax"
@@ -39,8 +42,10 @@ class PS2SegVutext(Ps2SegAsm):
         if typ.startswith("."):
             typ = typ[1:]
 
-        return options.opts.asm_path / self.dir / f"{self.name}.{typ}.s"
+        # return options.opts.asm_path / self.dir / f"{self.name}.{typ}.s"
+        return options.opts.data_path / self.dir / f"{self.name}.{typ}.s"
 
+    """
     def out_path(self) -> Path|None:
         if self.type.startswith("."):
             if self.sibling:
@@ -52,3 +57,4 @@ class PS2SegVutext(Ps2SegAsm):
         else:
             # ASM
             return self.asm_out_path()
+    """

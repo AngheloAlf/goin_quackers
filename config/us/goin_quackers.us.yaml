@@ -77,7 +77,7 @@ options:
     # - .exceptix
     - .overlay_info # made up
     - .sdata
-    - .sbss
+    # - .sbss
     - .bss
     - .vubss
 
@@ -467,7 +467,7 @@ segments:
       - [0x18EA20, init, main/SectInfo] # cpp
       - [0x18EA60, init, main/StdGame] # cpp
       - [0x18EAA0, init, main/3dData_bin] # cpp
-      - [0x18EAE0, init, main/CallbackRegistration] # cpp
+      - [0x18EAE0, init, main/18EAE0] # cpp # CallbackRegistration
       - [0x18EB20, init, main/collset_bin] # cpp
       - [0x18EB60, init, main/Directories_Bin] # cpp
       - [0x18EBA0, init, main/Dynam_Bin] # cpp
@@ -602,7 +602,7 @@ segments:
       - [0x190E70, init, main/AITool2] # cpp
       - [0x190EB0, init, main/MetaActions] # cpp
       - [0x190EF0, init, main/RegCond] # cpp
-      - [0x190F30, init, main/RegFunc] # cpp
+      - [0x190F30, init, main/190F30] # cpp RegFunc
       - [0x190F70, init, main/RegMeta] # cpp
       - [0x190FB0, init, main/RegProc] # cpp
       - [0x190FF0, init, main/cinaction] # cpp
@@ -628,7 +628,7 @@ segments:
       - [0x1914F0, init, main/cinway] # cpp
       - [0x191530, init, main/cinwaypoint] # cpp
       - [0x191570, init, main/cinwtime] # cpp
-      - [0x1915B0, init, main/CallbackRegistration] # cpp
+      - [0x1915B0, init, main/1915B0] # cpp CallbackRegistration
       - [0x1915F0, init, main/CinAction_Bin] # cpp
       - [0x191630, init, main/CinActor_Bin] # cpp
       - [0x191670, init, main/CinCamera_Bin] # cpp
@@ -647,7 +647,7 @@ segments:
       - [0x1919B0, init, main/keyword] # cpp
       - [0x1919F0, init, main/operator] # cpp
       - [0x191A30, init, main/AIEngine_DLL] # cpp
-      - [0x191A70, init, main/RegFunc] # cpp
+      - [0x191A70, init, main/191A70] # cpp # RegFunc
       - [0x191AB0, init, main/RegPriv] # cpp
       - [0x191AF0, init, main/action] # cpp
       - [0x191B30, init, main/actparam] # cpp
@@ -660,7 +660,7 @@ segments:
       - [0x191CF0, init, main/intell] # cpp
       - [0x191D30, init, main/readrulecb] # cpp
       - [0x191D70, init, main/strintel] # cpp
-      - [0x191DB0, init, main/CallbackRegistration] # cpp
+      - [0x191DB0, init, main/191DB0] # cpp CallbackRegistration
       - [0x191DF0, init, main/intelligence_bin] # cpp
       - [0x191E30, init, main/convact] # cpp
       - [0x191E70, init, main/convcond] # cpp
@@ -685,7 +685,7 @@ segments:
       - [0x192330, init, main/clinktable] # cpp
       - [0x192370, init, main/clinktableelement] # cpp
       - [0x1923B0, init, main/datapath] # cpp
-      - [0x1923F0, init, main/error] # cpp
+      - [0x1923F0, init, main/1923F0] # cpp error
       - [0x192430, init, main/cdictionnary] # cpp
       - [0x192470, init, main/clocalizationmanager] # cpp
       - [0x1924B0, init, main/cangleaxis] # cpp
@@ -715,7 +715,7 @@ segments:
       - [0x192EE0, init, main/mem] # cpp
       - [0x192F20, init, main/memorycommon] # cpp
       - [0x192F60, init, main/shiftjis] # c
-      - [0x192FA0, init, main/error] # cpp
+      - [0x192FA0, init, main/192FA0] # cpp error
       - [0x192FE0, init, main/element] # cpp
       - [0x193020, init, main/geobdvol] # cpp
       - [0x193060, init, main/geoobj] # cpp
@@ -865,7 +865,7 @@ segments:
       - [0x1942B8, ctor, main/SectInfo] # cpp
       - [0x1942BC, ctor, main/StdGame] # cpp
       - [0x1942C0, ctor, main/3dData_bin] # cpp
-      - [0x1942C4, ctor, main/CallbackRegistration] # cpp
+      - [0x1942C4, ctor, main/18EAE0] # cpp CallbackRegistration
       - [0x1942C8, ctor, main/collset_bin] # cpp
       - [0x1942CC, ctor, main/Directories_Bin] # cpp
       - [0x1942D0, ctor, main/Dynam_Bin] # cpp
@@ -1000,7 +1000,7 @@ segments:
       - [0x1944D4, ctor, main/AITool2] # cpp
       - [0x1944D8, ctor, main/MetaActions] # cpp
       - [0x1944DC, ctor, main/RegCond] # cpp
-      - [0x1944E0, ctor, main/RegFunc] # cpp
+      - [0x1944E0, ctor, main/190F30] # cpp RegFunc
       - [0x1944E4, ctor, main/RegMeta] # cpp
       - [0x1944E8, ctor, main/RegProc] # cpp
       - [0x1944EC, ctor, main/cinaction] # cpp
@@ -1026,7 +1026,7 @@ segments:
       - [0x19453C, ctor, main/cinway] # cpp
       - [0x194540, ctor, main/cinwaypoint] # cpp
       - [0x194544, ctor, main/cinwtime] # cpp
-      - [0x194548, ctor, main/CallbackRegistration] # cpp
+      - [0x194548, ctor, main/1915B0] # cpp CallbackRegistration
       - [0x19454C, ctor, main/CinAction_Bin] # cpp
       - [0x194550, ctor, main/CinActor_Bin] # cpp
       - [0x194554, ctor, main/CinCamera_Bin] # cpp
@@ -1045,7 +1045,7 @@ segments:
       - [0x194588, ctor, main/keyword] # cpp
       - [0x19458C, ctor, main/operator] # cpp
       - [0x194590, ctor, main/AIEngine_DLL] # cpp
-      - [0x194594, ctor, main/RegFunc] # cpp
+      - [0x194594, ctor, main/191A70] # cpp RegFunc
       - [0x194598, ctor, main/RegPriv] # cpp
       - [0x19459C, ctor, main/action] # cpp
       - [0x1945A0, ctor, main/actparam] # cpp
@@ -1058,7 +1058,7 @@ segments:
       - [0x1945BC, ctor, main/intell] # cpp
       - [0x1945C0, ctor, main/readrulecb] # cpp
       - [0x1945C4, ctor, main/strintel] # cpp
-      - [0x1945C8, ctor, main/CallbackRegistration] # cpp
+      - [0x1945C8, ctor, main/191DB0] # cpp CallbackRegistration
       - [0x1945CC, ctor, main/intelligence_bin] # cpp
       - [0x1945D0, ctor, main/convact] # cpp
       - [0x1945D4, ctor, main/convcond] # cpp
@@ -1083,7 +1083,7 @@ segments:
       - [0x194620, ctor, main/clinktable] # cpp
       - [0x194624, ctor, main/clinktableelement] # cpp
       - [0x194628, ctor, main/datapath] # cpp
-      - [0x19462C, ctor, main/error] # cpp
+      - [0x19462C, ctor, main/1923F0] # cpp error
       - [0x194630, ctor, main/cdictionnary] # cpp
       - [0x194634, ctor, main/clocalizationmanager] # cpp
       - [0x194638, ctor, main/cangleaxis] # cpp
@@ -1113,7 +1113,7 @@ segments:
       - [0x194698, ctor, main/mem] # cpp
       - [0x19469C, ctor, main/memorycommon] # cpp
       - [0x1946A0, ctor, main/shiftjis] # c
-      - [0x1946A4, ctor, main/error] # cpp
+      - [0x1946A4, ctor, main/192FA0] # cpp error
       - [0x1946A8, ctor, main/element] # cpp
       - [0x1946AC, ctor, main/geobdvol] # cpp
       - [0x1946B0, ctor, main/geoobj] # cpp
