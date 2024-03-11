@@ -78,6 +78,7 @@ options:
     - .init
     - .ctor
     - .vtables
+    - .exception
     # - .exceptix
     - .gcc_except_table
     - .sdata
@@ -127,7 +128,7 @@ segments:
     subsegments:
       - [0x000100, asm, main/crt0] # hasm
       - [0x0001C0, asm, main/0001C0]
-      - [0x002680, asm, main/gcc_wrapper] # c # maybe larger
+      - [0x002680, asm, main/gcc_wrapper] # c # maybe larger # fake?
       - [0x0052E0, asm, main/0052E0]
       - [0x009D78, asm, main/009D78]
       - [0x009EC8, asm, main/009EC8]
@@ -311,6 +312,8 @@ segments:
       - [0x02F560, asm, main/02F560]
       - [0x031F98, asm, main/031F98]
       - [0x033028, asm, main/033028]
+      - [0x0351D0, asm, main/0351D0]
+      - [0x035210, asm, main/035210]
       - [0x035468, asm, main/035468]
       - [0x16F280, vutext, main/16F280]
       - [0x170C20, vutext, main/170C20]
@@ -393,7 +396,7 @@ segments:
       - [0x17C790, rodata, main/02D748]
       - [0x17C890, rodata, main/02F560]
       - [0x17CC60, rodata, main/031F98]
-      - [0x17CD60, rodata, main/033028]
+      - [0x17CD60, rodata, main/17CD60]
       - [0x17CF38, rodata, main/035468]
       - [0x18D480, init, main/gcc_wrapper] # c
       - [0x18D4C0, init, main/locale] # cpp
@@ -1212,7 +1215,7 @@ segments:
       - { type: bss, vram: 0x00399500, name: main/02E980 }
       - { type: bss, vram: 0x00399540, name: main/02F560 }
       - { type: bss, vram: 0x0039AB00, name: main/031F98 }
-      - { type: bss, vram: 0x0039B200, name: main/033028 }
+      - { type: bss, vram: 0x0039B200, name: main/0039B200 } # 033028?
       - { type: bss, vram: 0x0039C880, name: main/035468 }
       # - { type: vubss, vram: 0x00504F80, name: main/16F280 }
       # - { type: vubss, vram: 0x00504F80, name: main/170C20 }

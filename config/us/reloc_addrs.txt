@@ -14,3 +14,8 @@ rom:0x0351D0 reloc:MIPS_HI16 symbol:__static_init
 rom:0x0351D4 reloc:MIPS_LO16 symbol:__static_init
 rom:0x0351D8 reloc:MIPS_HI16 symbol:__static_init_end
 rom:0x0351DC reloc:MIPS_LO16 symbol:__static_init_end
+
+rom:0x0351E0 reloc:MIPS_HI16 symbol:__exception_table_start__
+rom:0x0351E4 reloc:MIPS_LO16 symbol:__exception_table_start__
+rom:0x0351E8 reloc:MIPS_HI16 symbol:__exception_table_end__
+rom:0x0351F0 reloc:MIPS_LO16 symbol:__exception_table_end__
