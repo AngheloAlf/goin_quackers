@@ -18,3 +18,8 @@ linker_scripts/**/auto
 linker_scripts/**/goin_quackers.*.ld
 linker_scripts/**/goin_quackers.*.d
 *.o
+
+ctx.c
+ctx.c.m2c
+
+.vscode/settings.json

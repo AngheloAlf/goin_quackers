@@ -59,7 +59,7 @@
 // __start_.DVP.overlay..unknvma.1385248536.967.2 = 0x00000000; // bind = LOCAL
 _align_segment = 0x00000080; // bind = GLOBAL
 __data_size = 0x000250F4; // bind = GLOBAL
-_stack_size = 0x00080000; // bind = GLOBAL
+// _stack_size = 0x00080000; // bind = GLOBAL
 __bss_size = 0x001EA1A3; // bind = GLOBAL
 // ENTRYPOINT = 0x00200008; // bind = GLOBAL
 // _start = 0x00200008; // bind = GLOBAL
@@ -10277,7 +10277,7 @@ __init__id__Q23std12timepunct<c> = 0x00395E54; // size:0x1 bind = WEAK
 __init__id__Q23std15moneypunct<c,0> = 0x00395E58; // size:0x1 bind = WEAK
 __init__id__Q23std15moneypunct<c,1> = 0x00395E5C; // size:0x1 bind = WEAK
 __bss_start = 0x00395E5D; // bind = GLOBAL
-_args = 0x00395E80; // bind = LOCAL
+// _args = 0x00395E80; // bind = LOCAL
 // __msl_ios_base_init__3std = 0x00395FC8; // size:0x1 bind = LOCAL
 // @543 = 0x00395FD0; // size:0xC bind = LOCAL
 __global_destructor_chain = 0x00395FE0; // size:0x4 bind = GLOBAL
@@ -12110,5 +12110,5 @@ init$12 = 0x00504F38; // size:0x1 bind = LOCAL
 sg_ClientData = 0x00504F40; // size:0x28 bind = LOCAL
 errno = 0x00504F68; // size:0x4 bind = GLOBAL
 __bss_end = 0x00580000; // bind = GLOBAL
-_stack = 0x01F80000; // bind = GLOBAL
-_heap_size = 0xFFFFFFFF; // bind = GLOBAL
+// _stack = 0x01F80000; // bind = GLOBAL
+// _heap_size = 0xFFFFFFFF; // bind = GLOBAL

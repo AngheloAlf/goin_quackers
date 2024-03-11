@@ -1,0 +1,12 @@
+rom:0x000108 reloc:MIPS_HI16 symbol:_fbss
+rom:0x000110 reloc:MIPS_LO16 symbol:_fbss
+
+rom:0x00010C reloc:MIPS_HI16 symbol:_end
+rom:0x000114 reloc:MIPS_LO16 symbol:_end
+
+rom:0x000168 reloc:MIPS_HI16 symbol:_end
+rom:0x000170 reloc:MIPS_LO16 symbol:_end
+
+rom:0x00016C reloc:MIPS_HI16 symbol:_heap_size
+rom:0x000174 reloc:MIPS_LO16 symbol:_heap_size
+

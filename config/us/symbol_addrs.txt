@@ -1,0 +1,3 @@
+_args = 0x00395E80; // size:0x144 bind = LOCAL
+
+_start = 0x00200008;
