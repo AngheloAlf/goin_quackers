@@ -9717,8 +9717,8 @@ __sinit_psx2mpegvibuf.cpp = 0x00393F70; // size:0x38 type:func bind = LOCAL
 __sinit_psx2mpegvideodec.cpp = 0x00393FB0; // size:0x38 type:func bind = LOCAL
 __sinit_psx2mpegvobuf.cpp = 0x00393FF0; // size:0x38 type:func bind = LOCAL
 __sinit_psx2video.cpp = 0x00394030; // size:0x38 type:func bind = LOCAL
-__static_init = 0x00394070; // bind = GLOBAL
-// .p__sinit_gcc_wrapper.c = 0x00394070; // size:0x4 bind = LOCAL
+// __static_init = 0x00394070; // bind = GLOBAL
+.p__sinit_gcc_wrapper.c = 0x00394070; // size:0x4 bind = LOCAL
 .p__sinit_locale.cpp = 0x00394074; // size:0x4 bind = LOCAL
 .p__sinit_cgameapplicationpsx2.cpp = 0x00394078; // size:0x4 bind = LOCAL
 .p__sinit_mwutils_ps2.c = 0x0039407C; // size:0x4 bind = LOCAL
@@ -10116,7 +10116,7 @@ __static_init = 0x00394070; // bind = GLOBAL
 .p__sinit_psx2mpegvideodec.cpp = 0x0039469C; // size:0x4 bind = LOCAL
 .p__sinit_psx2mpegvobuf.cpp = 0x003946A0; // size:0x4 bind = LOCAL
 .p__sinit_psx2video.cpp = 0x003946A4; // size:0x4 bind = LOCAL
-__static_init_end = 0x003946A8; // bind = GLOBAL
+// __static_init_end = 0x003946A8; // bind = GLOBAL
 __vt__Q23std9exception = 0x003946B0; // size:0x10 bind = <processor specific> 13
 __vt__Q23std9bad_alloc = 0x003946C0; // size:0x10 bind = <processor specific> 13
 __vt__Q23std13bad_exception = 0x003946D0; // size:0x10 bind = <processor specific> 13

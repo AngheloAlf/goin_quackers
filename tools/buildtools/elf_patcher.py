@@ -17,6 +17,7 @@ sections_to_realign = {
     ".ctor": 4,
     ".init": 4,
     ".exceptix": 4,
+    ".vtables": 0x10,
     ".sdata": 4,
     ".sbss": 4,
     ".bss": 4,
