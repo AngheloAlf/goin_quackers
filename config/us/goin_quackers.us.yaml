@@ -63,8 +63,9 @@ options:
     - .init
     - .ctor
     - .vtables
+    - .exception
     # - .exceptix
-    - .overlay_info # made up
+    - .gcc_except_table
     - .sdata
     - .sbss
     - .bss
@@ -78,7 +79,7 @@ options:
     - .ctor
     - .vtables
     # - .exceptix
-    - .overlay_info # made up
+    - .gcc_except_table
     - .sdata
     # - .sbss
     - .bss
@@ -94,11 +95,16 @@ options:
     - .init
     - .ctor
     - .vtables
+    - .exception
     # - .exceptix
-    - .overlay_info # made up
+    - .gcc_except_table
     - .sdata
     - .sbss
+    # - .scommon
+    # - SCOMMON
     - .bss
+    # - .common
+    # - COMMON
     - .vubss
 
 segments:
@@ -1185,7 +1191,7 @@ segments:
       - [0x1947A0, ctor, main/psx2mpegvobuf] # cpp
       - [0x1947A4, ctor, main/psx2video] # cpp
       - [0x1947B0, vtables, main/1947B0]
-      - [0x195E70, overlay_info, main/195E70]
+      - [0x195E70, gcc_except_table, main/195E70] # infered from og linker script
       - [0x195E80, sdata, main/195E80]
       - { type: ps2_sbss, vram: 0x00395E00, name: main/00395E00 }
       - { type: bss, vram: 0x00395E80, name: main/crt0 } # hasm
@@ -1215,6 +1221,15 @@ segments:
   #   vram: 0x00580000
   #   subsegments:
   #     - [0x195F00, data, heap/heap]
+
+  # Splat doesn't emit the bss file for some reason
+  # - name: scratchpad
+  #   type: code
+  #   start: 0x195F00
+  #   vram: 0x70000000
+  #   bss_size: 0x4000 # Maybe smaller
+  #   subsegments:
+  #     - { start: 0x195F00, type: bss, vram: 0x70000000, name: scratchpad/scratchpad }
 
   - [0x195F00, databin, elf_stuff_2]
 
