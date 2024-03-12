@@ -19,3 +19,8 @@ rom:0x0351E0 reloc:MIPS_HI16 symbol:__exception_table_start__
 rom:0x0351E4 reloc:MIPS_LO16 symbol:__exception_table_start__
 rom:0x0351E8 reloc:MIPS_HI16 symbol:__exception_table_end__
 rom:0x0351F0 reloc:MIPS_LO16 symbol:__exception_table_end__
+
+rom:0x000134 reloc:MIPS_HI16 symbol:_stack
+rom:0x000148 reloc:MIPS_LO16 symbol:_stack
+rom:0x000138 reloc:MIPS_HI16 symbol:_stack_size
+rom:0x00014C reloc:MIPS_LO16 symbol:_stack_size
