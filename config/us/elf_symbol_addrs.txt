@@ -10256,7 +10256,7 @@ __data_end = 0x00395D74; // bind = GLOBAL
 // @609 = 0x00395D94; // size:0x2 bind = LOCAL
 // @1658 = 0x00395D98; // size:0x1 bind = LOCAL
 // _fbss = 0x00395E00; // bind = GLOBAL
-// init_cnt_s__Q33std8ios_base4Init = 0x00395E00; // size:0x4 bind = GLOBAL
+init_cnt_s__Q33std8ios_base4Init = 0x00395E00; // size:0x4 bind = GLOBAL
 init$596 = 0x00395E04; // size:0x1 bind = LOCAL
 init$600 = 0x00395E08; // size:0x1 bind = LOCAL
 init$604 = 0x00395E0C; // size:0x1 bind = LOCAL
@@ -10642,7 +10642,7 @@ ErrorSent$1132 = 0x0039DD38; // size:0x4 bind = LOCAL
 // @609 = 0x0039DD50; // size:0xC bind = LOCAL
 // __msl_ios_base_init__3std = 0x0039DD60; // size:0x1 bind = LOCAL
 // @609 = 0x0039DD68; // size:0xC bind = LOCAL
-_gp = 0x0039DD70; // bind = GLOBAL
+// _gp = 0x0039DD70; // bind = GLOBAL
 // __msl_ios_base_init__3std = 0x0039DD78; // size:0x1 bind = LOCAL
 // @609 = 0x0039DD80; // size:0xC bind = LOCAL
 CAM_g_stCameraConstants = 0x0039DD90; // size:0x80 bind = GLOBAL

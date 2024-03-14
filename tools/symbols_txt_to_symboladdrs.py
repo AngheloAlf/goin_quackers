@@ -4,6 +4,30 @@ import sys
 
 regex = re.compile(r"[0-9]+: (?P<address>[0-9a-fA-F]{8})\s+(?P<size>[0-9]+)\s+(?P<type>[^ ]+)\s+(?P<bind>.+?)\s+DEFAULT.+5 (?P<name>.+)")
 
+def eprint(*args, **kwargs):
+    kwargs["file"] = sys.stderr
+    print(*args, **kwargs)
+
+defined_elsewhere_names: set[str] = set()
+defined_elsewhere_addrs: set[int] = set()
+
+def parse_other_file(other_path: Path, do_addrs: bool):
+    with other_path.open() as f:
+        for line in f:
+            line = line.split("//")[0]
+            if "=" not in line:
+                continue
+            name, addr = line.split("=")
+            name = name.strip()
+            addr = addr.strip()[:-1].strip()
+            defined_elsewhere_names.add(name)
+            if do_addrs:
+                defined_elsewhere_addrs.add(int(addr, 16))
+
+parse_other_file(Path("config/us/symbol_addrs.txt"), True)
+parse_other_file(Path("linker_scripts/us/linker_script_extra.us.ld"), False)
+
+
 syms: list[tuple[int, int, str, str, str]] = []
 
 with Path("tools/elf_syms.us.txt").open() as f:
@@ -49,12 +73,16 @@ for address, size, typ, bind, name in syms:
     # print(address, size, typ, bind, name, "\n", file=sys.stderr)
 
     if address in known_addresses[bind]:
-        duped_addresses[bind].add(address)
+        if address not in defined_elsewhere_addrs and name not in defined_elsewhere_names:
+            duped_addresses[bind].add(address)
     if name in known_names[bind]:
-        duped_names[bind].add(name)
+        if address not in defined_elsewhere_addrs and name not in defined_elsewhere_names:
+            duped_names[bind].add(name)
 
-    known_addresses[bind].add(address)
-    known_names[bind].add(name)
+    if address not in defined_elsewhere_addrs and name not in defined_elsewhere_names:
+        known_addresses[bind].add(address)
+    if address not in defined_elsewhere_addrs and name not in defined_elsewhere_names:
+        known_names[bind].add(name)
 
 for address, size, typ, bind, name in syms:
     if name in banned_names:
@@ -65,6 +93,8 @@ for address, size, typ, bind, name in syms:
     comment_out = ""
 
     if name.startswith("@"):
+        comment_out = "// "
+    elif name in defined_elsewhere_names or address in defined_elsewhere_addrs:
         comment_out = "// "
     elif address in duped_addresses[bind] or name in duped_names[bind]:
         comment_out = "// "
