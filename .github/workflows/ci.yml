@@ -33,6 +33,7 @@ jobs:
       run: |
         tree deps_repo/
         cp -r deps_repo/goin_quackers/ps2/${{ matrix.version }} disk/${{ matrix.version }}
+        tree disk
 
     - name: Setup
       run: make setup -j $(nproc) VERSION=${{ matrix.version }}
