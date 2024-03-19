@@ -2,6 +2,8 @@ from pathlib import Path
 import re
 import sys
 
+ILLEGAL_FILENAME_CHARS = ["<", ">", ":", '"', "/", "\\", "|", "?", "*"]
+
 regex = re.compile(r"[0-9]+: (?P<address>[0-9a-fA-F]{8})\s+(?P<size>[0-9]+)\s+(?P<type>[^ ]+)\s+(?P<bind>.+?)\s+DEFAULT.+5 (?P<name>.+)")
 
 def eprint(*args, **kwargs):
@@ -108,8 +110,10 @@ for address, size, typ, bind, name in syms:
 
     # print(address, size, typ, bind, name)
     typ_str = ""
+    prefix = "D_"
     if typ == "FUNC":
         typ_str = " type:func"
+        prefix = "func_"
     bind = bind.replace(":", "")
 
     assert size >= 0, size
@@ -117,7 +121,11 @@ for address, size, typ, bind, name in syms:
     if size > 0:
         size_str = f" size:0x{size:X}"
 
-    print(f"{comment_out}{name} = 0x{address:08X}; //{size_str}{typ_str} bind = {bind}")
+    filename_str = ""
+    if len(name) > 253 or any(c in ILLEGAL_FILENAME_CHARS for c in name):
+        filename_str = f" filename:{prefix}{address:08X}"
+
+    print(f"{comment_out}{name} = 0x{address:08X}; //{size_str}{typ_str}{filename_str} bind = {bind}")
 
 # for address in duped_addresses:
 #     print(f"0x{address:08X}", file=sys.stderr)
