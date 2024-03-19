@@ -85,29 +85,6 @@ options:
     # - .sbss
     - .bss
     - .vubss
-
-  ld_section_labels:
-    - .text
-    - .vutext
-    - .data
-    - .vudata
-    - .rodata
-    - .rdata
-    - .init
-    - .ctor
-    - .vtables
-    - .exception
-    # - .exceptix
-    - .gcc_except_table
-    - .sdata
-    - .sbss
-    # - .scommon
-    # - SCOMMON
-    - .bss
-    # - .common
-    # - COMMON
-    - .vubss
-
 segments:
   - [0x000000, databin, elf_stuff]
 
@@ -1198,7 +1175,7 @@ segments:
       - [0x1947B0, vtables, main/1947B0]
       - [0x195E70, gcc_except_table, main/195E70] # infered from og linker script
       - [0x195E80, sdata, main/195E80]
-      - { type: ps2_sbss, vram: 0x00395E00, name: main/00395E00 }
+      - { type: sbss, vram: 0x00395E00, name: main/00395E00 }
       - { type: bss, vram: 0x00395E80, name: main/crt0 } # hasm
       - { type: bss, vram: 0x00395FC8, name: main/gcc_wrapper } # larger?
       - { type: bss, vram: 0x00395FE0, name: main/00395FE0 }
