@@ -1204,14 +1204,13 @@ segments:
   #   subsegments:
   #     - [0x195F00, data, heap/heap]
 
-  # Splat doesn't emit the bss file for some reason
-  # - name: scratchpad
-  #   type: code
-  #   start: 0x195F00
-  #   vram: 0x70000000
-  #   bss_size: 0x4000 # Maybe smaller
-  #   subsegments:
-  #     - { start: 0x195F00, type: bss, vram: 0x70000000, name: scratchpad/scratchpad }
+  - name: scratchpad
+    type: code
+    start: 0x195F00
+    vram: 0x70000000
+    bss_size: 0x4000 # Maybe smaller
+    subsegments:
+      - { start: 0x195F00, type: bss, vram: 0x70000000, name: scratchpad/scratchpad }
 
   - [0x195F00, databin, elf_stuff_2]
 
