@@ -17,7 +17,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install package requirements
+    - name: Install required packages
       run: sudo apt-get install -y make git build-essential clang binutils-mips-linux-gnu gcc-mips-linux-gnu python3 python3-pip clang-format-11 clang-tidy-11
 
     - name: Install Python dependencies
@@ -32,7 +32,7 @@ jobs:
     - name: Get the dependency
       run: |
         tree deps_repo/
-        cp -r deps_repo/goin_quackers/${{ matrix.version }} disk/${{ matrix.version }}
+        cp -r deps_repo/goin_quackers/ps2/${{ matrix.version }} disk/${{ matrix.version }}
 
     - name: Setup
       run: make setup -j $(nproc) VERSION=${{ matrix.version }}
