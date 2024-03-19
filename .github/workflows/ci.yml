@@ -32,7 +32,7 @@ jobs:
     - name: Get the dependency
       run: |
         tree deps_repo/
-        cp -r deps_repo/goin_quackers/ps2/${{ matrix.version }} disk/${{ matrix.version }}
+        cp -r deps_repo/goin_quackers/ps2/${{ matrix.version }} disk/
         tree disk
 
     - name: Setup
