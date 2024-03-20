@@ -10,6 +10,13 @@ SHELL = /bin/bash
 
 #### Defaults ####
 
+# If COMPARE is 1, check the output md5sum after building
+COMPARE ?= 1
+# Disassembles all asm from the ROM instead of skipping files which are entirely in C
+FULL_DISASM ?= 0
+# Dump build object files
+OBJDUMP_BUILD ?= 1
+# If non-zero, passes -v to compiler
 COMPILER_VERBOSE ?= 0
 
 # Set prefix to mips binutils binaries (mips-linux-gnu-ld => 'mips-linux-gnu-') - Change at your own risk!
@@ -66,24 +73,38 @@ ifneq ($(shell type $(CROSS)ld >/dev/null 2>/dev/null; echo $$?), 0)
 $(error Please install or build $(CROSS))
 endif
 
-WIBO            := tools/wibo/wibo
+## General tools
 
-CC              := $(WIBO) tools/mwcps2/2.3-991202/mwccmips.exe
+WIBO            := tools/wibo/wibo
+PYTHON          ?= python3
+SPLAT           ?= $(PYTHON) -m splat split
+
+## GNU tools
 
 AS              := $(CROSS)as
-LD              := $(CROSS)ld
+GNULD           := $(CROSS)ld
 OBJCOPY         := $(CROSS)objcopy
 OBJDUMP         := $(CROSS)objdump
 GCC             := $(CROSS)gcc
 CPP             := $(CROSS)cpp
 STRIP           := $(CROSS)strip
 
-PYTHON          ?= python3
+## Codewarrior tools
 
-SPLAT             ?= $(PYTHON) -m splat split
-SPLAT_YAML        ?= config/$(VERSION)/$(TARGET).$(VERSION).yaml
+MWCC            := $(WIBO) tools/mwcps2/2.3-991202/mwccmips.exe
+MWLD            := $(WIBO) tools/mwcps2/2.3-991202/mwldmips.exe
 
-SPLAT_FLAGS       ?=
+## Tools
+
+CC              := $(MWCC)
+LD              := $(GNULD)
+# LD              := $(MWLD)
+
+## General tool flags
+
+SPLAT_YAML      ?= config/$(VERSION)/$(TARGET).$(VERSION).yaml
+
+SPLAT_FLAGS     ?=
 ifneq ($(FULL_DISASM),0)
     SPLAT_FLAGS       += --disassemble-all
 endif
@@ -241,7 +262,8 @@ $(ROM): $(ELF)
 
 $(ELF): $(LINKER_SCRIPTS)
 	$(LD) $(ENDIAN) $(LDFLAGS) -G8 -Map $(LD_MAP) $(foreach ld, $(LINKER_SCRIPTS), -T $(ld)) -o $@ $(filter %.o, $^)
-
+#$(ELF):
+#	$(LD) -map -nostdlib -m _start -nodead -g -o $@ $(LD_SCRIPT) $(filter %.o, $^) || $(RM) $@
 
 ## Order-only prerequisites
 # These ensure e.g. the PNG_INC_FILES are built before the O_FILES.
@@ -257,11 +279,12 @@ $(BUILD_DIR)/%.ld: %.ld
 
 $(BUILD_DIR)/%.o: %.s
 	$(CPP) $(CPPFLAGS) $(BUILD_DEFINES) $(IINC) -I $(dir $*) -I $(BUILD_DIR)/$(dir $*) $(COMMON_DEFINES) $(AS_DEFINES) $(COMP_VERBOSE_FLAG) $< | $(AS) $(ASFLAGS) $(ENDIAN) $(IINC) -I $(dir $*) -I $(BUILD_DIR)/$(dir $*) $(COMP_VERBOSE_FLAG) -o $@
-	$(PYTHON) tools/buildtools/elf_patcher.py $@
+	$(PYTHON) tools/buildtools/elf_patcher.py $@ gas
 	$(OBJDUMP_CMD)
 
 $(BUILD_DIR)/%.o: %.cpp
 	$(CC) $(C_COMPILER_FLAGS) -I$(dir $*) -I$(BUILD_DIR)/$(dir $*) $(COMP_VERBOSE_FLAG) -nostdinc -stderr -c -o $@ $<
+	$(PYTHON) tools/buildtools/elf_patcher.py $@ mwcc
 	$(OBJDUMP_CMD)
 
 

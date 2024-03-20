@@ -294,8 +294,8 @@ segments:
       - [0x035468, asm, main/035468]
 
       - [0x0354A0, asm, main/0354A0]
-      - [0x035930, asm, main/035930] # some stuff is probably part of main
-      - [0x035B10, asm, main/main]
+      - [0x035930, asm, main/035930] # part of main
+      - [0x035B10, cpp, main/main]
       - [0x035B60, asm, main/035B60] # some stuff is probably part of main
 
       - [0x16F280, vutext, main/16F280]
