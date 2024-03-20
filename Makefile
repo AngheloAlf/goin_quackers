@@ -66,7 +66,9 @@ ifneq ($(shell type $(CROSS)ld >/dev/null 2>/dev/null; echo $$?), 0)
 $(error Please install or build $(CROSS))
 endif
 
-CC              := 
+WIBO            := tools/wibo/wibo
+
+CC              := $(WIBO) tools/mwcps2/2.3-991202/mwccmips.exe
 
 AS              := $(CROSS)as
 LD              := $(CROSS)ld
@@ -97,7 +99,7 @@ IINC       := -Iinclude
 
 ## Compiler options ##
 
-CFLAGS          += 
+CFLAGS          += -enum min
 
 WARNINGS        := 
 ASFLAGS         := -march=r5900 -mabi=eabi -G8 -no-pad-sections
@@ -112,6 +114,10 @@ DBGFLAGS        :=
 # MIPS_VERSION    := -mips3
 # OUT_ENCODING    := Shift-JIS
 # CHAR_SIGN       := -funsigned-char
+
+# Variable to simplify C compiler invocation
+# C_COMPILER_FLAGS = $(ABIFLAG) $(CFLAGS) $(CHAR_SIGN) $(BUILD_DEFINES) $(IINC) $(WARNINGS) $(MIPS_VERSION) $(ENDIAN) $(COMMON_DEFINES) $(C_DEFINES) $(OPTFLAGS) $(DBGFLAGS)
+C_COMPILER_FLAGS = $(CFLAGS) $(BUILD_DEFINES) $(IINC) $(WARNINGS) $(COMMON_DEFINES) $(C_DEFINES) $(OPTFLAGS) $(DBGFLAGS)
 
 ifneq ($(COMPILER_VERBOSE),0)
     COMP_VERBOSE_FLAG := -v
@@ -252,6 +258,10 @@ $(BUILD_DIR)/%.ld: %.ld
 $(BUILD_DIR)/%.o: %.s
 	$(CPP) $(CPPFLAGS) $(BUILD_DEFINES) $(IINC) -I $(dir $*) -I $(BUILD_DIR)/$(dir $*) $(COMMON_DEFINES) $(AS_DEFINES) $(COMP_VERBOSE_FLAG) $< | $(AS) $(ASFLAGS) $(ENDIAN) $(IINC) -I $(dir $*) -I $(BUILD_DIR)/$(dir $*) $(COMP_VERBOSE_FLAG) -o $@
 	$(PYTHON) tools/buildtools/elf_patcher.py $@
+	$(OBJDUMP_CMD)
+
+$(BUILD_DIR)/%.o: %.cpp
+	$(CC) $(C_COMPILER_FLAGS) -I$(dir $*) -I$(BUILD_DIR)/$(dir $*) $(COMP_VERBOSE_FLAG) -nostdinc -stderr -c -o $@ $<
 	$(OBJDUMP_CMD)
 
 
