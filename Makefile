@@ -121,12 +121,14 @@ IINC       := -Iinclude
 ## Compiler options ##
 
 CFLAGS          += -enum min
+CXXFLAGS        += -enum min
 
 WARNINGS        := 
 ASFLAGS         := -march=r5900 -mabi=eabi -G8 -no-pad-sections
 COMMON_DEFINES  := 
 AS_DEFINES      := 
 C_DEFINES       := 
+CXX_DEFINES     := 
 ENDIAN          := -EL
 
 OPTFLAGS        := -O4
@@ -138,7 +140,8 @@ DBGFLAGS        :=
 
 # Variable to simplify C compiler invocation
 # C_COMPILER_FLAGS = $(ABIFLAG) $(CFLAGS) $(CHAR_SIGN) $(BUILD_DEFINES) $(IINC) $(WARNINGS) $(MIPS_VERSION) $(ENDIAN) $(COMMON_DEFINES) $(C_DEFINES) $(OPTFLAGS) $(DBGFLAGS)
-C_COMPILER_FLAGS = $(CFLAGS) $(BUILD_DEFINES) $(IINC) $(WARNINGS) $(COMMON_DEFINES) $(C_DEFINES) $(OPTFLAGS) $(DBGFLAGS)
+C_COMPILER_FLAGS   = $(CFLAGS)   $(BUILD_DEFINES) $(IINC) $(WARNINGS) $(COMMON_DEFINES) $(C_DEFINES)   $(OPTFLAGS) $(DBGFLAGS)
+CXX_COMPILER_FLAGS = $(CXXFLAGS) $(BUILD_DEFINES) $(IINC) $(WARNINGS) $(COMMON_DEFINES) $(CXX_DEFINES) $(OPTFLAGS) $(DBGFLAGS)
 
 ifneq ($(COMPILER_VERBOSE),0)
     COMP_VERBOSE_FLAG := -v
@@ -282,8 +285,13 @@ $(BUILD_DIR)/%.o: %.s
 	$(PYTHON) tools/buildtools/elf_patcher.py $@ gas
 	$(OBJDUMP_CMD)
 
-$(BUILD_DIR)/%.o: %.cpp
+$(BUILD_DIR)/%.o: %.c
 	$(CC) $(C_COMPILER_FLAGS) -I$(dir $*) -I$(BUILD_DIR)/$(dir $*) $(COMP_VERBOSE_FLAG) -nostdinc -stderr -c -o $@ $<
+	$(PYTHON) tools/buildtools/elf_patcher.py $@ mwcc
+	$(OBJDUMP_CMD)
+
+$(BUILD_DIR)/%.o: %.cpp
+	$(CC) $(CXX_COMPILER_FLAGS) -I$(dir $*) -I$(BUILD_DIR)/$(dir $*) $(COMP_VERBOSE_FLAG) -nostdinc -stderr -c -o $@ $<
 	$(PYTHON) tools/buildtools/elf_patcher.py $@ mwcc
 	$(OBJDUMP_CMD)
 

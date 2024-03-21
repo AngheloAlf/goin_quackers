@@ -289,7 +289,7 @@ segments:
       - [0x02F560, asm, main/02F560]
       - [0x031F98, asm, main/031F98]
       - [0x033028, asm, main/033028]
-      - [0x0351D0, asm, main/0351D0]
+      - [0x0351D0, c, main/mwUtils_PS2]
       - [0x035210, asm, main/035210]
       - [0x035468, asm, main/035468]
 
