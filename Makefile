@@ -120,8 +120,8 @@ IINC       := -Iinclude
 
 ## Compiler options ##
 
-CFLAGS          += -enum min
-CXXFLAGS        += -enum min
+CFLAGS          += -enum min -sdatathreshold 0
+CXXFLAGS        += -enum min -sdatathreshold 0
 
 WARNINGS        := 
 ASFLAGS         := -march=r5900 -mabi=eabi -G8 -no-pad-sections
@@ -131,7 +131,7 @@ C_DEFINES       :=
 CXX_DEFINES     := 
 ENDIAN          := -EL
 
-OPTFLAGS        := -O4
+OPTFLAGS        := -O4,p
 DBGFLAGS        :=
 # DBGFLAGS        := -gdwarf
 # MIPS_VERSION    := -mips3
