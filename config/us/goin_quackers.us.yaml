@@ -47,7 +47,6 @@ options:
   # asm_end_label: endlabel
   asm_jtbl_label_macro: jlabel
   asm_data_macro: dlabel
-  # include_macro_inc: False
   # libultra_symbols: True
   # hardware_regs: True
 
@@ -71,7 +70,7 @@ options:
     - .bss
     - .vubss
 
-  auto_all_sections:
+  auto_link_sections:
     - .data
     - .rodata
     - .rdata
@@ -294,7 +293,7 @@ segments:
       - [0x02F560, asm, main/02F560]
       - [0x031F98, asm, main/031F98]
       - [0x033028, asm, main/033028]
-      - [0x0351D0, c, cw/runtime/cpp_support/mwUtils_PS2] # CodeWarrior Layout/PS2 Support/Runtime/Sources/CPP_Support/StaticInitializers.cp
+      - [0x0351D0, c, cw/runtime/cpp_support/mwUtils_PS2]
       - [0x035210, asm, main/035210]
       - [0x035468, asm, main/035468]
 
