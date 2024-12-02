@@ -1,5 +1,5 @@
 mapfile-parser>=2.3.2,<3.0.0
-splat64[mips]>=0.27.0,<1.0.0
+splat64[mips]>=0.31.0,<1.0.0
 
 # for m2c
 pycparser

@@ -7,13 +7,10 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from splat.segtypes.ps2.asm import Ps2SegAsm
+from splat.segtypes.common.asm import CommonSegAsm
 from splat.util import options
 
-class PS2SegInit(Ps2SegAsm):
-    def get_section_flags(self):
-        return "ax"
-
+class PS2SegInit(CommonSegAsm):
     def get_linker_section(self) -> str:
         return ".init"
 
